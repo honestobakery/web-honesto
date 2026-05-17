@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://honestobakery.github.io/web-honesto/sitemap.xml
