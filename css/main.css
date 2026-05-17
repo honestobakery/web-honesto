@@ -1010,6 +1010,26 @@ a {
 
 .mainnav__cta:hover { background: var(--color-blue-deep); }
 
+.mainnav__bakery {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-charcoal-20);
+  color: var(--color-charcoal);
+  border-radius: var(--radius-full);
+  padding: 8px 14px;
+  text-decoration: none;
+  transition: border-color 180ms, background 180ms, color 180ms;
+}
+
+.mainnav__bakery:hover,
+.mainnav__bakery[aria-current="page"] {
+  border-color: var(--color-blue-primary);
+  background: var(--color-blue-primary);
+  color: var(--color-cream);
+}
+
 .mainnav__toggle {
   display: flex;
   background: none;
@@ -1853,6 +1873,88 @@ a {
   font-family: var(--font-display);
   font-size: 18px;
   color: var(--color-cream-50);
+}
+
+/* ─── BAKERY PAGE ────────────────────────────────────────── */
+
+.bakery-hero {
+  min-height: 100svh;
+  background: var(--color-blue-primary);
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  padding-block: clamp(140px, 18vw, 200px) clamp(80px, 10vw, 120px);
+}
+
+.bakery-hero__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(48px, 8vw, 112px);
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .bakery-hero__inner { padding-inline: 64px; }
+}
+
+@media (max-width: 768px) {
+  .bakery-hero__inner { grid-template-columns: 1fr; }
+}
+
+.bakery-hero__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-cream-60);
+  margin: 0 0 var(--space-3);
+}
+
+.bakery-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(72px, 13vw, 160px);
+  font-weight: 400;
+  line-height: 0.9;
+  color: var(--color-cream);
+  margin: 0;
+}
+
+.bakery-hero__content {
+  display: grid;
+  gap: var(--space-5);
+  padding-top: clamp(0px, 2vw, 24px);
+}
+
+.bakery-hero__lead {
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.3;
+  color: var(--color-cream);
+  margin: 0;
+  max-width: 38ch;
+}
+
+.bakery-hero__body p {
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.65;
+  color: var(--color-cream-80);
+  margin: 0 0 var(--space-3);
+  max-width: 54ch;
+}
+
+.bakery-hero__body p:last-child { margin-bottom: 0; }
+
+.bakery-hero__actions { display: flex; }
+
+.bakery-hero__note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-cream-40);
+  margin: 0;
 }
 
 /* ─── REDUCED MOTION ─────────────────────────────────────── */
