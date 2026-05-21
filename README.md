@@ -34,3 +34,4 @@ Cualquier cambio visual o de copy debe respetar estos documentos. No inventar es
 ## Deploy
 
 El sitio se publica automáticamente en GitHub Pages desde la rama `main`.
+El dominio custom esperado es `https://honesto.com.ar/`.

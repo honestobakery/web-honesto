@@ -1,0 +1,22 @@
+# honesto
+
+> Panadería artesanal y café en Independencia 180, Centro, Córdoba, Argentina. Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca de producción propia. Sin cadena, sin pose.
+
+honesto es un proyecto de oficio. El pan fermenta 24 horas sin levadura comercial, con harinas nobles y producción propia todos los días — corteza crujiente, miga alveolada, sabor real. No es pan "estilo artesanal": es el proceso completo.
+
+El café se calibra diariamente. La diferencia se nota en la taza sin necesidad de saber de café de especialidad. La comida es fresca y de producción propia: medialunas recién horneadas, opciones para desayuno y almuerzo.
+
+Ubicado en Independencia 180, Centro, Córdoba (X5000), a pocas cuadras de la Peatonal Juntos y del Paseo del Buen Pastor. Horario: lunes a viernes 7:30–20:00, sábados 8:00–14:00, domingos cerrado.
+
+honesto también vende al por mayor a cafeterías, restaurantes y negocios gastronómicos de Córdoba: pan de masa madre, facturas y productos artesanales en volumen con calidad consistente y entrega regular.
+
+Contacto: hola@honesto.com.ar — Instagram: @honesto.bakery
+
+## Páginas
+
+- [Inicio](https://honesto.com.ar/): carta, proceso, ubicación y horarios
+- [Bakery / Mayorista](https://honesto.com.ar/bakery.html): venta al por mayor para negocios gastronómicos en Córdoba
+
+## Optional
+
+- [Sitemap](https://honesto.com.ar/sitemap.xml): mapa del sitio en formato XML
