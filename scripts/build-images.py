@@ -25,6 +25,7 @@ SLOTS = {
     'hogaza':     ('_A744449.jpg', (4, 3), (0.5, 1.0), 0.7), # hogazas adelante, equipo detrás (zoom 70%)
     'laminados':  ('_A744569.jpg', (4, 3), (0.5, 0.5)),    # croissant + medialuna
     'pasteleria': ('_A744551.jpg', (4, 3), (0.5, 0.5)),    # roll
+    'congelados': ('_A744482.jpg', (4, 3), (0.5, 0.5)),    # bloque de masa laminada
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
 SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}

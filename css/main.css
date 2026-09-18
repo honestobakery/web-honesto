@@ -2237,6 +2237,41 @@ a {
   .b2b-grid { grid-template-columns: repeat(3, 1fr); }
 }
 
+.b2b-grid--2 { gap: 24px; }
+
+@media (min-width: 768px) {
+  .b2b-grid--2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+.product-card--list .product-card__body { display: grid; gap: 8px; }
+
+.product-card__list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--color-charcoal-10);
+}
+
+.product-card__list li {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-charcoal-70);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-charcoal-10);
+}
+
+.product-card__list li strong {
+  display: block;
+  color: var(--color-charcoal);
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.b2b__lead a { color: var(--color-blue-primary); text-decoration: underline; text-underline-offset: 3px; }
+.b2b__lead a:hover { color: var(--color-blue-deep); }
+.bakery-hero__note a { color: var(--color-cream-60); text-decoration: underline; text-underline-offset: 3px; }
+.bakery-hero__note a:hover { color: var(--color-cream); }
+
 .b2b__inner--split { display: grid; gap: 40px; }
 
 @media (min-width: 1024px) {

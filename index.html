@@ -50,7 +50,8 @@
         "name": "honesto",
         "alternateName": [
           "honesto bakery & café",
-          "honesto bakery"
+          "honesto bakery",
+          "Honesto Obrador"
         ],
         "slogan": "Lo esencial puede ser extraordinario.",
         "description": "Café de especialidad y panadería de masa madre en el centro de Córdoba, Argentina. Hogazas con 24 horas de fermentación natural sin levadura comercial, café calibrado todos los días, laminados, pastelería y comida fresca de producción propia. Cocina y horno a la vista. Venta mayorista B2B para cafeterías y restaurantes a través de honesto bakery.",
@@ -117,6 +118,7 @@
           "Fermentación natural de 24 horas",
           "Café de especialidad",
           "Laminados de manteca",
+          "Croissants y medialunas congelados para hornear",
           "Panadería artesanal",
           "Venta mayorista para cafeterías"
         ],
@@ -133,28 +135,64 @@
                 {
                   "@type": "MenuItem",
                   "name": "Hogaza de masa madre",
-                  "description": "Nuestro producto principal. Hogaza con 24 horas de fermentación natural, sin levadura comercial. Corteza firme, miga abierta. Producción propia todos los días."
+                  "description": "Nuestro producto principal. Pan 100% masa madre con harinas de trigo, integral y centeno, 24 horas de fermentación natural, sin levadura comercial. Corteza crocante, miga aireada. Pieza de 1 kg aproximado."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Pan de molde de masa madre",
+                  "description": "Blanco o semillado con mix de semillas y avena. Harinas de trigo e integral, miga suave. Pieza de 1 kg aproximado."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Baguetín",
+                  "description": "Pan de masa madre de 400 g, corteza crocante y miga tierna."
                 }
               ]
             },
             {
               "@type": "MenuSection",
-              "name": "Laminados y pastelería",
+              "name": "Laminados de manteca",
               "hasMenuItem": [
                 {
                   "@type": "MenuItem",
                   "name": "Medialunas",
-                  "description": "Las de siempre, bien hechas. Recién salidas, con la manteca y el tiempo que hacen falta."
+                  "description": "Medialunas de manteca y masa madre estilo marplatense, recién salidas."
                 },
                 {
                   "@type": "MenuItem",
-                  "name": "Croissants y laminados de manteca",
-                  "description": "Laminados de producción propia, horneados el mismo día."
+                  "name": "Croissant",
+                  "description": "Laminado estilo francés de masa madre y 100% manteca."
                 },
                 {
                   "@type": "MenuItem",
-                  "name": "Rolls y pastelería de mostrador",
-                  "description": "Pastelería de producción propia. Varía según el día."
+                  "name": "Pan de chocolate",
+                  "description": "Masa hojaldrada de masa madre rellena de chocolate semiamargo."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Roll de canela, danesas y pepa de membrillo",
+                  "description": "Roll de manteca de canela y azúcar morena; danesa con pastelera o con crumble de manzana; pepa de membrillo en masa laminada."
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Pastelería",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Alfajor de chocolate y frutos rojos",
+                  "description": "Bañado en chocolate, relleno de dulce de leche con corazón de frutos rojos."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Budines",
+                  "description": "Zanahoria, limón con frutos rojos, banana y chocolate."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Cookies",
+                  "description": "Avena, naranja y almendras (receta sin gluten) y clásica con chips de chocolate."
                 }
               ]
             },
@@ -185,8 +223,8 @@
         "makesOffer": {
           "@type": "Offer",
           "@id": "https://honesto.com.ar/bakery.html#oferta",
-          "name": "Venta mayorista B2B: pan de masa madre, laminados y pastelería para cafeterías",
-          "description": "honesto bakery abastece a cafeterías, restaurantes, hoteles y tiendas de Córdoba con hogazas de masa madre, laminados de manteca y pastelería de producción propia.",
+          "name": "Venta mayorista B2B: pan de masa madre, laminados, pastelería y congelados para cafeterías",
+          "description": "honesto bakery (Honesto Obrador) abastece a cafeterías, restaurantes, hoteles y tiendas de Córdoba con hogazas y panes de molde de masa madre, laminados de manteca, pastelería y piezas congeladas para hornear en packs de 10. Carta con precios en menu.fu.do/independencia180/qr-menu.",
           "url": "https://honesto.com.ar/bakery.html",
           "availability": "https://schema.org/InStock",
           "businessFunction": "http://purl.org/goodrelations/v1#Sell",
@@ -220,7 +258,10 @@
           "@type": "Bakery",
           "@id": "https://honesto.com.ar/bakery.html#unidad",
           "name": "honesto bakery",
-          "alternateName": "honesto bakery mayorista",
+          "alternateName": [
+            "honesto bakery mayorista",
+            "Honesto Obrador"
+          ],
           "description": "Unidad de producción mayorista B2B de honesto: hogazas de masa madre, laminados de manteca y pastelería para cafeterías, restaurantes, hoteles y tiendas de Córdoba.",
           "url": "https://honesto.com.ar/bakery.html",
           "telephone": "+543516016091",
@@ -235,7 +276,8 @@
           },
           "parentOrganization": {
             "@id": "https://honesto.com.ar/#negocio"
-          }
+          },
+          "menu": "https://menu.fu.do/independencia180/qr-menu"
         }
       },
       {
@@ -309,7 +351,7 @@
             "name": "¿Qué laminados y pastelería tienen?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Medialunas, croissants, rolls y pastelería de mostrador, todo de producción propia y horneado el mismo día. La oferta varía según el día."
+              "text": "Medialunas de manteca estilo marplatense, croissants, pan de chocolate, roll de canela, danesas con pastelera o crumble de manzana y pepa de membrillo, todo laminado con masa madre y 100% manteca. En pastelería: alfajor de chocolate y frutos rojos, budines de zanahoria, limón y frutos rojos o banana y chocolate, y cookies (una de avena y naranja con receta sin gluten). Todo de producción propia, horneado el mismo día."
             }
           },
           {
@@ -333,7 +375,7 @@
             "name": "¿Venden pan de masa madre al por mayor para cafeterías y restaurantes?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sí. honesto bakery es la unidad mayorista de honesto: hogazas de masa madre, laminados de manteca y pastelería de producción propia para cafeterías, restaurantes, hoteles y tiendas de Córdoba. Los pedidos se coordinan por WhatsApp al +54 351 601-6091 o registrando el negocio en honesto.com.ar/bakery.html."
+              "text": "Sí. honesto bakery es la unidad mayorista de honesto: hogazas y panes de molde de masa madre, laminados de manteca, pastelería y congelados para hornear en packs de 10, para cafeterías, restaurantes, hoteles y tiendas de Córdoba. Carta con precios en menu.fu.do/independencia180/qr-menu; pedidos por WhatsApp al +54 351 601-6091 o registrando el negocio en honesto.com.ar/bakery.html."
             }
           }
         ]
@@ -508,7 +550,7 @@
           <div class="product-card__body">
             <span class="product-card__label">Hogaza de Masa Madre</span>
             <h3 class="product-card__title">Fermentación de 24 horas</h3>
-            <p class="product-card__desc">Nuestro producto principal. Corteza firme, miga abierta y 24 horas de fermentación natural, sin levadura comercial. Horneada todos los días.</p>
+            <p class="product-card__desc">Nuestro producto principal. Harinas de trigo, integral y centeno, 24 horas de fermentación natural, sin levadura comercial. Corteza crocante, miga aireada. Horneada todos los días.</p>
           </div>
         </div>
         <div class="product-card">
@@ -538,7 +580,7 @@
           <div class="product-card__body">
             <span class="product-card__label">Medialunas y Laminados</span>
             <h3 class="product-card__title">Las de siempre, bien hechas</h3>
-            <p class="product-card__desc">Medialunas, croissants y rolls de manteca. Recién salidos. Sin vueltas.</p>
+            <p class="product-card__desc">Medialunas marplatenses, croissants, pan de chocolate, roll de canela y danesas. Masa madre y 100% manteca. Recién salidos.</p>
           </div>
         </div>
       </div>
@@ -639,7 +681,7 @@
         </details>
         <details class="faq__item">
           <summary>¿Qué laminados y pastelería tienen?</summary>
-          <p>Medialunas, croissants, rolls y pastelería de mostrador, todo de producción propia y horneado el mismo día. La oferta varía según el día.</p>
+          <p>Medialunas de manteca estilo marplatense, croissants, pan de chocolate, roll de canela, danesas y pepa de membrillo, todo laminado con masa madre y 100% manteca. En pastelería: alfajor de chocolate y frutos rojos, budines y cookies, una de ellas con receta sin gluten. Producción propia, horneado el mismo día.</p>
         </details>
         <details class="faq__item">
           <summary>¿Hacen desayunos y almuerzos?</summary>
@@ -651,7 +693,7 @@
         </details>
         <details class="faq__item">
           <summary>¿Venden pan de masa madre al por mayor?</summary>
-          <p>Sí. <a href="bakery.html">honesto bakery</a> es nuestra unidad mayorista: hogazas de masa madre, laminados de manteca y pastelería de producción propia para cafeterías, restaurantes, hoteles y tiendas de Córdoba. Pedís por WhatsApp o registrás tu negocio.</p>
+          <p>Sí. <a href="bakery.html">honesto bakery</a> es nuestra unidad mayorista: hogazas y panes de molde de masa madre, laminados de manteca, pastelería y congelados para hornear en packs de 10, para cafeterías, restaurantes, hoteles y tiendas de Córdoba. Pedís por WhatsApp o registrás tu negocio.</p>
         </details>
       </div>
     </div>
