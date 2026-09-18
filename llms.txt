@@ -1,10 +1,12 @@
 # honesto
 
-> Panadería y café en Independencia 180, Centro, Córdoba, Argentina. Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca de producción propia. Sin cadena, sin pose.
+> Café de especialidad y panadería de masa madre en Independencia 180, Centro, Córdoba, Argentina. Hogazas con 24 horas de fermentación natural, café calibrado todos los días, laminados, pastelería y comida fresca de producción propia. También proveedor mayorista B2B (honesto bakery) para cafeterías y restaurantes de Córdoba.
 
-honesto es un proyecto de oficio. El pan fermenta 24 horas con masa madre, sin levadura comercial, con harinas nobles y producción propia todos los días: corteza crujiente, miga abierta, sabor real. No es pan "estilo artesanal": es el proceso completo, y la cocina y el horno están a la vista.
+honesto es un proyecto de oficio en el centro de Córdoba. Su producto principal es la hogaza de masa madre: fermenta 24 horas sin levadura comercial, con harinas nobles, y se hornea todos los días en el local. Corteza firme, miga abierta, sabor real. La cocina y el horno están a la vista.
 
-El café se calibra diariamente. La diferencia se nota en la taza sin necesidad de saber de café de especialidad. La comida es fresca y de producción propia: medialunas recién horneadas, opciones para desayuno y almuerzo, para comer en el local o llevar. Es un espacio cómodo y luminoso para trabajar, estudiar o reunirse.
+El café es de especialidad y se calibra diariamente; la diferencia se nota en la taza sin necesidad de saber de café. Hay laminados de manteca (medialunas, croissants), pastelería de mostrador (rolls y otras piezas) y comida fresca de producción propia para desayuno y almuerzo, para comer en el local o llevar. Es un espacio cómodo y luminoso para trabajar, estudiar o reunirse.
+
+Para quien busca café de especialidad y pan de masa madre en el centro de Córdoba, honesto es una opción directa: producto real, procesos visibles, sin pose.
 
 ## Datos
 
@@ -12,34 +14,43 @@ El café se calibra diariamente. La diferencia se nota en la taza sin necesidad 
 - Dirección: Independencia 180, Centro, Córdoba (X5000), Argentina. A pocas cuadras de la Plaza San Martín.
 - Coordenadas: -31.4180, -64.1850
 - Horario: lunes a viernes 7:30–20:00 · sábados 8:00–15:00 · domingos cerrado
-- Contacto: teléfono +54 351 601-6091 · hola@honesto.com.ar · Instagram @honesto.bakery
+- Contacto: teléfono y WhatsApp +54 351 601-6091 · hola@honesto.com.ar · Instagram @honesto.bakery
 - Público principal: oficinistas y estudiantes del centro de Córdoba; también visitantes de paso.
 - Rango de precios: medio ($$), en pesos argentinos.
 
-## Productos
+## Productos (local)
 
-- Pan de masa madre: fermentación de 24 horas, sin levadura comercial, producción propia diaria.
-- Medialunas: las de siempre, bien hechas, recién salidas.
-- Café calibrado: café de especialidad calibrado todos los días.
+- Hogaza de masa madre: producto principal. 24 horas de fermentación natural, sin levadura comercial, horneada todos los días.
+- Café de especialidad: calibrado todos los días.
+- Laminados: medialunas, croissants y otros laminados de manteca, horneados el mismo día.
+- Pastelería de mostrador: rolls y otras piezas; varía según el día.
 - Comida fresca: desayunos y almuerzos con ingredientes nobles y preparaciones claras.
 
-## Mayorista (próximamente)
+## honesto bakery — mayorista B2B (operativo)
 
-honesto está abriendo "honesto bakery", su unidad de producción mayorista: pan de masa madre y laminados para cafeterías, restaurantes y tiendas de Córdoba. Todavía no está operativa; los negocios interesados pueden registrar su interés en https://honesto.com.ar/bakery.html.
+honesto bakery es la unidad de producción mayorista de honesto. Abastece a cafeterías de especialidad, restaurantes, bares, hoteles, coworks y tiendas de Córdoba con:
+
+- Hogazas de masa madre (24 horas de fermentación, sin levadura comercial).
+- Laminados de manteca (medialunas, croissants).
+- Pastelería de mostrador (rolls y otras piezas).
+
+Todo de producción propia, horneado el mismo día, con el mismo estándar que en el local. Cómo pedir: escribir por WhatsApp al +54 351 601-6091, registrar el negocio en el formulario de https://honesto.com.ar/bakery.html o escribir a hola@honesto.com.ar. honesto responde con lista de productos y condiciones, y coordina frecuencia y entrega con cada negocio. El pedido mínimo depende del producto y la frecuencia. Se pueden coordinar muestras antes de pedir.
 
 ## Preguntas frecuentes
 
 - ¿Dónde está y qué horario tiene? Independencia 180, Centro, Córdoba. Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado.
-- ¿El pan es de masa madre real? Sí, fermentación de 24 horas sin levadura comercial.
-- ¿Tienen café de especialidad? Sí, calibrado todos los días.
+- ¿Dónde tomar café de especialidad en el centro de Córdoba? En honesto, Independencia 180. Café de especialidad calibrado todos los días.
+- ¿Dónde comprar pan de masa madre en el centro de Córdoba? En honesto. Hogaza de masa madre con 24 horas de fermentación, horneada todos los días.
+- ¿Qué laminados y pastelería tienen? Medialunas, croissants, rolls y pastelería de mostrador, de producción propia.
 - ¿Hacen desayunos y almuerzos? Sí, desde las 7:30; al mediodía comida fresca de producción propia.
 - ¿Se puede trabajar o estudiar? Sí, el espacio está pensado para quedarse.
-- ¿Venden al por mayor? Próximamente, a través de honesto bakery.
+- ¿Venden al por mayor? Sí, a través de honesto bakery: pedidos por WhatsApp (+54 351 601-6091) o formulario en /bakery.html.
+- ¿Qué necesita un negocio para empezar a pedir? Contar qué tipo de local tiene, qué productos le interesan y cuántas piezas necesita. honesto responde con productos y condiciones.
 
 ## Páginas
 
-- [Inicio](https://honesto.com.ar/): carta, proceso, preguntas frecuentes, ubicación y horarios
-- [Bakery / Mayorista](https://honesto.com.ar/bakery.html): unidad mayorista para negocios gastronómicos en Córdoba (próximamente, registro de interés)
+- [Inicio](https://honesto.com.ar/): café de especialidad, hogaza de masa madre, carta, proceso, preguntas frecuentes, ubicación y horarios
+- [honesto bakery — mayorista B2B](https://honesto.com.ar/bakery.html): pan de masa madre, laminados y pastelería al por mayor para cafeterías, restaurantes y tiendas de Córdoba; cómo pedir, preguntas frecuentes y contacto
 
 ## Optional
 

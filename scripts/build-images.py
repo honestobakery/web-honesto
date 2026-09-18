@@ -5,14 +5,14 @@ Uso:  python3 scripts/build-images.py <carpeta-con-originales>
 
 Requiere Pillow y cwebp (brew install webp). Cada slot se recorta a 4:3
 con un punto focal (fx, fy en 0..1) y se exporta a 480/800/1200/1600 px en
-assets/images/<slot>-<ancho>.webp. También regenera og-honesto.jpg (1200x630).
+assets/images/<slot>-<ancho>.webp. También regenera og-<nombre>.jpg (1200x630).
 Para agregar o cambiar una foto, editá SLOTS y volvé a correr el script.
 """
 import os, subprocess, sys
 from PIL import Image, ImageOps
 
 SLOTS = {
-    # slot        (archivo original,  aspecto, focal)
+    # slot        (archivo original,  aspecto, focal[, zoom])
     'hero-local': ('_A744449.jpg', (4, 3), (0.5, 0.42)),
     'fachada':    ('_A744433.jpg', (4, 3), (0.5, 0.5)),
     'cafe':       ('_A744557.jpg', (4, 3), (0.5, 0.5)),
@@ -22,19 +22,28 @@ SLOTS = {
     'desayuno':   ('_A744565.jpg', (4, 3), (0.5, 0.5)),
     'patio':      ('_A744498.jpg', (4, 3), (0.5, 0.5)),
     'horno':      ('_A744492.jpg', (4, 3), (0.5, 0.5)),
+    'hogaza':     ('_A744449.jpg', (4, 3), (0.5, 1.0), 0.7), # hogazas adelante, equipo detrás (zoom 70%)
+    'laminados':  ('_A744569.jpg', (4, 3), (0.5, 0.5)),    # croissant + medialuna
+    'pasteleria': ('_A744551.jpg', (4, 3), (0.5, 0.5)),    # roll
 }
-OG = ('_A744449.jpg', (0.5, 0.42))
+# og-<nombre>.jpg 1200x630: (original, focal)
+OG = {
+    'honesto': ('_A744433.jpg', (0.5, 0.5)),   # fachada (home)
+    'bakery':  ('_A744449.jpg', (0.5, 0.42)),  # cocina / producción (bakery B2B)
+}
 WIDTHS = (480, 800, 1200, 1600)
 OUT = os.path.join(os.path.dirname(__file__), '..', 'assets', 'images')
 
 
-def crop(im, aspect, focal):
+def crop(im, aspect, focal, zoom=1.0):
+    """zoom < 1 recorta más cerca (fracción del encuadre máximo)."""
     W, H = im.size
     aw, ah = aspect
     if W / H > aw / ah:
         cw, ch = int(H * aw / ah), H
     else:
         cw, ch = W, int(W * ah / aw)
+    cw, ch = int(cw * zoom), int(ch * zoom)
     fx, fy = focal
     x = min(max(int(fx * W - cw / 2), 0), W - cw)
     y = min(max(int(fy * H - ch / 2), 0), H - ch)
@@ -47,8 +56,10 @@ def load(src_dir, name):
 
 def main(src_dir):
     os.makedirs(OUT, exist_ok=True)
-    for slot, (src, aspect, focal) in SLOTS.items():
-        c = crop(load(src_dir, src), aspect, focal)
+    for slot, spec in SLOTS.items():
+        src, aspect, focal = spec[:3]
+        zoom = spec[3] if len(spec) > 3 else 1.0
+        c = crop(load(src_dir, src), aspect, focal, zoom)
         for w in WIDTHS:
             tmp = os.path.join(OUT, f'{slot}-{w}.png')
             c.resize((w, round(w * aspect[1] / aspect[0])), Image.LANCZOS).save(tmp)
@@ -56,10 +67,10 @@ def main(src_dir):
                             '-o', os.path.join(OUT, f'{slot}-{w}.webp')], check=True)
             os.remove(tmp)
         print('ok', slot)
-    src, focal = OG
-    og = crop(load(src_dir, src), (1200, 630), focal).resize((1200, 630), Image.LANCZOS)
-    og.save(os.path.join(OUT, 'og-honesto.jpg'), quality=85, optimize=True, progressive=True)
-    print('ok og-honesto.jpg')
+    for name, (src, focal) in OG.items():
+        og = crop(load(src_dir, src), (1200, 630), focal).resize((1200, 630), Image.LANCZOS)
+        og.save(os.path.join(OUT, f'og-{name}.jpg'), quality=85, optimize=True, progressive=True)
+        print('ok', f'og-{name}.jpg')
 
 
 if __name__ == '__main__':

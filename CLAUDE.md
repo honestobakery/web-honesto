@@ -10,7 +10,7 @@ Web frontend for **Honesto**, a Bakery & Café at Independencia 180, Córdoba, A
 
 ```
 index.html           ← single page, all sections (hero, happenings, carta, proceso, nosotros, FAQ, CTA)
-bakery.html          ← wholesale unit landing ("próximamente")
+bakery.html          ← honesto bakery: B2B wholesale landing (operating; WhatsApp + form CTAs, products, FAQ)
 404.html             ← GitHub Pages not-found page
 css/main.css         ← all styles + design tokens
 robots.txt, sitemap.xml, llms.txt  ← discoverability (SEO / GEO)
@@ -31,6 +31,8 @@ scripts/build-images.py  ← regenerates assets/images from the original JPGs (e
 - **Facts must match everywhere**: address, hours (Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
 - JSON-LD lives in a single `@graph` per page. The business node is `https://honesto.com.ar/#negocio`; reference it by `@id`, don't duplicate it.
 - The `FAQPage` schema must mirror the visible `#preguntas` section 1:1 (Google requires FAQ content to be visible on the page).
+- **Target queries**: home targets "café de especialidad" + "pan de masa madre / hogaza" + "centro de Córdoba"; bakery.html targets "panadería mayorista / proveedor B2B de pan de masa madre, laminados y pastelería para cafeterías en Córdoba". Keep those phrases in titles, H1, FAQ and llms.txt.
+- The hero's first image is the storefront (`fachada`); the hogaza de masa madre (star product) must stay visible above the fold.
 - **Images**: every `<img>` uses `srcset` with the four WebP widths and a `sizes` that matches its grid slot (hero 576px, hero cell 272px, happenings 373px, carta card 418px, half-width 544px at ≥1024px). Alt text describes what is actually in the photo. Source photos live in the owner's Drive folder "cafe honesto"; to swap one, add it to `SLOTS` in `scripts/build-images.py` and rerun.
 - Never invent facts for schema or copy (prices, menu items, amenities). If it's not confirmed by the owner, leave it out.
 
