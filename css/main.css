@@ -1943,6 +1943,8 @@ a {
 
 .footer-v2__location { display: flex; align-items: flex-start; gap: 12px; }
 
+.footer-v2 address { font-style: normal; }
+
 .footer-v2__hours p { color: var(--color-cream); margin: 0 0 4px; }
 .footer-v2__hours p.muted { color: var(--color-cream-50); }
 
