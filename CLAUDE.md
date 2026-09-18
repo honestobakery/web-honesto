@@ -28,11 +28,11 @@ scripts/build-images.py  ← regenerates assets/images from the original JPGs (e
 
 ## SEO / GEO rules
 
-- **Facts must match everywhere**: address, hours (Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
+- **Facts must match everywhere**: address, hours (Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
 - JSON-LD lives in a single `@graph` per page. The business node is `https://honesto.com.ar/#negocio`; reference it by `@id`, don't duplicate it.
 - The `FAQPage` schema must mirror the visible `#preguntas` section 1:1 (Google requires FAQ content to be visible on the page).
 - **Images**: every `<img>` uses `srcset` with the four WebP widths and a `sizes` that matches its grid slot (hero 576px, hero cell 272px, happenings 373px, carta card 418px, half-width 544px at ≥1024px). Alt text describes what is actually in the photo. Source photos live in the owner's Drive folder "cafe honesto"; to swap one, add it to `SLOTS` in `scripts/build-images.py` and rerun.
-- Never invent facts for schema or copy (phone, prices, menu items, amenities). If it's not confirmed by the owner, leave it out.
+- Never invent facts for schema or copy (prices, menu items, amenities). If it's not confirmed by the owner, leave it out.
 
 ## Brand & Design System
 
