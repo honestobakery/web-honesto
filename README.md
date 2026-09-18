@@ -42,3 +42,17 @@ Cualquier cambio visual o de copy debe respetar estos documentos. No inventar es
 
 El sitio se publica automáticamente en GitHub Pages desde la rama `main`.
 El dominio custom esperado es `https://honesto.com.ar/`.
+
+---
+
+## Indexación
+
+Tras publicar cambios de contenido, avisar a Bing/Copilot vía IndexNow (la clave es el archivo `*.txt` de 32 caracteres hex en la raíz):
+
+```bash
+KEY=$(ls | grep -E '^[0-9a-f]{32}\.txt$' | sed 's/.txt//')
+curl -s -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" \
+  -d "{\"host\":\"honesto.com.ar\",\"key\":\"$KEY\",\"keyLocation\":\"https://honesto.com.ar/$KEY.txt\",\"urlList\":[\"https://honesto.com.ar/\",\"https://honesto.com.ar/bakery.html\"]}" -w "%{http_code}\n"
+```
+
+Para Google, pedir la reindexación desde Search Console (Inspección de URL → Solicitar indexación).

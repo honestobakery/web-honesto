@@ -27,6 +27,7 @@ SLOTS = {
     'pasteleria': ('_A744551.jpg', (4, 3), (0.5, 0.5)),    # roll
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
+SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}
 OG = {
     'honesto': ('_A744433.jpg', (0.5, 0.5)),   # fachada (home)
     'bakery':  ('_A744449.jpg', (0.5, 0.42)),  # cocina / producción (bakery B2B)
@@ -71,6 +72,12 @@ def main(src_dir):
         og = crop(load(src_dir, src), (1200, 630), focal).resize((1200, 630), Image.LANCZOS)
         og.save(os.path.join(OUT, f'og-{name}.jpg'), quality=85, optimize=True, progressive=True)
         print('ok', f'og-{name}.jpg')
+    # 1:1 y 4:3 en JPG para el schema (Google pide 16:9, 4:3 y 1:1 para LocalBusiness/Organization)
+    for name, (src, focal) in SQUARE.items():
+        im = load(src_dir, src)
+        crop(im, (1, 1), focal).resize((1200, 1200), Image.LANCZOS).save(os.path.join(OUT, f'{name}-1x1.jpg'), quality=85, optimize=True, progressive=True)
+        crop(im, (4, 3), focal).resize((1200, 900), Image.LANCZOS).save(os.path.join(OUT, f'{name}-4x3.jpg'), quality=85, optimize=True, progressive=True)
+        print('ok', f'{name}-1x1.jpg', f'{name}-4x3.jpg')
 
 
 if __name__ == '__main__':
