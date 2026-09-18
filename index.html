@@ -1,122 +1,230 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>honesto | Panadería Artesanal &amp; Café — Centro, Córdoba</title>
-  <meta name="description" content="Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca. En Independencia 180, Centro, Córdoba. Lun–Vie 7:30–20:00.">
+  <title>honesto | Panadería de masa madre y café — Centro, Córdoba</title>
+  <meta name="description" content="Panadería y café en Independencia 180, Centro, Córdoba. Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca de producción propia. Lun–Vie 7:30–20:00, Sáb 8:00–15:00.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#F4F2E7">
+  <meta name="geo.region" content="AR-X">
+  <meta name="geo.placename" content="Córdoba, Argentina">
+  <meta name="geo.position" content="-31.4180;-64.1850">
+  <meta name="ICBM" content="-31.4180, -64.1850">
   <link rel="canonical" href="https://honesto.com.ar/">
 
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
   <!-- Open Graph -->
-  <meta property="og:type" content="restaurant">
-  <meta property="og:title" content="honesto | Panadería Artesanal & Café — Córdoba">
-  <meta property="og:description" content="Pan de masa madre real, café bien calibrado y comida fresca. En el centro de Córdoba, sin pose.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="honesto | Panadería de masa madre y café — Centro, Córdoba">
+  <meta property="og:description" content="Pan de masa madre real, café bien calibrado y comida fresca. En Independencia 180, centro de Córdoba. Sin pose.">
   <meta property="og:url" content="https://honesto.com.ar/">
-  <meta property="og:image" content="https://honesto.com.ar/assets/images/hero-bakery.jpg">
+  <meta property="og:image" content="https://honesto.com.ar/assets/images/og-honesto.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cocina de honesto a la vista: panes recién horneados y el equipo trabajando">
   <meta property="og:locale" content="es_AR">
   <meta property="og:site_name" content="honesto">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="honesto | Panadería Artesanal & Café — Córdoba">
-  <meta name="twitter:description" content="Pan de masa madre real, café bien calibrado y comida fresca. En el centro de Córdoba.">
-  <meta name="twitter:image" content="https://honesto.com.ar/assets/images/hero-bakery.jpg">
+  <meta name="twitter:title" content="honesto | Panadería de masa madre y café — Centro, Córdoba">
+  <meta name="twitter:description" content="Pan de masa madre real, café bien calibrado y comida fresca. En Independencia 180, centro de Córdoba.">
+  <meta name="twitter:image" content="https://honesto.com.ar/assets/images/og-honesto.jpg">
 
-  <!-- Schema: LocalBusiness (Bakery) -->
+  <!-- Schema.org: Bakery + WebSite + FAQPage (SEO / GEO) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Bakery",
-    "name": "honesto",
-    "description": "Panadería artesanal y café en el centro de Córdoba. Pan de masa madre real con fermentación de 24 horas, café calibrado y comida fresca de producción propia.",
-    "url": "https://honesto.com.ar/",
-    "email": "hola@honesto.com.ar",
-    "image": "https://honesto.com.ar/assets/images/hero-bakery.jpg",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Independencia 180",
-      "addressLocality": "Córdoba",
-      "addressRegion": "Córdoba",
-      "postalCode": "X5000",
-      "addressCountry": "AR"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -31.4201,
-      "longitude": -64.1888
-    },
-    "openingHoursSpecification": [
+    "@graph": [
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-        "opens": "07:30",
-        "closes": "20:00"
+        "@type": ["Bakery", "CafeOrCoffeeShop"],
+        "@id": "https://honesto.com.ar/#negocio",
+        "name": "honesto",
+        "alternateName": "honesto bakery & café",
+        "slogan": "Lo esencial puede ser extraordinario.",
+        "description": "Panadería y café en el centro de Córdoba, Argentina. Pan de masa madre real con fermentación de 24 horas sin levadura comercial, café calibrado todos los días y comida fresca de producción propia. Cocina y horno a la vista.",
+        "url": "https://honesto.com.ar/",
+        "email": "hola@honesto.com.ar",
+        "logo": "https://honesto.com.ar/assets/logo/logo-full-dark.png",
+        "image": [
+          "https://honesto.com.ar/assets/images/og-honesto.jpg",
+          "https://honesto.com.ar/assets/images/hero-local-1600.webp"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Independencia 180",
+          "addressLocality": "Córdoba",
+          "addressRegion": "Córdoba",
+          "postalCode": "X5000",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -31.4180,
+          "longitude": -64.1850
+        },
+        "hasMap": "https://www.google.com/maps/search/?api=1&query=Independencia+180%2C+C%C3%B3rdoba%2C+Argentina",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:30",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "08:00",
+            "closes": "15:00"
+          }
+        ],
+        "servesCuisine": ["Panadería de masa madre", "Café de especialidad", "Desayunos y almuerzos"],
+        "priceRange": "$$",
+        "currenciesAccepted": "ARS",
+        "areaServed": {
+          "@type": "City",
+          "name": "Córdoba",
+          "sameAs": "https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)"
+        },
+        "knowsAbout": ["Masa madre", "Fermentación natural", "Café de especialidad", "Panadería artesanal"],
+        "hasMenu": {
+          "@type": "Menu",
+          "@id": "https://honesto.com.ar/#carta",
+          "name": "Carta de honesto",
+          "inLanguage": "es-AR",
+          "hasMenuSection": [
+            {
+              "@type": "MenuSection",
+              "name": "Panadería",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Pan de masa madre",
+                  "description": "Fermentación de 24 horas sin levadura comercial. Harinas nobles, producción propia todos los días."
+                },
+                {
+                  "@type": "MenuItem",
+                  "name": "Medialunas",
+                  "description": "Las de siempre, bien hechas. Recién salidas, con la manteca y el tiempo que hacen falta."
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Café",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Café calibrado",
+                  "description": "Café de especialidad calibrado todos los días. Se nota en la taza."
+                }
+              ]
+            },
+            {
+              "@type": "MenuSection",
+              "name": "Comida fresca",
+              "hasMenuItem": [
+                {
+                  "@type": "MenuItem",
+                  "name": "Desayunos y almuerzos",
+                  "description": "Ingredientes nobles, preparaciones claras, porciones honestas. Producción propia."
+                }
+              ]
+            }
+          ]
+        },
+        "makesOffer": {
+          "@type": "Offer",
+          "name": "Venta mayorista de pan de masa madre",
+          "description": "Próximamente: pan de masa madre y laminados para cafeterías, restaurantes y tiendas de Córdoba.",
+          "url": "https://honesto.com.ar/bakery.html",
+          "availability": "https://schema.org/PreOrder"
+        },
+        "sameAs": ["https://instagram.com/honesto.bakery"]
       },
       {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "14:00"
-      }
-    ],
-    "servesCuisine": ["Panadería artesanal", "Café de especialidad", "Comida fresca"],
-    "priceRange": "$$",
-    "sameAs": ["https://instagram.com/honesto.bakery"],
-    "hasMap": "https://maps.google.com/?q=Independencia+180+Córdoba+Argentina"
-  }
-  </script>
-
-  <!-- Schema: FAQPage (GEO — AI search visibility) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "¿Dónde está honesto en Córdoba?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "honesto está en Independencia 180, Centro, Córdoba, Argentina. Abre de lunes a viernes de 7:30 a 20:00 y los sábados de 8:00 a 14:00. Los domingos permanece cerrado."
-        }
+        "@type": "WebSite",
+        "@id": "https://honesto.com.ar/#sitio",
+        "url": "https://honesto.com.ar/",
+        "name": "honesto",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://honesto.com.ar/#negocio" }
       },
       {
-        "@type": "Question",
-        "name": "¿Qué tiene de especial el pan de masa madre de honesto?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "El pan de masa madre de honesto fermenta durante 24 horas sin levadura comercial. Se elabora con fermentación natural, harinas nobles y producción propia todos los días, lo que garantiza corteza crujiente, miga alveolada y sabor real."
-        }
+        "@type": "WebPage",
+        "@id": "https://honesto.com.ar/#pagina",
+        "url": "https://honesto.com.ar/",
+        "name": "honesto | Panadería de masa madre y café — Centro, Córdoba",
+        "isPartOf": { "@id": "https://honesto.com.ar/#sitio" },
+        "about": { "@id": "https://honesto.com.ar/#negocio" },
+        "inLanguage": "es-AR",
+        "primaryImageOfPage": "https://honesto.com.ar/assets/images/hero-local-1600.webp"
       },
       {
-        "@type": "Question",
-        "name": "¿Tienen café de especialidad en honesto?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. En honesto el café se calibra todos los días para garantizar consistencia. La diferencia se nota en la taza, sin necesidad de saber de café de especialidad."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Es un buen lugar para trabajar o estudiar en Córdoba centro?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. honesto tiene un espacio cómodo y luminoso en el centro de Córdoba, ideal para trabajar, estudiar o reunirse. Con buen café y sin pretensión."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "¿Hacen desayuno en honesto?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sí. honesto abre desde las 7:30 de lunes a viernes. Ofrecen medialunas recién horneadas, pan de masa madre, café calibrado y productos frescos de producción propia para empezar el día bien."
-        }
+        "@type": "FAQPage",
+        "@id": "https://honesto.com.ar/#preguntas",
+        "isPartOf": { "@id": "https://honesto.com.ar/#pagina" },
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde está honesto y qué horario tiene?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "honesto está en Independencia 180, Centro, Córdoba, Argentina, a pocas cuadras de la Plaza San Martín. Abre de lunes a viernes de 7:30 a 20:00 y los sábados de 8:00 a 15:00. Los domingos está cerrado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿El pan de honesto es de masa madre real?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El pan fermenta 24 horas con masa madre, sin levadura comercial. Se hace todos los días con harinas nobles y producción propia. Corteza crujiente, miga abierta y sabor real."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Tienen café de especialidad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. El café se calibra todos los días para que salga igual de bien en cada taza. No hace falta saber de café de especialidad para notar la diferencia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hacen desayunos y almuerzos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. honesto abre a las 7:30 de lunes a viernes con medialunas recién horneadas, pan de masa madre y café calibrado. Al mediodía hay comida fresca de producción propia, para comer ahí o llevar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se puede trabajar o estudiar en honesto?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí. Es un espacio cómodo y luminoso en el centro de Córdoba, pensado para quedarse: trabajar, estudiar, reunirse o simplemente estar un rato."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Venden pan al por mayor para cafeterías y restaurantes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Estamos abriendo honesto bakery, la unidad de producción mayorista: pan de masa madre y laminados para cafeterías, restaurantes y tiendas de Córdoba. Los negocios interesados pueden registrarse en honesto.com.ar/bakery.html."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
 
-  <link rel="preload" as="image" href="assets/images/hero-bakery.jpg">
+  <link rel="preload" as="image" href="assets/images/hero-local-1200.webp" imagesrcset="assets/images/hero-local-480.webp 480w, assets/images/hero-local-800.webp 800w, assets/images/hero-local-1200.webp 1200w, assets/images/hero-local-1600.webp 1600w" imagesizes="(min-width: 1024px) 576px, (min-width: 768px) 50vw, calc(100vw - 48px)" type="image/webp">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -136,6 +244,7 @@
     <a class="mainnav__brand" href="/">honesto</a>
     <div class="mainnav__links">
       <a href="#carta">Carta</a>
+      <a href="#preguntas">Preguntas</a>
       <a class="mainnav__cta" href="bakery.html">Bakery</a>
     </div>
     <button class="mainnav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -148,6 +257,7 @@
     <a href="#nosotros">Nosotros</a>
     <a href="#proceso">Proceso</a>
     <a href="#carta">Carta</a>
+    <a href="#preguntas">Preguntas</a>
     <a href="bakery.html">Bakery</a>
   </nav>
 </header>
@@ -160,44 +270,23 @@
     <div class="hero-mosaic__inner">
       <div class="hero-mosaic__grid">
         <div class="hero-mosaic__main">
-          <img
-            src="assets/images/hero-bakery.jpg"
-            alt="Interior de honesto: pan artesanal recién salido del horno"
-            width="800" height="600"
-            fetchpriority="high"
-          >
+          <img src="assets/images/hero-local-1200.webp" srcset="assets/images/hero-local-480.webp 480w, assets/images/hero-local-800.webp 800w, assets/images/hero-local-1200.webp 1200w, assets/images/hero-local-1600.webp 1600w" sizes="(min-width: 1024px) 576px, (min-width: 768px) 50vw, calc(100vw - 48px)" alt="Cocina de honesto a la vista: panes recién horneados adelante y el equipo trabajando al fondo" width="1200" height="900" fetchpriority="high">
         </div>
         <div class="hero-mosaic__cell">
-          <img
-            src="assets/images/coffee-pour.jpg"
-            alt="Café vertido con precisión en taza de cerámica"
-            width="400" height="300"
-          >
+          <img src="assets/images/cafe-800.webp" srcset="assets/images/cafe-480.webp 480w, assets/images/cafe-800.webp 800w, assets/images/cafe-1200.webp 1200w, assets/images/cafe-1600.webp 1600w" sizes="(min-width: 1024px) 272px, (min-width: 768px) 25vw, 50vw" alt="Café con leche con arte latte en taza verde, servido en honesto" width="800" height="600" loading="lazy" decoding="async">
         </div>
         <div class="hero-mosaic__cell">
-          <img
-            src="assets/images/pastries.jpg"
-            alt="Medialunas doradas recién salidas del horno"
-            width="400" height="300"
-          >
+          <img src="assets/images/medialuna-800.webp" srcset="assets/images/medialuna-480.webp 480w, assets/images/medialuna-800.webp 800w, assets/images/medialuna-1200.webp 1200w, assets/images/medialuna-1600.webp 1600w" sizes="(min-width: 1024px) 272px, (min-width: 768px) 25vw, 50vw" alt="Medialuna hojaldrada en plato, con luz natural de la mañana" width="800" height="600" loading="lazy" decoding="async">
         </div>
         <div class="hero-mosaic__cell">
-          <img
-            src="assets/images/bread-sourdough.jpg"
-            alt="Pan de masa madre con corteza abierta y miga alveolada"
-            width="400" height="300"
-          >
+          <img src="assets/images/pan-800.webp" srcset="assets/images/pan-480.webp 480w, assets/images/pan-800.webp 800w, assets/images/pan-1200.webp 1200w, assets/images/pan-1600.webp 1600w" sizes="(min-width: 1024px) 272px, (min-width: 768px) 25vw, 50vw" alt="Bollos de masa fermentando en la placa antes de hornearse" width="800" height="600" loading="lazy" decoding="async">
         </div>
         <div class="hero-mosaic__cell">
-          <img
-            src="assets/images/hands-kneading.jpg"
-            alt="Manos amasando masa con harina en la mesada"
-            width="400" height="300"
-          >
+          <img src="assets/images/manos-800.webp" srcset="assets/images/manos-480.webp 480w, assets/images/manos-800.webp 800w, assets/images/manos-1200.webp 1200w, assets/images/manos-1600.webp 1600w" sizes="(min-width: 1024px) 272px, (min-width: 768px) 25vw, 50vw" alt="Manos estirando masa con palo de amasar sobre la mesada enharinada" width="800" height="600" loading="lazy" decoding="async">
         </div>
       </div>
       <div class="hero-mosaic__text">
-        <h1>pan de masa madre real, café bien preparado, producción propia y procesos visibles. Sin pose, sin vueltas.</h1>
+        <h1>pan de masa madre real, café bien preparado y producción propia en el centro de Córdoba. Sin pose, sin vueltas.</h1>
       </div>
       <div class="hero-mosaic__cta">
         <a href="#contacto">
@@ -219,7 +308,7 @@
       <div class="happenings__grid">
         <a class="hap-card" href="#proceso">
           <div class="hap-card__image">
-            <img src="assets/images/hands-kneading.jpg" alt="Manos amasando masa de pan" width="420" height="315" loading="lazy">
+            <img src="assets/images/manos-800.webp" srcset="assets/images/manos-480.webp 480w, assets/images/manos-800.webp 800w, assets/images/manos-1200.webp 1200w, assets/images/manos-1600.webp 1600w" sizes="(min-width: 1024px) 373px, (min-width: 768px) 33vw, calc(100vw - 48px)" alt="Panadera estirando masa con palo de amasar en la cocina de honesto" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="hap-card__body">
             <h3 class="hap-card__title">Amasar, esperar, hornear</h3>
@@ -229,7 +318,7 @@
         </a>
         <a class="hap-card" href="#carta">
           <div class="hap-card__image">
-            <img src="assets/images/food-plate.jpg" alt="Plato fresco de temporada en honesto" width="420" height="315" loading="lazy">
+            <img src="assets/images/desayuno-800.webp" srcset="assets/images/desayuno-480.webp 480w, assets/images/desayuno-800.webp 800w, assets/images/desayuno-1200.webp 1200w, assets/images/desayuno-1600.webp 1600w" sizes="(min-width: 1024px) 373px, (min-width: 768px) 33vw, calc(100vw - 48px)" alt="Medialuna de chocolate y café con leche en la mesa, desayuno en honesto" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="hap-card__body">
             <h3 class="hap-card__title">Carta de temporada</h3>
@@ -239,7 +328,7 @@
         </a>
         <a class="hap-card" href="#contacto">
           <div class="hap-card__image">
-            <img src="assets/images/cafe-interior.jpg" alt="Interior luminoso del café con mesas de madera" width="420" height="315" loading="lazy">
+            <img src="assets/images/patio-800.webp" srcset="assets/images/patio-480.webp 480w, assets/images/patio-800.webp 800w, assets/images/patio-1200.webp 1200w, assets/images/patio-1600.webp 1600w" sizes="(min-width: 1024px) 373px, (min-width: 768px) 33vw, calc(100vw - 48px)" alt="Patio de honesto con mesas blancas, plantas y clientes conversando" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="hap-card__body">
             <h3 class="hap-card__title">Un lugar para quedarse</h3>
@@ -274,11 +363,12 @@
   <!-- CARTA -->
   <section class="carta" id="carta">
     <div class="carta__inner">
+      <p class="section-eyebrow">La carta</p>
       <h2 class="carta__title">Producto real. <em>Sin pose.</em></h2>
       <div class="carta__grid">
         <div class="product-card">
           <div class="product-card__image">
-            <img src="assets/images/bread-sourdough.jpg" alt="Pan de masa madre con corteza dorada y miga abierta" width="600" height="450" loading="lazy">
+            <img src="assets/images/pan-800.webp" srcset="assets/images/pan-480.webp 480w, assets/images/pan-800.webp 800w, assets/images/pan-1200.webp 1200w, assets/images/pan-1600.webp 1600w" sizes="(min-width: 908px) 418px, (min-width: 768px) calc(50vw - 36px), calc(100vw - 48px)" alt="Masa fermentando en bollos sobre la placa, lista para el horno" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="product-card__body">
             <span class="product-card__label">Pan de Masa Madre</span>
@@ -288,7 +378,7 @@
         </div>
         <div class="product-card">
           <div class="product-card__image">
-            <img src="assets/images/coffee-pour.jpg" alt="Café de especialidad siendo vertido con precisión" width="600" height="450" loading="lazy">
+            <img src="assets/images/cafe-800.webp" srcset="assets/images/cafe-480.webp 480w, assets/images/cafe-800.webp 800w, assets/images/cafe-1200.webp 1200w, assets/images/cafe-1600.webp 1600w" sizes="(min-width: 908px) 418px, (min-width: 768px) calc(50vw - 36px), calc(100vw - 48px)" alt="Café con leche calibrado, servido en taza verde en honesto" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="product-card__body">
             <span class="product-card__label">Café Calibrado</span>
@@ -298,7 +388,7 @@
         </div>
         <div class="product-card">
           <div class="product-card__image">
-            <img src="assets/images/food-plate.jpg" alt="Plato de temporada con ingredientes frescos" width="600" height="450" loading="lazy">
+            <img src="assets/images/desayuno-800.webp" srcset="assets/images/desayuno-480.webp 480w, assets/images/desayuno-800.webp 800w, assets/images/desayuno-1200.webp 1200w, assets/images/desayuno-1600.webp 1600w" sizes="(min-width: 908px) 418px, (min-width: 768px) calc(50vw - 36px), calc(100vw - 48px)" alt="Medialuna de chocolate y café con leche sobre la mesa" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="product-card__body">
             <span class="product-card__label">Comida Fresca</span>
@@ -308,7 +398,7 @@
         </div>
         <div class="product-card">
           <div class="product-card__image">
-            <img src="assets/images/pastries.jpg" alt="Medialunas doradas y hojaldradas recién horneadas" width="600" height="450" loading="lazy">
+            <img src="assets/images/medialuna-800.webp" srcset="assets/images/medialuna-480.webp 480w, assets/images/medialuna-800.webp 800w, assets/images/medialuna-1200.webp 1200w, assets/images/medialuna-1600.webp 1600w" sizes="(min-width: 908px) 418px, (min-width: 768px) calc(50vw - 36px), calc(100vw - 48px)" alt="Medialuna dorada y hojaldrada recién horneada, en plato" width="800" height="600" loading="lazy" decoding="async">
           </div>
           <div class="product-card__body">
             <span class="product-card__label">Medialunas</span>
@@ -352,7 +442,7 @@
           </ul>
         </div>
         <div class="proceso-section__image">
-          <img src="assets/images/oven-bread.jpg" alt="Pan artesanal saliendo del horno de leña en honesto" width="640" height="480" loading="lazy">
+          <img src="assets/images/horno-800.webp" srcset="assets/images/horno-480.webp 480w, assets/images/horno-800.webp 800w, assets/images/horno-1200.webp 1200w, assets/images/horno-1600.webp 1600w" sizes="(min-width: 1024px) 544px, calc(100vw - 48px)" alt="Panadera trabajando junto a los hornos de la cocina de honesto" width="800" height="600" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -363,7 +453,7 @@
     <div class="nosotros__inner">
       <div class="nosotros__grid">
         <div class="nosotros__image">
-          <img src="assets/images/cafe-interior.jpg" alt="Interior del café con clientes trabajando y conversando" width="640" height="480" loading="lazy">
+          <img src="assets/images/fachada-800.webp" srcset="assets/images/fachada-480.webp 480w, assets/images/fachada-800.webp 800w, assets/images/fachada-1200.webp 1200w, assets/images/fachada-1600.webp 1600w" sizes="(min-width: 1024px) 544px, calc(100vw - 48px)" alt="Fachada de honesto en Independencia 180, Centro de Córdoba, con gente pasando por la vereda" width="800" height="600" loading="lazy" decoding="async">
         </div>
         <div class="nosotros__copy">
           <h2>Calidad contemporánea. <em>Identidad cordobesa.</em></h2>
@@ -388,6 +478,42 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="faq" id="preguntas" aria-labelledby="faq-title">
+    <div class="faq__inner">
+      <div class="faq__head">
+        <p class="section-eyebrow">Preguntas frecuentes</p>
+        <h2 class="faq__title" id="faq-title">Lo que nos preguntan <em>seguido.</em></h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary>¿Dónde está honesto y qué horario tiene?</summary>
+          <p>Estamos en Independencia 180, Centro, Córdoba, a pocas cuadras de la Plaza San Martín. Abrimos de lunes a viernes de 7:30 a 20:00 y los sábados de 8:00 a 15:00. Los domingos cerramos.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿El pan es de masa madre real?</summary>
+          <p>Sí. Fermenta 24 horas con masa madre, sin levadura comercial. Lo hacemos todos los días con harinas nobles y producción propia. Corteza crujiente, miga abierta y sabor real.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Tienen café de especialidad?</summary>
+          <p>Sí. Calibramos el café todos los días para que salga igual de bien en cada taza. No hace falta saber de café para notar la diferencia.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Hacen desayunos y almuerzos?</summary>
+          <p>Sí. Abrimos a las 7:30 con medialunas recién horneadas, pan de masa madre y café calibrado. Al mediodía hay comida fresca de producción propia, para comer acá o llevar.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Se puede trabajar o estudiar?</summary>
+          <p>Sí. Es un espacio cómodo y luminoso, pensado para quedarse: trabajar, estudiar, reunirse o simplemente estar un rato.</p>
+        </details>
+        <details class="faq__item">
+          <summary>¿Venden pan al por mayor?</summary>
+          <p>Estamos abriendo <a href="bakery.html">honesto bakery</a>, la unidad mayorista: pan de masa madre y laminados para cafeterías, restaurantes y tiendas de Córdoba. Si tenés un negocio, podés registrar tu interés.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -424,10 +550,10 @@
             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
-          <div>
+          <address>
             <p>Independencia 180, Centro</p>
             <p class="footer-v2__col-sub">Córdoba, Argentina</p>
-          </div>
+          </address>
         </div>
       </div>
       <div class="footer-v2__col">
@@ -438,8 +564,8 @@
             <circle cx="12" cy="12" r="10"/>
           </svg>
           <div class="footer-v2__hours">
-            <p>Lun - Vie: 7:30 - 20:00</p>
-            <p>Sáb: 8:00 - 15:00</p>
+            <p>Lun - Vie: <time datetime="07:30">7:30</time> - <time datetime="20:00">20:00</time></p>
+            <p>Sáb: <time datetime="08:00">8:00</time> - <time datetime="15:00">15:00</time></p>
             <p class="muted">Dom: Cerrado</p>
           </div>
         </div>
@@ -460,7 +586,7 @@
               <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
               <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
             </svg>
-            honesto.bakery
+            @honesto.bakery
           </a>
         </div>
       </div>

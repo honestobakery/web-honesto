@@ -1,21 +1,45 @@
 # honesto
 
-> Panadería artesanal y café en Independencia 180, Centro, Córdoba, Argentina. Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca de producción propia. Sin cadena, sin pose.
+> Panadería y café en Independencia 180, Centro, Córdoba, Argentina. Pan de masa madre real con fermentación de 24 horas, café calibrado todos los días y comida fresca de producción propia. Sin cadena, sin pose.
 
-honesto es un proyecto de oficio. El pan fermenta 24 horas sin levadura comercial, con harinas nobles y producción propia todos los días — corteza crujiente, miga alveolada, sabor real. No es pan "estilo artesanal": es el proceso completo.
+honesto es un proyecto de oficio. El pan fermenta 24 horas con masa madre, sin levadura comercial, con harinas nobles y producción propia todos los días: corteza crujiente, miga abierta, sabor real. No es pan "estilo artesanal": es el proceso completo, y la cocina y el horno están a la vista.
 
-El café se calibra diariamente. La diferencia se nota en la taza sin necesidad de saber de café de especialidad. La comida es fresca y de producción propia: medialunas recién horneadas, opciones para desayuno y almuerzo.
+El café se calibra diariamente. La diferencia se nota en la taza sin necesidad de saber de café de especialidad. La comida es fresca y de producción propia: medialunas recién horneadas, opciones para desayuno y almuerzo, para comer en el local o llevar. Es un espacio cómodo y luminoso para trabajar, estudiar o reunirse.
 
-Ubicado en Independencia 180, Centro, Córdoba (X5000), a pocas cuadras de la Peatonal Juntos y del Paseo del Buen Pastor. Horario: lunes a viernes 7:30–20:00, sábados 8:00–14:00, domingos cerrado.
+## Datos
 
-honesto también vende al por mayor a cafeterías, restaurantes y negocios gastronómicos de Córdoba: pan de masa madre, facturas y productos artesanales en volumen con calidad consistente y entrega regular.
+- Nombre: honesto (Bakery & Café / Comida Fresca)
+- Dirección: Independencia 180, Centro, Córdoba (X5000), Argentina. A pocas cuadras de la Plaza San Martín.
+- Coordenadas: -31.4180, -64.1850
+- Horario: lunes a viernes 7:30–20:00 · sábados 8:00–15:00 · domingos cerrado
+- Contacto: hola@honesto.com.ar · Instagram @honesto.bakery
+- Público principal: oficinistas y estudiantes del centro de Córdoba; también visitantes de paso.
+- Rango de precios: medio ($$), en pesos argentinos.
 
-Contacto: hola@honesto.com.ar — Instagram: @honesto.bakery
+## Productos
+
+- Pan de masa madre: fermentación de 24 horas, sin levadura comercial, producción propia diaria.
+- Medialunas: las de siempre, bien hechas, recién salidas.
+- Café calibrado: café de especialidad calibrado todos los días.
+- Comida fresca: desayunos y almuerzos con ingredientes nobles y preparaciones claras.
+
+## Mayorista (próximamente)
+
+honesto está abriendo "honesto bakery", su unidad de producción mayorista: pan de masa madre y laminados para cafeterías, restaurantes y tiendas de Córdoba. Todavía no está operativa; los negocios interesados pueden registrar su interés en https://honesto.com.ar/bakery.html.
+
+## Preguntas frecuentes
+
+- ¿Dónde está y qué horario tiene? Independencia 180, Centro, Córdoba. Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado.
+- ¿El pan es de masa madre real? Sí, fermentación de 24 horas sin levadura comercial.
+- ¿Tienen café de especialidad? Sí, calibrado todos los días.
+- ¿Hacen desayunos y almuerzos? Sí, desde las 7:30; al mediodía comida fresca de producción propia.
+- ¿Se puede trabajar o estudiar? Sí, el espacio está pensado para quedarse.
+- ¿Venden al por mayor? Próximamente, a través de honesto bakery.
 
 ## Páginas
 
-- [Inicio](https://honesto.com.ar/): carta, proceso, ubicación y horarios
-- [Bakery / Mayorista](https://honesto.com.ar/bakery.html): venta al por mayor para negocios gastronómicos en Córdoba
+- [Inicio](https://honesto.com.ar/): carta, proceso, preguntas frecuentes, ubicación y horarios
+- [Bakery / Mayorista](https://honesto.com.ar/bakery.html): unidad mayorista para negocios gastronómicos en Córdoba (próximamente, registro de interés)
 
 ## Optional
 

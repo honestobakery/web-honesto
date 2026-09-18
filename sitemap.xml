@@ -1,20 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://honesto.com.ar/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/hero-local-1600.webp</image:loc>
+      <image:title>honesto — panadería de masa madre y café en Córdoba</image:title>
+      <image:caption>Cocina a la vista de honesto en Independencia 180, Córdoba: panes recién horneados y el equipo trabajando</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/fachada-1600.webp</image:loc>
+      <image:title>Fachada de honesto en Independencia 180, Centro, Córdoba</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/pan-1600.webp</image:loc>
+      <image:title>Masa fermentando en honesto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/cafe-1600.webp</image:loc>
+      <image:title>Café calibrado en honesto</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/medialuna-1600.webp</image:loc>
+      <image:title>Medialuna de honesto</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://honesto.com.ar/bakery.html</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://honesto.com.ar/llms.txt</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>honesto bakery | Mayorista — Próximamente</title>
-  <meta name="description" content="Pan de masa madre a escala. Próximamente abrimos nuestra unidad mayorista para negocios que no quieren resignar calidad.">
+  <title>honesto bakery | Pan de masa madre mayorista en Córdoba — Próximamente</title>
+  <meta name="description" content="Panadería mayorista en Córdoba, próximamente. Pan de masa madre real y laminados de producción propia para cafeterías, restaurantes y tiendas. Registrá tu interés.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="theme-color" content="#F4F2E7">
+  <link rel="canonical" href="https://honesto.com.ar/bakery.html">
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="honesto bakery | Pan de masa madre mayorista en Córdoba">
+  <meta property="og:description" content="Próximamente: pan de masa madre real y laminados para cafeterías, restaurantes y tiendas de Córdoba. El mismo proceso, en el volumen que tu negocio necesita.">
+  <meta property="og:url" content="https://honesto.com.ar/bakery.html">
+  <meta property="og:image" content="https://honesto.com.ar/assets/images/og-honesto.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Cocina de honesto a la vista: panes recién horneados y el equipo trabajando">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="honesto">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="honesto bakery | Pan de masa madre mayorista en Córdoba">
+  <meta name="twitter:description" content="Próximamente: pan de masa madre real y laminados para cafeterías, restaurantes y tiendas de Córdoba.">
+  <meta name="twitter:image" content="https://honesto.com.ar/assets/images/og-honesto.jpg">
+
+  <!-- Schema.org: wholesale service of the bakery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://honesto.com.ar/bakery.html#pagina",
+        "url": "https://honesto.com.ar/bakery.html",
+        "name": "honesto bakery | Pan de masa madre mayorista en Córdoba",
+        "description": "Unidad de producción mayorista de honesto. Pan de masa madre real y laminados para cafeterías, restaurantes y tiendas de Córdoba. Próximamente.",
+        "inLanguage": "es-AR",
+        "isPartOf": { "@id": "https://honesto.com.ar/#sitio" },
+        "about": { "@id": "https://honesto.com.ar/bakery.html#servicio" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "honesto", "item": "https://honesto.com.ar/" },
+            { "@type": "ListItem", "position": 2, "name": "Bakery mayorista", "item": "https://honesto.com.ar/bakery.html" }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://honesto.com.ar/bakery.html#servicio",
+        "name": "honesto bakery — venta mayorista de pan de masa madre",
+        "serviceType": "Panadería mayorista",
+        "description": "Pan de masa madre real, laminados y producción propia para cafeterías, restaurantes y tiendas que quieren ofrecer algo genuino. El mismo proceso y el mismo cuidado, en el volumen que cada negocio necesita.",
+        "provider": { "@id": "https://honesto.com.ar/#negocio" },
+        "areaServed": { "@type": "City", "name": "Córdoba", "sameAs": "https://es.wikipedia.org/wiki/C%C3%B3rdoba_(Argentina)" },
+        "audience": { "@type": "BusinessAudience", "name": "Cafeterías, restaurantes y tiendas gastronómicas" },
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdrXzQT3iLPlITxKimTepCVTriIcB6kNue1KyreylwKv8W4UA/viewform",
+          "description": "Registro de interés para negocios. Apertura próximamente."
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -24,6 +93,7 @@
     <a class="mainnav__brand" href="index.html">honesto</a>
     <div class="mainnav__links">
       <a href="index.html#carta">Carta</a>
+      <a href="index.html#preguntas">Preguntas</a>
       <a class="mainnav__cta" href="bakery.html" aria-current="page">Bakery</a>
     </div>
     <button class="mainnav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
@@ -36,6 +106,7 @@
     <a href="index.html">Inicio</a>
     <a href="index.html#nosotros">Nosotros</a>
     <a href="index.html#carta">Carta</a>
+    <a href="index.html#preguntas">Preguntas</a>
     <a href="bakery.html">Bakery</a>
   </nav>
 </header>
@@ -89,10 +160,10 @@
             <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
             <circle cx="12" cy="10" r="3"/>
           </svg>
-          <div>
+          <address>
             <p>Independencia 180, Centro</p>
             <p class="footer-v2__col-sub">Córdoba, Argentina</p>
-          </div>
+          </address>
         </div>
       </div>
       <div class="footer-v2__col">
@@ -103,8 +174,8 @@
             <circle cx="12" cy="12" r="10"/>
           </svg>
           <div class="footer-v2__hours">
-            <p>Lun - Vie: 7:30 - 20:00</p>
-            <p>Sáb: 8:00 - 14:00</p>
+            <p>Lun - Vie: <time datetime="07:30">7:30</time> - <time datetime="20:00">20:00</time></p>
+            <p>Sáb: <time datetime="08:00">8:00</time> - <time datetime="15:00">15:00</time></p>
             <p class="muted">Dom: Cerrado</p>
           </div>
         </div>

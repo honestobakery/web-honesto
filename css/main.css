@@ -1638,6 +1638,107 @@ a {
   margin: 0;
 }
 
+/* FAQ (preguntas frecuentes) */
+.faq {
+  background: var(--color-cream);
+  padding: 80px 0;
+}
+
+@media (min-width: 1024px) {
+  .faq { padding: 112px 0; }
+}
+
+.faq__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: grid;
+  gap: 40px;
+}
+
+@media (min-width: 1024px) {
+  .faq__inner {
+    padding-inline: 64px;
+    grid-template-columns: 4fr 8fr;
+    gap: 64px;
+    align-items: start;
+  }
+}
+
+.faq__title {
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-charcoal);
+  margin: 12px 0 0;
+}
+
+.faq__title em {
+  font-style: normal;
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-blue-primary);
+}
+
+.faq__list {
+  border-top: 1px solid var(--color-charcoal-10);
+}
+
+.faq__item {
+  border-bottom: 1px solid var(--color-charcoal-10);
+}
+
+.faq__item summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+.faq__item summary::-webkit-details-marker { display: none; }
+
+.faq__item summary::after {
+  content: "+";
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-blue-primary);
+  flex-shrink: 0;
+  transition: transform 180ms;
+}
+
+.faq__item[open] summary::after { transform: rotate(45deg); }
+
+.faq__item summary:hover { color: var(--color-blue-primary); }
+
+.faq__item summary:focus-visible {
+  outline: 2px solid var(--color-blue-primary);
+  outline-offset: 4px;
+  border-radius: var(--radius-sm);
+}
+
+.faq__item p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-charcoal-70);
+  margin: 0 0 24px;
+  max-width: 640px;
+}
+
+.faq__item a {
+  color: var(--color-blue-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faq__item a:hover { color: var(--color-blue-deep); }
+
 /* CTA */
 .cta-section {
   background: var(--color-rose);

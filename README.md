@@ -9,12 +9,19 @@ Una sola página HTML + CSS, sin framework ni paso de build. Desplegado en GitHu
 ## Estructura
 
 ```
-index.html           ← página única con todas las secciones
+index.html           ← página principal con todas las secciones
+bakery.html          ← unidad mayorista (próximamente)
+404.html             ← página de error para GitHub Pages
 css/main.css         ← todos los estilos y design tokens
+robots.txt           ← acceso para buscadores y motores de IA
+sitemap.xml          ← mapa del sitio (con imágenes)
+llms.txt             ← resumen del negocio para asistentes de IA (GEO)
 
 assets/
   fonts/             ← Almonde.otf, Satoshi-*.otf, SpaceMono-*.ttf
-  images/            ← fotografías del local y producto
+  icons/             ← favicons y apple-touch-icon
+  images/            ← fotos reales del local en WebP (varios anchos) + og-honesto.jpg
+scripts/             ← build-images.py: regenera las fotos desde los originales
   logo/              ← variantes del logo y el isotipo
   personajes/        ← ilustraciones de línea (personaje-01…24)
 ```
