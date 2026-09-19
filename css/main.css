@@ -2411,6 +2411,13 @@ a {
   margin-top: 14px;
 }
 
+.article__body .mapa__actions .btn-primary {
+  color: var(--color-cream);
+  text-decoration: none;
+}
+
+.article__body .mapa__actions .btn-primary:hover { color: var(--color-cream); }
+
 .mapa__note {
   font-family: var(--font-mono);
   font-size: 11px;
