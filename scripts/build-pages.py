@@ -333,9 +333,8 @@ PAGES = {
 </ul>'''),
    ('Laminados para cafeterías y restaurantes', '''<p>Los mismos laminados se venden al por mayor a través de <a href="/bakery.html">honesto bakery</a>, horneados o <strong>congelados sin fermentar</strong> en packs de 10 (croissant, pan de chocolate, danesa, roll de canela, medialunita) para descongelar, leudar y hornear en tu negocio. Te pasamos las indicaciones de leudado y horneado.</p>'''),
   ],
-  figures=[('laminadora','Panadero pasando un bloque de masa con manteca por la laminadora en la cocina de honesto','La masa pasa por la laminadora hasta formar decenas de capas de manteca.',2),
-           ('cortante','Mano cortando discos de masa con un cortante sobre la placa, en la cocina de honesto','Cada pieza se corta y se forma a mano.',4),
-           ('roll-2','Roll de canela de manteca con azúcar en plato verde, laminado de honesto','Roll de canela: masa esponjosa, manteca de canela y azúcar morena.',6)],
+  figures=[('laminadora','Bloque de masa laminada con manteca saliendo de la laminadora, en la cocina de honesto','Así se lamina: la masa y la manteca pasan por la laminadora una y otra vez hasta formar decenas de capas.',2),
+           ('roll-2','Roll de canela de manteca con azúcar en plato verde, laminado de honesto','Roll de canela: masa esponjosa, manteca de canela y azúcar morena.',5)],
   faq=[
    ('¿Dónde comprar medialunas de manteca en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Medialunas estilo marplatense de masa madre y 100% manteca, horneadas todos los días. Lunes a viernes de 8:00 a 21:00, sábados de 9:00 a 15:00.'),
    ('¿Los laminados llevan margarina?','No. Se laminan únicamente con manteca.'),
@@ -398,8 +397,9 @@ PAGES = {
 <li><strong>Para quien pasa.</strong> Trámite, turismo, una vuelta por el casco histórico. Un lugar para probar el pan y el café de la ciudad, a metros de la Catedral.</li>
 </ul>'''),
   ],
-  figures=[('puerta','Puerta abierta de honesto con la calle Independencia y gente pasando al fondo','La puerta a la calle Independencia. El centro pasa por acá.',2),
-           ('salon','Salón de honesto con mesas y sillas blancas, luz natural y paredes de la casona','El salón de la casona. Mesas para quedarse.',4)],
+  figures=[('santa-teresa','Fachada rosa de la Iglesia de Santa Teresa sobre la calle Independencia, con la cúpula de la Catedral de Córdoba al fondo y gente caminando por la vereda','La Iglesia de Santa Teresa sobre Independencia y, al fondo, la cúpula de la Catedral. honesto está en este mismo complejo.',2),
+           ('puerta','Puerta abierta de honesto con la calle Independencia y gente pasando al fondo','La puerta a la calle Independencia. El centro pasa por acá.',3),
+           ('salon','Salón de honesto con mesas y sillas blancas, luz natural y paredes de la casona','El salón de la casona. Mesas para quedarse.',5)],
   faq=[
    ('¿Dónde queda honesto en Córdoba?','En Independencia 180, Centro, Córdoba, Argentina. Es la calle de la Catedral y el Cabildo; honesto está una cuadra más al sur, a 200 metros de la Plaza San Martín.'),
    ('¿Cómo llego desde la Plaza San Martín?','Tomá Independencia desde la esquina sureste de la plaza, en dirección sur. Pasás el Cabildo y la Catedral, y honesto está en la cuadra siguiente. Son dos o tres minutos a pie.'),

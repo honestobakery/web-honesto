@@ -42,12 +42,12 @@ SLOTS = {
     'cafe-alfajor':  ('_A744593.jpg', (4, 3), (0.5, 0.5)),        # /cafe-especialidad: café + alfajor
     'mesas':         ('_A744513.jpg', (4, 3), (0.5, 0.45)),       # /cafe-especialidad: clientes en el patio
     'laminadora':    ('_A744477.jpg', (4, 3), (0.5, 0.5)),        # /laminados: pasando la masa por la laminadora
-    'cortante':      ('_A744461.jpg', (4, 3), (0.5, 0.5)),        # /laminados: cortando discos de masa
     'medialuna-2':   ('_A744545.jpg', (4, 3), (0.5, 0.5)),        # /laminados: medialuna (hero)
     'roll-2':        ('_A744554.jpg', (4, 3), (0.5, 0.5)),        # /laminados: roll de canela
     'cartel':        ('_A744437.jpg', (4, 3), (0.5, 0.45)),       # /centro-cordoba: cartel en la fachada
     'puerta':        ('_A744537.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: puerta abierta a la calle
     'salon':         ('_A744584.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: salón interior
+    'santa-teresa':  ('IMG_1618-santa-teresa.jpg', (4, 3), (0.5, 0.6)), # /centro-cordoba: convento de Santa Teresa y cúpula de la Catedral (foto de Alfredo)
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
 SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}
