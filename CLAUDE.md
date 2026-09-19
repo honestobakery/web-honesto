@@ -37,7 +37,7 @@ Two documents in this repo do govern social content, because they govern the web
 
 ## SEO / GEO rules
 
-- **Facts must match everywhere**: address, hours (Lun–Vie 7:30–20:00, Sáb 8:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
+- **Facts must match everywhere**: address, hours (Lun–Vie 8:00–21:00, Sáb 8:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
 - JSON-LD lives in a single `@graph` per page. The business node is `https://honesto.com.ar/#negocio`; reference it by `@id`, don't duplicate it.
 - The `FAQPage` schema must mirror the visible `#preguntas` section 1:1 (Google requires FAQ content to be visible on the page).
 - **Target queries**: home targets "café de especialidad" + "pan de masa madre / hogaza" + "centro de Córdoba"; bakery.html targets "panadería mayorista / proveedor B2B de pan de masa madre, laminados y pastelería para cafeterías en Córdoba". Keep those phrases in titles, H1, FAQ and llms.txt.
@@ -46,6 +46,7 @@ Two documents in this repo do govern social content, because they govern the web
 - **Extractable summary**: each page opens (right after the hero) with a `.resumen` block: a question H2 ("¿Qué es honesto?"), one 60–80 word plain-fact paragraph, and a `<dl>` of facts. AI engines lift these blocks; keep them factual, keep them in sync with schema and footer.
 - `llms.txt` is kept because it is cheap, but 2026 evidence shows almost no AI crawler reads it. Don't invest in it beyond keeping facts current. The real levers are Google Business Profile, directories/press and consistent NAP.
 - IndexNow: `<key>.txt` at the site root is the IndexNow key. After a content deploy, ping `https://api.indexnow.org/indexnow` with the changed URLs (see README).
+- **No repeated photos**: every photo is used exactly once across the whole site (home + bakery). `SLOTS` in `scripts/build-images.py` is the registry; add a new slot rather than reusing one.
 - **Images**: every `<img>` uses `srcset` with the four WebP widths and a `sizes` that matches its grid slot (hero 576px, hero cell 272px, happenings 373px, carta card 418px, half-width 544px at ≥1024px). Alt text describes what is actually in the photo. Source photos live in the owner's Drive folder "cafe honesto"; to swap one, add it to `SLOTS` in `scripts/build-images.py` and rerun.
 - Never invent facts for schema or copy (prices, menu items, amenities). If it's not confirmed by the owner, leave it out.
 

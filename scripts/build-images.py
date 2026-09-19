@@ -12,20 +12,28 @@ import os, subprocess, sys
 from PIL import Image, ImageOps
 
 SLOTS = {
-    # slot        (archivo original,  aspecto, focal[, zoom])
-    'hero-local': ('_A744449.jpg', (4, 3), (0.5, 0.42)),
-    'fachada':    ('_A744433.jpg', (4, 3), (0.5, 0.5)),
-    'cafe':       ('_A744557.jpg', (4, 3), (0.5, 0.5)),
-    'medialuna':  ('_A744542.jpg', (4, 3), (0.5, 0.5)),
-    'manos':      ('_A744474.jpg', (4, 3), (0.5, 0.5)),
-    'pan':        ('_A744501.jpg', (4, 3), (0.5, 0.5)),
-    'desayuno':   ('_A744565.jpg', (4, 3), (0.5, 0.5)),
-    'patio':      ('_A744498.jpg', (4, 3), (0.5, 0.5)),
-    'horno':      ('_A744492.jpg', (4, 3), (0.5, 0.5)),
-    'hogaza':     ('_A744449.jpg', (4, 3), (0.5, 1.0), 0.7), # hogazas adelante, equipo detrás (zoom 70%)
-    'laminados':  ('_A744569.jpg', (4, 3), (0.5, 0.5)),    # croissant + medialuna
-    'pasteleria': ('_A744551.jpg', (4, 3), (0.5, 0.5)),    # roll
-    'congelados': ('_A744482.jpg', (4, 3), (0.5, 0.5)),    # bloque de masa laminada
+    # slot        (archivo original,  aspecto, focal[, zoom])  — cada foto se usa UNA sola vez en el sitio
+    # home
+    'fachada':       ('_A744433.jpg', (4, 3), (0.5, 0.5)),        # hero principal
+    'hogaza':        ('_A744449.jpg', (4, 3), (0.5, 1.0), 0.7),   # hero: hogazas adelante, equipo detrás
+    'cafe':          ('_A744557.jpg', (4, 3), (0.5, 0.5)),        # hero: latte
+    'medialuna':     ('_A744542.jpg', (4, 3), (0.5, 0.5)),        # hero: medialuna
+    'manos':         ('_A744474.jpg', (4, 3), (0.5, 0.5)),        # hero: palo de amasar
+    'corte':         ('_A744463.jpg', (4, 3), (0.5, 0.5)),        # happenings: cortando masa
+    'desayuno':      ('_A744565.jpg', (4, 3), (0.5, 0.5)),        # happenings: croissant + latte
+    'patio':         ('_A744498.jpg', (4, 3), (0.5, 0.5)),        # happenings: patio
+    'hogazas-carro': ('_A744452.jpg', (4, 3), (0.3, 1.0), 0.65),  # carta: hogazas en el carro
+    'cafe-negro':    ('_A744575-Editar.jpg', (4, 3), (0.5, 0.5)), # carta: café negro en vaso
+    'mesa':          ('_A744596.jpg', (4, 3), (0.5, 0.5)),        # carta: mesa con uso real
+    'laminados':     ('_A744569.jpg', (4, 3), (0.5, 0.5)),        # carta: croissant + medialuna
+    'horno':         ('_A744492.jpg', (4, 3), (0.5, 0.5)),        # proceso: panadera junto a los hornos
+    'mostrador':     ('_A744511.jpg', (4, 3), (0.6, 0.5)),        # nosotros: panadera y vitrina de panes
+    # bakery B2B
+    'equipo':        ('_A744503.jpg', (4, 3), (0.5, 0.5)),        # panadería: equipo produciendo
+    'roll':          ('_A744551.jpg', (4, 3), (0.5, 0.5)),        # laminados: roll de canela
+    'alfajor':       ('_A744585.jpg', (4, 3), (0.5, 0.5)),        # pastelería: alfajor
+    'congelados':    ('_A744482.jpg', (4, 3), (0.5, 0.5)),        # congelados: bloque de masa laminada
+    'hornos':        ('_A744488.jpg', (4, 3), (0.5, 0.5)),        # por qué: hornos
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
 SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}
