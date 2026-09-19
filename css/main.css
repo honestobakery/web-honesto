@@ -1617,6 +1617,9 @@ a {
   margin: 0 0 16px;
 }
 
+.nosotros p a { color: var(--color-blue-primary); text-decoration: underline; text-underline-offset: 3px; }
+.nosotros p a:hover { color: var(--color-blue-deep); }
+
 .nosotros__values {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

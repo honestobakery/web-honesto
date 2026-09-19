@@ -178,7 +178,7 @@ PAGES = {
   hero_class='',
   resumen_title='¿Qué es el pan de masa madre de honesto?',
   resumen='Es pan hecho solo con harina, agua, sal y masa madre: un cultivo natural de levaduras y bacterias que fermenta la masa sin levadura comercial. Nuestra hogaza usa harinas de trigo, integral y centeno, fermenta 24 horas y se hornea todos los días en el centro de Córdoba. Pesa alrededor de 1 kg.',
-  facts=[('Fermentación','24 horas, natural, sin levadura comercial'),('Harinas','Trigo, integral y centeno (hogaza); trigo e integral (moldes)'),('Panes','Hogaza 1 kg · pan de molde blanco y semillado 1 kg · baguetín 400 g'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
+  facts=[('Sale del horno','Desde las 8:00, todos los días'),('Fermentación','24 horas, natural, sin levadura comercial'),('Harinas','Trigo, integral y centeno (hogaza); trigo e integral (moldes)'),('Panes','Hogaza 1 kg · pan de molde blanco y semillado 1 kg · baguetín 400 g'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
   sections=[
    ('¿Qué es la masa madre?', '''<p>La masa madre es un cultivo vivo de harina y agua. Con el tiempo, las levaduras y bacterias que están en la harina y en el aire se establecen en ese cultivo y lo hacen fermentar solo. Una parte de esa masa madre se mezcla con la masa del pan y hace el trabajo que en la panadería industrial hace la levadura comercial: levar. La diferencia es que lo hace despacio y, mientras, transforma la masa.</p>
 <p>Esa transformación es lo que se siente en el pan: corteza más firme y crocante, miga con alvéolos irregulares, sabor con un fondo apenas ácido y una duración mayor sin conservantes. No es un estilo ni una etiqueta. Es un proceso, y se nota.</p>'''),
@@ -193,7 +193,7 @@ PAGES = {
 <li><strong>Baguetín.</strong> Corteza crocante y miga tierna, unos 400 g. Formato individual.</li>
 </ul>
 <p>Los cuatro se hacen en nuestra cocina de Independencia 180. También los vendemos al por mayor a cafeterías y restaurantes a través de <a href="/bakery.html">honesto bakery</a>.</p>'''),
-   ('¿A qué hora sale el pan del horno?', '''<p>Horneamos todos los días en el local y el pan del día se vende hasta que se termina. Si querés una hogaza a una hora puntual, o varias para tu negocio, escribinos por <a href="%s?text=Hola%%2C%%20quiero%%20reservar%%20pan%%20de%%20masa%%20madre." target="_blank" rel="noopener noreferrer">WhatsApp</a> y te la reservamos.</p>''' % WA),
+   ('¿A qué hora sale el pan del horno?', '''<p><strong>A las 8 de la mañana, cuando abrimos, el pan ya está en el mostrador.</strong> Las hogazas y los panes de molde se hornean temprano, todos los días, y se venden hasta que se terminan. Si querés asegurarte una hogaza o necesitás varias para tu negocio, escribinos por <a href="%s?text=Hola%%2C%%20quiero%%20reservar%%20pan%%20de%%20masa%%20madre." target="_blank" rel="noopener noreferrer">WhatsApp</a> y te la reservamos.</p>''' % WA),
    ('¿Cómo conservar el pan de masa madre?', '''<p>El pan de masa madre dura más que el pan común, pero hay que guardarlo bien:</p>
 <ul>
 <li><strong>Los primeros dos o tres días</strong>, a temperatura ambiente, en una bolsa de papel o envuelto en un paño de algodón, con el corte hacia abajo sobre la tabla. Así la corteza sigue crocante y la miga no se reseca.</li>
@@ -206,6 +206,7 @@ PAGES = {
   figure=('cocina','Cocina de honesto en Independencia 180: el equipo trabajando entre mesadas y hornos','La cocina y el horno están a la vista. El proceso no se esconde.'),
   faq=[
    ('¿Dónde comprar pan de masa madre en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Horneamos hogazas, panes de molde y baguetines de masa madre todos los días. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.'),
+   ('¿A qué hora sale el pan?','A las 8 de la mañana, en la apertura, el pan del día ya está en el mostrador. Se vende hasta que se termina; se puede reservar por WhatsApp.'),
    ('¿El pan de honesto lleva levadura?','No lleva levadura comercial. Se leva únicamente con masa madre, un cultivo natural de harina y agua, durante 24 horas.'),
    ('¿Cuánto dura el pan de masa madre?','Bien guardado, dos o tres días a temperatura ambiente con la corteza crocante, y más tiempo congelado en rebanadas. No lo guardes en la heladera.'),
    ('¿La hogaza es integral?','Es una mezcla: harina de trigo, harina integral y centeno. No es 100% integral, pero tiene el sabor y la fibra de la integral y del centeno.'),
@@ -218,7 +219,7 @@ PAGES = {
 
  'cafe-especialidad': dict(
   title='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos | honesto',
-  description='Qué es el café de especialidad, qué significa calibrarlo todos los días y qué servimos en honesto, Independencia 180, centro de Córdoba. Con medialunas y laminados de masa madre.',
+  description='Qué es el café de especialidad, qué significa calibrarlo todos los días y qué servimos en honesto, Independencia 180, centro de Córdoba: café de la casa, tolva invitada de tostadores locales y leches vegetales.',
   headline='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos',
   keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café calibrado, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
   eyebrow='Café de especialidad', crumb='Café de especialidad',
@@ -227,15 +228,15 @@ PAGES = {
   hero_img=('cafe-alfajor','Café de especialidad en vaso de vidrio junto a un alfajor, en una mesa de honesto'),
   hero_class='page-hero--blue',
   resumen_title='¿Qué es el café de especialidad de honesto?',
-  resumen='Es café de especialidad, es decir, de granos seleccionados y trazables, que calibramos todos los días: ajustamos molienda, dosis, tiempo y temperatura cada mañana para que salga igual de bien en cada taza. Lo servimos en Independencia 180, centro de Córdoba, con medialunas y laminados de masa madre y manteca recién horneados.',
-  facts=[('Qué','Café de especialidad, calibrado a diario'),('Cómo','Espresso, café con leche y café negro'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
+  resumen='Es café de especialidad, es decir, de granos seleccionados y trazables, que calibramos todos los días: ajustamos molienda, dosis, tiempo y temperatura cada mañana para que salga igual de bien en cada taza. Además del café de la casa, siempre hay una tolva invitada con un tostador local de Córdoba. Servimos espresso, café con leche (también con leches vegetales) y café negro, en Independencia 180, con medialunas y laminados recién horneados.',
+  facts=[('Qué','Café de especialidad de la casa + tolva invitada de tostadores locales'),('Cómo','Espresso, café con leche (también leches vegetales) y café negro'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
   sections=[
    ('¿Qué es el café de especialidad?', '''<p>"Café de especialidad" es un término técnico. Se refiere a cafés que obtienen 80 puntos o más sobre 100 en una evaluación sensorial estandarizada, hecha por catadores certificados. Para llegar ahí, el grano tiene que estar libre de defectos, cultivado y procesado con cuidado, y ser trazable: se sabe de qué finca o cooperativa viene, de qué variedad y cómo se procesó.</p>
 <p>Ese cuidado se pierde si el tostado es viejo o si la preparación es descuidada. Por eso en café de especialidad importa tanto lo que pasa en la barra como lo que pasó en origen.</p>'''),
    ('¿Qué significa que calibramos el café todos los días?', '''<p>El café es un producto vivo. Cambia con la humedad del ambiente, con la temperatura del local y con los días que pasan desde el tostado. La misma receta de ayer puede salir distinta hoy. Calibrar es ajustar cada mañana los cuatro parámetros que definen un espresso: la <strong>molienda</strong>, la <strong>dosis</strong> de café, el <strong>tiempo</strong> de extracción y la <strong>temperatura</strong> del agua. Se prueba, se corrige y se vuelve a probar hasta que la taza está donde tiene que estar.</p>
 <p>No lo hacemos para contarlo. Lo hacemos porque es la única manera de que el café salga igual de bien un martes a las 8 que un sábado a las 14.</p>'''),
-   ('¿Qué café servimos?', '''<p>Espresso y sus variantes con leche, y café negro. Trabajamos con café de especialidad y lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. La idea es que elijas bien sin necesidad de un diccionario.</p>
-<p>La carta puede cambiar según el café que tengamos. Si querés saber qué estamos sirviendo esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % WA),
+   ('¿Qué café servimos?', '''<p>Trabajamos con dos tolvas. En una está nuestro <strong>café de especialidad de la casa</strong>; en la otra, siempre, una <strong>tolva invitada</strong> que rota entre <strong>tostadores locales</strong> de Córdoba. Así el café de todos los días es el mismo y, a la vez, siempre hay algo nuevo para probar de la escena cordobesa.</p>
+<p>Servimos espresso y sus variantes con leche, y café negro. Hay <strong>leches vegetales</strong> para quien las prefiera. Lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. Si querés saber qué tostador está en la tolva invitada esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % WA),
    ('¿Con qué acompañarlo?', '''<p>Con lo que sale del horno. Medialunas de manteca estilo marplatense, croissant, pan de chocolate, roll de canela, danesas, alfajor de chocolate y frutos rojos, budines y cookies. Todo de producción propia, con <a href="/masa-madre/">masa madre</a> y 100% manteca en los <a href="/laminados/">laminados</a>. Al mediodía hay comida fresca para almorzar.</p>'''),
    ('¿Es un buen lugar para trabajar o estudiar?', '''<p>Sí. honesto está en el centro de Córdoba, a 200 metros de la Plaza San Martín, y está pensado para quedarse: mesas cómodas, luz natural, un patio con plantas y horario largo, de 8:00 a 21:00 de lunes a viernes. Vienen oficinistas a la mañana temprano, estudiantes a la tarde y gente que aprovecha un trámite en el centro para tomar un café bien hecho.</p>'''),
   ],
@@ -244,7 +245,8 @@ PAGES = {
    ('¿Dónde tomar café de especialidad en el centro de Córdoba?','En honesto, Independencia 180, a una cuadra de la Catedral y a 200 metros de la Plaza San Martín. Café de especialidad calibrado todos los días, de lunes a viernes de 8:00 a 21:00 y sábados de 9:00 a 15:00.'),
    ('¿Qué diferencia hay entre café de especialidad y café común?','El café de especialidad viene de granos seleccionados, trazables y sin defectos, evaluados con 80 puntos o más sobre 100, tostados recientemente y preparados con parámetros controlados. El café común suele ser una mezcla de granos de menor calidad, tostado muy oscuro para uniformar el sabor.'),
    ('¿Qué es calibrar el café?','Ajustar cada día la molienda, la dosis, el tiempo de extracción y la temperatura del agua, probando hasta que el espresso sale como debe. Se hace porque el café cambia con el clima y con los días desde el tostado.'),
-   ('¿Tienen café con leche y opciones sin cafeína?','Servimos espresso, café con leche y café negro. Para opciones específicas, como descafeinado o leches vegetales, consultá en la barra: la carta cambia según lo que tengamos.'),
+   ('¿Tienen leches vegetales?','Sí. Ofrecemos leches vegetales para el café con leche y sus variantes.'),
+   ('¿Qué es la tolva invitada?','Además de nuestro café de especialidad de la casa, siempre hay una segunda tolva con un café de un tostador local de Córdoba, que va rotando. Es una forma de probar lo que se tuesta en la ciudad.'),
    ('¿Se puede trabajar con la notebook?','Sí. Hay mesas cómodas, luz natural y horario corrido de 8:00 a 21:00 de lunes a viernes. Es un lugar pensado para quedarse.'),
   ],
   aside_links=[('/laminados/','Medialunas y croissants para acompañar'),('/masa-madre/','Nuestro pan de masa madre'),('/centro-cordoba/','Cómo llegar y qué hay cerca'),('/#carta','La carta')],
@@ -263,7 +265,7 @@ PAGES = {
   hero_class='',
   resumen_title='¿Qué son los laminados de honesto?',
   resumen='Son las piezas de masa y manteca en capas que hacemos todos los días: medialunas de manteca estilo marplatense, croissants, pan de chocolate, roll de canela, danesas con pastelera o crumble de manzana y pepa de membrillo. La masa se leva con masa madre y se lamina con manteca, sin margarina. Se venden en el local, en Independencia 180, y al por mayor a cafeterías de Córdoba.',
-  facts=[('Masa','Masa madre, sin levadura comercial'),('Manteca','100% manteca, sin margarina'),('Piezas','Medialunitas · croissant · pan de chocolate · roll de canela · danesas · pepa de membrillo'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
+  facts=[('Salen del horno','Desde las 8:00, todos los días'),('Masa','Masa madre, sin levadura comercial'),('Manteca','100% manteca, sin margarina'),('Piezas','Medialunitas · croissant · pan de chocolate · roll de canela · danesas · pepa de membrillo'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
   sections=[
    ('¿Qué es un laminado?', '''<p>Un laminado es una masa que se pliega muchas veces sobre una lámina de manteca hasta formar decenas de capas alternadas. En el horno, el agua de la manteca se evapora, separa las capas y las infla: por eso el croissant es liviano y crocante afuera, y tierno y con "panal" adentro. Es una técnica lenta, que necesita frío, precisión y una buena manteca. No admite atajos.</p>'''),
    ('¿Por qué masa madre y 100% manteca?', '''<p>Casi todos los laminados industriales usan margarina, porque es más barata y más fácil de trabajar. Nosotros usamos <strong>solo manteca</strong>: es lo que da el sabor, el color dorado y la textura que se deshace. Y en vez de levadura comercial, la masa se leva con <a href="/masa-madre/">masa madre</a>, lo que suma sabor, mejora la conservación y da una miga menos seca al día siguiente.</p>
@@ -278,7 +280,7 @@ PAGES = {
 <li><strong>Danesa de crumble de manzana.</strong> Masa de croissant rellena de crumble de manzana.</li>
 <li><strong>Pepa de membrillo.</strong> La pepa argentina clásica, en masa laminada con dulce de membrillo.</li>
 </ul>'''),
-   ('¿A qué hora salen los laminados?', '''<p>Se hornean todos los días en el local y salen a la venta a medida que están listos, desde la apertura. Si querés asegurarte medialunas o croissants para una hora determinada, o cantidad para una reunión, avisanos por <a href="%s?text=Hola%%2C%%20quiero%%20reservar%%20laminados." target="_blank" rel="noopener noreferrer">WhatsApp</a> y te los reservamos.</p>''' % WA),
+   ('¿A qué hora salen los laminados?', '''<p><strong>A las 8, cuando abrimos, ya hay medialunas y croissants recién horneados.</strong> Se hornean temprano, todos los días, y se venden hasta que se terminan. Si querés asegurarte cantidad para una reunión o una hora puntual, avisanos por <a href="%s?text=Hola%%2C%%20quiero%%20reservar%%20laminados." target="_blank" rel="noopener noreferrer">WhatsApp</a> y te los reservamos.</p>''' % WA),
    ('¿Cómo conservarlos y recalentarlos?', '''<p>Los laminados están en su punto el mismo día. Si te sobran:</p>
 <ul>
 <li>Guardalos en una bolsa de papel a temperatura ambiente, no en la heladera.</li>
@@ -294,6 +296,7 @@ PAGES = {
    ('¿Qué diferencia hay entre medialuna y croissant?','La medialuna estilo marplatense es más chica, tierna y con brillo; el croissant es el laminado francés, más grande, más hojaldrado y crocante. Los dos se hacen con masa madre y manteca.'),
    ('¿Puedo comprar laminados congelados para hornear en casa o en mi negocio?','Para negocios, sí: honesto bakery vende croissants, panes de chocolate, danesas, rolls de canela y medialunitas congelados sin fermentar, en packs de 10. Consultá por WhatsApp al +54 351 601-6091.'),
    ('¿Cómo recalentar un croissant?','Tres o cuatro minutos en horno a 180 °C. Nunca en microondas.'),
+   ('¿A qué hora salen las medialunas?','A las 8 de la mañana, en la apertura, ya están recién horneadas. Se venden hasta que se terminan.'),
   ],
   aside_links=[('/masa-madre/','Por qué usamos masa madre'),('/cafe-especialidad/','El café que va con las medialunas'),('/bakery.html','Laminados al por mayor y congelados'),(FUDO,'Carta y precios del obrador')],
   cta=('medialunas de las de siempre, bien hechas.','Recién salidas, en Independencia 180. Sin vueltas.'),
@@ -301,20 +304,21 @@ PAGES = {
 
  'centro-cordoba': dict(
   title='honesto en el centro de Córdoba: Independencia 180, a una cuadra de la Catedral',
-  description='Dónde está honesto: Independencia 180, a 200 metros de la Plaza San Martín y a una cuadra de la Catedral y la Manzana Jesuítica. Historia del casco histórico y por qué elegimos el centro de Córdoba.',
+  description='Dónde está honesto: Independencia 180, en el complejo de Santa Teresa, a 200 metros de la Plaza San Martín. Abierto en 2019 como Le Dureau, honesto desde 2026. Historia del casco histórico y por qué el centro de Córdoba.',
   headline='honesto en el centro de Córdoba: Independencia 180, a una cuadra de la Catedral',
-  keywords='cafetería centro Córdoba, panadería centro Córdoba, Independencia 180 Córdoba, café cerca de Plaza San Martín, desayuno centro histórico Córdoba, café cerca Manzana Jesuítica, café cerca Patio Olmos, casco histórico Córdoba cafetería',
+  keywords='Le Dureau Córdoba, ex Le Dureau, cafetería centro Córdoba, panadería centro Córdoba, Independencia 180 Córdoba, complejo Santa Teresa Córdoba, café cerca de Plaza San Martín, desayuno centro histórico Córdoba, café cerca Manzana Jesuítica, café cerca Patio Olmos, casco histórico Córdoba cafetería',
   eyebrow='Centro de Córdoba', crumb='Centro de Córdoba',
   h1='En el centro de Córdoba, <em>donde empezó la ciudad.</em>',
   lead='honesto está en Independencia 180, la calle que baja desde la Plaza San Martín entre el Cabildo, la Catedral y la Manzana Jesuítica. A dos cuadras de todo lo que hace al casco histórico, y a la vuelta de las oficinas, los tribunales y las facultades del centro.',
   hero_img=('cartel','Cartel colgante de honesto en la fachada de Independencia 180, con árboles y cielo de fondo'),
   hero_class='',
   resumen_title='¿Dónde está honesto?',
-  resumen='En Independencia 180, Centro, Córdoba, Argentina. Es la calle que sale de la esquina sureste de la Plaza San Martín, sobre la que están el Cabildo y la Catedral, una cuadra antes de nuestro local. La Manzana Jesuítica y el Colegio Monserrat quedan a menos de 200 metros; Patio Olmos, a 330; la Peatonal, a 430. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.',
-  facts=[('Dirección','Independencia 180, Centro, Córdoba (X5000)'),('Referencia','Una cuadra al sur de la Catedral, sobre la misma calle'),('Horario',HOURS),('Contacto',f'<a href="tel:{TEL}">{TEL_SHOW}</a> · <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">@honesto.bakery</a>')],
+  resumen='En Independencia 180, Centro, Córdoba, Argentina, en una casona del complejo de Santa Teresa. Es la calle que sale de la esquina sureste de la Plaza San Martín, sobre la que están el Cabildo y la Catedral, una cuadra antes de nuestro local. El local abrió en 2019 como Le Dureau y desde 2026 se llama honesto. La Manzana Jesuítica y el Colegio Monserrat quedan a menos de 200 metros; Patio Olmos, a 330; la Peatonal, a 430. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.',
+  facts=[('Dirección','Independencia 180, Centro, Córdoba (X5000)'),('Referencia','Una cuadra al sur de la Catedral, en el complejo de Santa Teresa'),('Desde','2019 como Le Dureau · honesto desde 2026'),('Horario',HOURS),('Contacto',f'<a href="tel:{TEL}">{TEL_SHOW}</a> · <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">@honesto.bakery</a>')],
   sections=[
    ('¿Cómo llegar y qué hay cerca?', '''<p>Desde la Plaza San Martín, tomá Independencia hacia el sur: pasás el Cabildo y la Catedral y en la cuadra siguiente, a la derecha, está honesto. Si venís caminando por la Peatonal, son cinco minutos. Estas son las distancias reales, medidas desde la puerta:</p>
 <table class="dist-table">
+<tr><td>Iglesia de Santa Teresa y Museo Juan de Tejeda</td><td>mismo complejo</td></tr>
 <tr><td>Iglesia de la Compañía de Jesús y Manzana Jesuítica</td><td>170 m</td></tr>
 <tr><td>Colegio Nacional de Monserrat</td><td>180 m</td></tr>
 <tr><td>Plaza San Martín, Cabildo y Catedral</td><td>200 m</td></tr>
@@ -328,8 +332,11 @@ PAGES = {
 <tr><td>Mercado Norte</td><td>1 km</td></tr>
 <tr><td>Terminal de Ómnibus</td><td>1,1 km</td></tr>
 </table>'''),
-   ('Un poco de historia: el casco histórico', '''<p>Córdoba se fundó en 1573 alrededor de lo que hoy es la Plaza San Martín. De ahí salen las calles del casco histórico, y una de ellas es Independencia. En sus primeras cuadras están el <strong>Cabildo</strong>, sede del gobierno colonial, y la <strong>Catedral</strong>, cuya construcción llevó casi dos siglos. Una cuadra al oeste, la <strong>Manzana Jesuítica</strong>, con la Iglesia de la Compañía de Jesús, el Colegio Monserrat y la primera universidad del país, es Patrimonio de la Humanidad desde el año 2000.</p>
-<p>Nuestro local está en una casona de fachada antigua de esa misma trama de calles. No la elegimos por la foto. La elegimos porque acá pasa la ciudad: oficinistas que entran a las 8, estudiantes que se quedan a la tarde, gente que hace un trámite y descubre que en el centro también se puede desayunar bien.</p>'''),
+   ('Un poco de historia: el casco histórico', '''<p>Córdoba se fundó en 1573 alrededor de lo que hoy es la Plaza San Martín. De ahí salen las calles del casco histórico, y una de ellas es Independencia. En sus primeras cuadras están el <strong>Cabildo</strong>, sede del gobierno colonial, y la <strong>Catedral</strong>, cuya construcción llevó casi dos siglos. Una cuadra al oeste, la <strong>Manzana Jesuítica</strong>, con la Iglesia de la Compañía de Jesús, el Colegio Monserrat y la primera universidad del país, es Patrimonio de la Humanidad desde el año 2000.</p>'''),
+   ('La casona: parte del complejo de Santa Teresa', '''<p>Nuestro local está en una casona del <strong>complejo de Santa Teresa</strong>, sobre Independencia. El complejo nació en 1628, cuando Juan de Tejeda cedió la casa de su familia para fundar el <strong>Monasterio de San José de las Carmelitas Descalzas</strong> y la <strong>Iglesia de Santa Teresa de Jesús</strong>. Ahí vivió sus últimos años su hijo, <strong>Luis de Tejeda</strong>, considerado el primer poeta de estas tierras, y por eso una frase suya nos acompaña en la portada del sitio. Hoy el conjunto, Monumento Histórico Nacional desde 1941, reúne el monasterio de clausura, la iglesia y el Museo de Arte Religioso Juan de Tejeda.</p>
+<p>Trabajar entre esas paredes tiene sentido para lo que hacemos: cosas que llevan tiempo, hechas todos los días, sin apuro.</p>'''),
+   ('De Le Dureau a honesto', '''<p>El local abrió en <strong>2019</strong> con el nombre de <strong>Le Dureau</strong>, una de las primeras cafeterías de especialidad de Córdoba, junto a Superanfibio, cuando el café de especialidad todavía era una rareza en la ciudad. Desde <strong>2026</strong>, el proyecto se enfocó en lo que más había crecido puertas adentro: la producción propia de <a href="/masa-madre/">pan de masa madre</a> y <a href="/laminados/">laminados de manteca</a>, además del café. Con ese cambio llegó el nuevo nombre, <strong>honesto</strong>, y la unidad mayorista <a href="/bakery.html">honesto bakery</a>.</p>
+<p>Misma casona, mismo café bien hecho, misma gente del centro. Ahora, también, el pan.</p>'''),
    ('¿Por qué el centro?', '''<p>Porque el centro de Córdoba es donde la gente trabaja, estudia y resuelve el día, y casi no tenía un lugar donde el pan y el café estuvieran a la altura. honesto nace de una idea simple: lo de todos los días también puede estar bien hecho. Una hogaza de <a href="/masa-madre/">masa madre</a> real, un <a href="/cafe-especialidad/">café de especialidad</a> calibrado cada mañana, <a href="/laminados/">medialunas de manteca</a> recién salidas y una mesa para quedarse, a dos cuadras de la plaza.</p>
 <p>Y porque el centro es también el corazón gastronómico de la ciudad. Desde acá, con <a href="/bakery.html">honesto bakery</a>, abastecemos de pan, laminados y pastelería a cafeterías y restaurantes de toda Córdoba.</p>'''),
    ('¿Para quién es honesto?', '''<ul>
@@ -345,6 +352,7 @@ PAGES = {
    ('¿Qué horario tiene honesto?','Lunes a viernes de 8:00 a 21:00, sábados de 9:00 a 15:00, domingos cerrado.'),
    ('¿Hay lugar para quedarse a trabajar o estudiar?','Sí. Hay mesas cómodas, luz natural y un patio con plantas. El horario corrido de 8 a 21 los días de semana lo hace cómodo para trabajar.'),
    ('¿Qué hay cerca de honesto?','La Manzana Jesuítica y el Colegio Monserrat a menos de 200 metros; la Plaza San Martín, el Cabildo y la Catedral a 200; el Teatro del Libertador a 310; Patio Olmos a 330; la Peatonal a 430; la Municipalidad a 620 y Tribunales I a 730.'),
+   ('¿honesto es el ex Le Dureau?','Sí. El local de Independencia 180 abrió en 2019 como Le Dureau, una de las primeras cafeterías de especialidad de Córdoba. Desde 2026 se llama honesto y se enfoca en pan de masa madre, laminados y café de especialidad. Misma casona, nuevo nombre.'),
    ('¿Cómo los contacto?','Por WhatsApp o teléfono al +54 351 601-6091, por correo a hola@honesto.com.ar o por Instagram en @honesto.bakery.'),
   ],
   aside_links=[('/masa-madre/','Nuestro pan de masa madre'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Medialunas y croissants'),('https://www.google.com/maps/search/?api=1&query=Independencia+180%2C+C%C3%B3rdoba%2C+Argentina','Abrir en Google Maps')],
