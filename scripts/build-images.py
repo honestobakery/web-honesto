@@ -48,6 +48,10 @@ SLOTS = {
     'puerta':        ('_A744537.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: puerta abierta a la calle
     'salon':         ('_A744584.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: salón interior
     'santa-teresa':  ('IMG_1618-santa-teresa.jpg', (4, 3), (0.5, 0.6)), # /centro-cordoba: convento de Santa Teresa y cúpula de la Catedral (foto de Alfredo)
+    'mesa-cafes':    ('_A744589.jpg', (4, 3), (0.5, 0.5)),        # /desayuno: dos cafés en la mesa, luz de la mañana
+    'entrada-manana':('_A744443.jpg', (4, 3), (0.25, 0.55), 0.85), # /desayuno: puerta abierta, mesas y luz de la mañana
+    'bebida-fresca': ('_A744441.jpg', (4, 3), (0.5, 0.5)),        # /almuerzo: vaso con bebida fresca sobre la mesa
+    'cocina-ventana':('_A744516.jpg', (4, 3), (0.5, 0.5)),        # /almuerzo: la cocina vista desde la ventana
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
 SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}

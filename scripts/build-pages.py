@@ -61,6 +61,8 @@ def header(active):
     <a href="/#preguntas">Preguntas</a>
     <a href="/bakery.html">Panadería mayorista</a>
     <p class="mobile-menu__group">Más</p>
+    <a href="/desayuno/"{' aria-current="page"' if active=='desayuno' else ''}>Desayuno</a>
+    <a href="/almuerzo/"{' aria-current="page"' if active=='almuerzo' else ''}>Almuerzo</a>
     <a href="/cafe-especialidad/"{' aria-current="page"' if active=='cafe-especialidad' else ''}>Café de especialidad</a>
     <a href="/laminados/"{' aria-current="page"' if active=='laminados' else ''}>Laminados</a>
     <a href="/centro-cordoba/"{' aria-current="page"' if active=='centro-cordoba' else ''}>Centro de Córdoba</a>
@@ -78,6 +80,8 @@ FOOTER = f'''<!-- FOOTER -->
         <p class="footer-v2__desc">Lo esencial puede ser extraordinario.</p>
         <ul class="footer-v2__links" aria-label="Más sobre honesto">
           <li><a href="/masa-madre/">Masa madre</a></li>
+          <li><a href="/desayuno/">Desayuno</a></li>
+          <li><a href="/almuerzo/">Almuerzo</a></li>
           <li><a href="/cafe-especialidad/">Café de especialidad</a></li>
           <li><a href="/laminados/">Laminados</a></li>
           <li><a href="/centro-cordoba/">Centro de Córdoba</a></li>
@@ -239,6 +243,7 @@ PAGES = {
 <li><strong>Para revivirlo</strong>, humedecé apenas la corteza y dale 8 a 10 minutos de horno a 180 °C. Vuelve a crujir.</li>
 </ul>'''),
    ('¿En qué se diferencia del pan común?', '''<p>El pan industrial se leva con levadura comercial en pocas horas y suele llevar aditivos para acelerar el proceso y prolongar la vida útil. El pan de masa madre se leva con un cultivo natural durante un día entero, sin aditivos. El resultado es otro pan: más sabor, mejor corteza, miga más húmeda y una acidez suave que muchos describen como "más liviano". No hace falta saber de pan para notar la diferencia. Se nota al cortarlo.</p>'''),
+   ('¿Se puede llevar pan para casa?', '''<p>Sí. En nuestro market vendemos hogaza, baguette y pan de molde para llevar, además de harina 000 orgánica y azúcar agroecológica para quien quiera amasar en su propia cocina. Y si preferís el café en grano, también lo tenemos: consultá en <a href="/cafe-especialidad/">nuestra página de café</a>.</p>'''),
   ],
   figures=[('vitrina','Panadera de honesto trabajando, con la vitrina de hogazas y panes al fondo','Las hogazas del día, en la vitrina desde las 8.',2),
            ('cocina','Panadería de honesto en Independencia 180: el equipo trabajando entre mesadas y hornos','La panadería, a la vista. El proceso no se esconde.',4),
@@ -251,6 +256,7 @@ PAGES = {
    ('¿La hogaza es integral?','Es una mezcla: harina de trigo, harina integral y centeno. No es 100% integral, pero tiene el sabor y la fibra de la integral y del centeno.'),
    ('¿Hacen pan sin gluten?','No. Todos nuestros panes son de trigo, integral y centeno, y se elaboran en el mismo obrador. La única pieza con receta sin gluten es una cookie de avena y naranja, con posible contaminación cruzada.'),
    ('¿Venden pan de masa madre al por mayor?','Sí. honesto bakery abastece a cafeterías, restaurantes y tiendas de Córdoba con hogazas, panes de molde y baguetines, además de laminados y congelados. Los pedidos se coordinan por WhatsApp al +54 351 601-6091.'),
+   ('¿Puedo comprar pan para llevar a mi casa?','Sí. Nuestro market vende hogaza, baguette y pan de molde para llevar, y también harina orgánica y azúcar agroecológica para quien quiera hacer pan en casa.'),
   ],
   aside_links=[('/laminados/','Laminados de masa madre y manteca'),('/cafe-especialidad/','Café de especialidad para acompañar'),('/bakery.html','Pan de masa madre al por mayor'),(FUDO,'Carta y precios del obrador')],
   cta=('elegí pan de verdad.','Hogaza de masa madre, horneada hoy en Independencia 180. Pasá a buscarla o reservala por WhatsApp.'),
@@ -260,7 +266,7 @@ PAGES = {
   title='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos | honesto',
   description='Qué es el café de especialidad, qué significa calibrarlo todos los días y qué servimos en honesto, Independencia 180, centro de Córdoba: café de la casa, tolva invitada de tostadores locales y leches vegetales.',
   headline='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos',
-  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café filtrado Córdoba, espresso tonic Córdoba, café con leche vegetal Córdoba, café calibrado, tostadores de café Córdoba, Chiquitito café, Ínfimo tostamos café, tolva invitada, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
+  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café filtrado Córdoba, espresso tonic Córdoba, café con leche vegetal Córdoba, café calibrado, tostadores de café Córdoba, Chiquitito café, Ínfimo tostamos café, tolva invitada, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, café de especialidad en grano Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
   eyebrow='Café de especialidad', crumb='Café de especialidad',
   h1='Café de especialidad, <em>calibrado todos los días.</em>',
   lead='No hace falta saber de café para notar la diferencia. Acá explicamos qué es el café de especialidad, qué hacemos cada mañana antes de servir la primera taza y por qué el centro de Córdoba es un buen lugar para tomarlo despacio.',
@@ -279,7 +285,8 @@ PAGES = {
 <p>En la barra hay <strong>espresso y sus clásicos</strong> (cortado, café con leche, capuccino, moka, macchiato, americano), <strong>café filtrado</strong> de cualquiera de las dos tolvas en el método que elijas, y <strong>cafés fríos</strong> como el espresso tonic, el cold latte y el cold moka. Hay <strong>leches vegetales</strong> para quien las prefiera. Y para quien no toma café: té en hebras agroecológico de Misiones, chai, matcha latte y chocolate caliente.</p>
 <p>Lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. La carta completa con precios está en <a href="%s" target="_blank" rel="noopener noreferrer">la carta online</a>. Si querés saber qué tostador está en la tolva invitada esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % (CARTA, WA)),
    ('¿Con qué acompañarlo?', '''<p>Con lo que sale del horno. Medialunas de manteca estilo marplatense, croissant, pan de chocolate, roll de canela, danesas, alfajor de chocolate y frutos rojos, budines y cookies. Todo de producción propia, con <a href="/masa-madre/">masa madre</a> y 100% manteca en los <a href="/laminados/">laminados</a>. Al mediodía hay comida fresca para almorzar.</p>'''),
-   ('¿Es un buen lugar para trabajar o estudiar?', '''<p>Sí. honesto está en el centro de Córdoba, a 200 metros de la Plaza San Martín, y está pensado para quedarse: mesas cómodas, luz natural, un patio con plantas y horario largo, de 8:00 a 21:00 de lunes a viernes. Vienen oficinistas a la mañana temprano, estudiantes a la tarde y gente que aprovecha un trámite en el centro para tomar un café bien hecho.</p>'''),
+   ('¿Se puede comprar café en grano para la casa?', '''<p>Sí. En nuestro market vendemos el café tostado en grano, en cuarticos para llevar. Hoy tenemos <strong>Ínfimo Colombia Inzá</strong> e <strong>Ínfimo Costa Rica</strong>; la selección va cambiando según lo que traigamos de los tostadores invitados. Preguntá en la barra cuál está disponible.</p>'''),
+   ('¿Es un buen lugar para trabajar o estudiar?', '''<p>Sí. honesto está en el centro de Córdoba, a 200 metros de la Plaza San Martín, y funciona también como cowork: wifi, enchufes en las mesas, luz natural y un patio con plantas. Vienen oficinistas a la mañana temprano, estudiantes a la tarde y gente que aprovecha un trámite en el centro para tomar un café bien hecho y quedarse un rato. Es pet friendly.</p>'''),
   ],
   figure=('mesas','Clientes conversando en las mesas del patio de honesto, con plantas al fondo','El patio, a media mañana. Un lugar para quedarse.'),
   faq=[
@@ -289,7 +296,8 @@ PAGES = {
    ('¿Tienen leches vegetales?','Sí. Ofrecemos leches vegetales para el café con leche y sus variantes.'),
    ('¿Hacen café filtrado?','Sí. Filtrado de la tolva principal o de la tolva invitada, en el método que elijas. También hay cafés fríos: espresso tonic, ice americano, cold latte y cold moka.'),
    ('¿Qué es la tolva invitada?','Además de nuestro café de especialidad de la casa, siempre hay una segunda tolva con un café de un tostador local de Córdoba, que va rotando. Entre los tostadores que pasan están Chiquitito e Ínfimo. Es una forma de probar lo que se tuesta en la ciudad.'),
-   ('¿Se puede trabajar con la notebook?','Sí. Hay mesas cómodas, luz natural y horario corrido de 8:00 a 21:00 de lunes a viernes. Es un lugar pensado para quedarse.'),
+   ('¿Se puede trabajar con la notebook?','Sí. Funcionamos también como cowork: wifi, enchufes en las mesas, luz natural y horario corrido de 8:00 a 21:00 de lunes a viernes. Es pet friendly.'),
+   ('¿Venden café en grano para llevar a casa?','Sí, en nuestro market: hoy tenemos Ínfimo Colombia Inzá e Ínfimo Costa Rica en cuarticos. La selección rota según los tostadores invitados.'),
   ],
   mentions=[{"@type":"Organization","name":"Chiquitito Café de Especialidad","url":"https://chiquitito.cafe/","sameAs":["https://www.instagram.com/chiquitito.cafe/"],"description":"Tostadores de café de especialidad en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}},
             {"@type":"Organization","name":"Ínfimo · tostamos café","sameAs":["https://www.instagram.com/infimo.tostamoscafe/"],"description":"Tostadores de café en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}}],
@@ -359,7 +367,7 @@ PAGES = {
   hero_class='',
   resumen_title='¿Dónde está honesto?',
   resumen='En Independencia 180, Centro, Córdoba, Argentina, en una casona del complejo de Santa Teresa. Es la calle que sale de la esquina sureste de la Plaza San Martín, sobre la que están el Cabildo y la Catedral, una cuadra antes de nuestro local. El local abrió en 2019 como Le Dureau y desde 2026 se llama honesto. La Manzana Jesuítica y el Colegio Monserrat quedan a menos de 200 metros; Patio Olmos, a 330; la Peatonal, a 430. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.',
-  facts=[('Dirección','Independencia 180, Centro, Córdoba (X5000)'),('Referencia','Una cuadra al sur de la Catedral, en el complejo de Santa Teresa'),('Desde','2019 como Le Dureau · honesto desde 2026'),('Horario',HOURS),('Contacto',f'<a href="tel:{TEL}">{TEL_SHOW}</a> · <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">@honesto.bakery</a>')],
+  facts=[('Dirección','Independencia 180, Centro, Córdoba (X5000)'),('Referencia','Una cuadra al sur de la Catedral, en el complejo de Santa Teresa'),('Desde','2019 como Le Dureau · honesto desde 2026'),('Espacio','Cowork con wifi y enchufes · pet friendly'),('Horario',HOURS),('Contacto',f'<a href="tel:{TEL}">{TEL_SHOW}</a> · <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">@honesto.bakery</a>')],
   sections=[
    ('¿Cómo llegar y qué hay cerca?', '''<div class="mapa">
   <div id="mapa" class="mapa__map" role="img" aria-label="Mapa de Google con la ubicación de honesto en Independencia 180, centro de Córdoba"></div>
@@ -393,7 +401,8 @@ PAGES = {
 <p>Y porque el centro es también el corazón gastronómico de la ciudad. Desde acá, con <a href="/bakery.html">honesto bakery</a>, abastecemos de pan, laminados y pastelería a cafeterías y restaurantes de toda Córdoba.</p>'''),
    ('¿Para quién es honesto?', '''<ul>
 <li><strong>Para quien trabaja en el centro.</strong> Desayuno antes de la oficina, un almuerzo liviano, una reunión informal con buen café. Abrimos a las 8 y cerramos a las 21.</li>
-<li><strong>Para quien estudia.</strong> Mesas cómodas, luz natural, patio y horario largo. Se puede quedar.</li>
+<li><strong>Para quien estudia o necesita un rato de cowork.</strong> Wifi, enchufes en las mesas, mesas cómodas y horario largo. Se puede quedar todo lo que haga falta.</li>
+<li><strong>Para quien va con perro.</strong> honesto es pet friendly.</li>
 <li><strong>Para quien pasa.</strong> Trámite, turismo, una vuelta por el casco histórico. Un lugar para probar el pan y el café de la ciudad, a metros de la Catedral.</li>
 </ul>'''),
   ],
@@ -407,11 +416,88 @@ PAGES = {
    ('¿Hay lugar para quedarse a trabajar o estudiar?','Sí. Hay mesas cómodas, luz natural y un patio con plantas. El horario corrido de 8 a 21 los días de semana lo hace cómodo para trabajar.'),
    ('¿Qué hay cerca de honesto?','La Manzana Jesuítica y el Colegio Monserrat a menos de 200 metros; la Plaza San Martín, el Cabildo y la Catedral a 200; el Teatro del Libertador a 310; Patio Olmos a 330; la Peatonal a 430; la Municipalidad a 620 y Tribunales I a 730.'),
    ('¿honesto es el ex Le Dureau?','Sí. El local de Independencia 180 abrió en 2019 como Le Dureau, una de las primeras cafeterías de especialidad de Córdoba. Desde 2026 se llama honesto y se enfoca en pan de masa madre, laminados y café de especialidad. Misma casona, nuevo nombre.'),
+   ('¿Tienen wifi y enchufes para trabajar?','Sí. Funcionamos también como cowork: wifi, enchufes en las mesas y un patio cómodo, para quedarte trabajando o estudiando el tiempo que necesites.'),
+   ('¿Se puede ir con perro?','Sí, honesto es pet friendly.'),
    ('¿Cómo los contacto?','Por WhatsApp o teléfono al +54 351 601-6091, por correo a hola@honesto.com.ar o por Instagram en @honesto.bakery.'),
   ],
   map=True,
   aside_links=[('/masa-madre/','Nuestro pan de masa madre'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Medialunas y croissants'),(MAPS,'Abrir en Google Maps')],
   cta=('nos vemos en el centro.','Independencia 180, a una cuadra de la Catedral. Lunes a viernes de 8 a 21, sábados de 9 a 15.'),
+ ),
+
+ 'desayuno': dict(
+  title='Desayuno y brunch en el centro de Córdoba, todo el día | honesto',
+  description='Desayuno de honesto en Independencia 180, centro de Córdoba: tostones de palta y huevo en hogaza, medialunas, huevos revueltos y café de especialidad. Se sirve todo el día, sin corte de horario.',
+  headline='Desayuno y brunch en el centro de Córdoba, servido todo el día',
+  keywords='desayuno centro Córdoba, dónde desayunar en Córdoba centro, brunch Córdoba, brunch Córdoba centro, merienda centro Córdoba, desayuno sin gluten Córdoba centro, tostón de palta y huevo Córdoba, desayuno todo el día Córdoba, café y medialunas Córdoba centro, desayuno cowork Córdoba',
+  eyebrow='Desayuno', crumb='Desayuno',
+  h1='Desayuno y brunch en el centro. <em>Se sirve todo el día.</em>',
+  lead='Tostones en hogaza de masa madre, medialunas recién horneadas, huevos revueltos y café de especialidad. En honesto el desayuno no tiene horario de corte: lo servimos desde que abrimos hasta que cerramos.',
+  hero_img=('mesa-cafes','Dos cafés servidos en la mesa, con luz de la mañana en honesto'),
+  hero_class='',
+  resumen_title='¿Qué se puede desayunar en honesto?',
+  resumen='Desayuno y brunch de producción propia, servidos todo el día: tostones de palta y huevo en hogaza de masa madre, medialunas y laminados recién horneados, huevos revueltos, bowls de yogur con granola y café de especialidad. Hay opciones dulces y saladas, para desayunar rápido o quedarte un rato. En Independencia 180, centro de Córdoba.',
+  facts=[('Horario','Todo el día, sin corte · '+HOURS),('Para','Desayuno, brunch y merienda'),('Con','Café de especialidad, tolva invitada y leches vegetales'),('Espacio','Cowork con wifi y enchufes · pet friendly')],
+  sections=[
+   ('¿Por qué desayunar en honesto?', '''<p>Porque el desayuno también se puede hacer bien: hogaza de masa madre real, medialunas de manteca horneadas esa misma mañana y café de especialidad calibrado, sin necesidad de pedir algo elaborado. Y porque no tiene un horario estrecho: lo servimos desde las 8 y hasta que cerramos, así que da lo mismo si venís antes de la oficina o a media tarde.</p>'''),
+   ('¿Qué podés pedir?', '''<ul>
+<li><strong>El clásico con medialuna.</strong> Infusión más una medialuna de masa madre. Lo de siempre.</li>
+<li><strong>Desayuno de campo.</strong> Infusión más tostadas calentitas en pan de molde de masa madre, con untables.</li>
+<li><strong>Desayuno proteico.</strong> Infusión, huevos revueltos, jamón asado, cazuela de palta y tostadas de masa madre opcionales.</li>
+<li><strong>Esencial dulce.</strong> Infusión más nuestra pastelería artesanal del día.</li>
+<li><strong>Café con tostón de palta y huevo.</strong> Tostón en hogaza de masa madre con pasta de palta y huevo.</li>
+</ul>'''),
+   ('¿Y si querés algo más liviano?', '''<p>Bowl de ensalada de frutas de estación con jugo de naranja, bowl de yogur natural con granola crocante y frutas frescas, o tostadas de masa madre con el untable que prefieras. La mafalda —dos mafaldas con jamón asado y queso derretido en medialuna dorada— es otra opción rápida y dulce a la vez.</p>'''),
+   ('¿Hay opciones más completas?', '''<p>El tostón micmac (hogaza con jamón crudo, reggianito, tomates cherry, tapenade de olivas negras y rúcula), el keto poderoso (huevos revueltos, palta y jamón asado) y el montadito en tortilla de chipa son para quien busca algo más contundente. También están los baguetines de masa madre —caprese, jamón crudo, jamón y queso, salame y gruyère— y la tablita de fiambres, ideal para compartir. Todos disponibles a cualquier hora, no solo a la mañana.</p>'''),
+   ('¿Hacen brunch los sábados?', '''<p>No tenemos una carta de "brunch" separada: el desayuno completo se sirve toda la mañana del sábado, de 9:00 a 15:00. Los domingos estamos cerrados.</p>'''),
+   ('¿Tienen opciones sin gluten?', '''<p>Limitadas. Hay una cookie de avena y naranja con receta sin gluten y cuadraditos y postres sin TACC elaborados por Rod Mix, pero se preparan en el mismo obrador que trabaja con harina de trigo: puede haber contaminación cruzada, así que no son aptos para celíacos.</p>'''),
+   ('¿Se puede desayunar trabajando?', '''<p>Sí. Funcionamos también como cowork: wifi, enchufes en las mesas y un patio cómodo. Podés quedarte desayunando y seguir trabajando o estudiando después, el tiempo que necesites. Es pet friendly.</p>'''),
+  ],
+  figure=('entrada-manana','Puerta abierta de honesto con mesas y luz de la mañana adentro','Abrimos a las 8. El desayuno se sirve hasta que cerramos.'),
+  faq=[
+   ('¿Dónde desayunar en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Desayuno y brunch de producción propia, servidos todo el día, de lunes a viernes de 8:00 a 21:00 y sábados de 9:00 a 15:00.'),
+   ('¿A qué hora se puede desayunar?','Todo el día, sin horario de corte: desde que abrimos, a las 8, hasta que cerramos.'),
+   ('¿Hacen brunch?','El desayuno completo se sirve toda la mañana, incluidos los sábados de 9 a 15. No hay una carta de brunch separada.'),
+   ('¿Qué opciones dulces y saladas tienen?','Medialunas, tostadas con untables y bowls de yogur o frutas del lado dulce; tostones de palta y huevo, huevos revueltos y baguetines del lado salado. Combos con infusión y café de especialidad en ambos casos.'),
+   ('¿Tienen desayuno sin gluten?','Muy limitado: una cookie de avena y naranja sin gluten y cuadraditos sin TACC de Rod Mix, elaborados en un obrador que trabaja con trigo. No son aptos para celíacos por posible contaminación cruzada.'),
+   ('¿Se puede trabajar mientras se desayuna?','Sí. Hay wifi, enchufes en las mesas y un patio cómodo. Es pet friendly.'),
+  ],
+  aside_links=[('/almuerzo/','Almuerzo de mediodía'),('/cafe-especialidad/','Nuestro café de especialidad'),('/masa-madre/','El pan de nuestros tostones'),(CARTA,'Carta completa con precios')],
+  cta=('empezá bien el día.','Tostones, medialunas y café de especialidad, servidos todo el día en Independencia 180.'),
+ ),
+
+ 'almuerzo': dict(
+  title='Almuerzo en el centro de Córdoba: menú del mediodía | honesto',
+  description='Almuerzo de honesto en Independencia 180, centro de Córdoba: menú ejecutivo, ensaladas, wraps, tartas y baguetines de masa madre, de 12 a 15. Café de especialidad y patio para quedarte.',
+  headline='Almuerzo en el centro de Córdoba: menú del mediodía',
+  keywords='almuerzo centro Córdoba, dónde almorzar en Córdoba centro, menú ejecutivo Córdoba centro, almuerzo liviano Córdoba, baguetín Córdoba, ensalada César Córdoba centro, almorzar cerca de Plaza San Martín, almuerzo cowork Córdoba',
+  eyebrow='Almuerzo', crumb='Almuerzo',
+  h1='Almuerzo en el centro. <em>Del mediodía, sin apuro.</em>',
+  lead='Menú ejecutivo, ensaladas, wraps, tartas y baguetines de masa madre, de 12 a 15. Para salir de la oficina, sentarte un rato y volver a lo que estabas haciendo.',
+  hero_img=('bebida-fresca','Vaso con bebida fresca sobre la mesa, luz del mediodía en honesto'),
+  hero_class='',
+  resumen_title='¿Qué se puede almorzar en honesto?',
+  resumen='Almuerzo de producción propia, de 12 a 15: menú ejecutivo y menú liviano, ensalada César, wrap de pollo César, tartas de calabaza con queso brie o de queso azul, pollo al limón y baguetines de masa madre. Con café de especialidad y un patio para quedarte o pedir para llevar. En Independencia 180, centro de Córdoba.',
+  facts=[('Horario del mediodía','12:00 a 15:00'),('También todo el día','Baguetines y tostones de masa madre'),('Espacio','Cowork con wifi y enchufes · pet friendly'),('Dónde','Independencia 180, Centro, Córdoba')],
+  sections=[
+   ('¿Qué hay en el menú del mediodía?', '''<p>De 12 a 15 armamos un menú de almuerzo aparte del desayuno: <strong>menú ejecutivo</strong> (bebida, plato principal y un laminado), <strong>menú liviano</strong> para seguir el día sin pesar, <strong>wrap de pollo César</strong>, <strong>ensalada César</strong> y <strong>pollo al limón</strong> con ensalada. Todo de producción propia.</p>'''),
+   ('¿Y las tartas?', '''<p>Tarta de calabaza asada con cebolla caramelizada y queso brie, sobre masa integral, o tarta de queso azul con cebolla caramelizada, miel y nueces, acompañada de ensalada de rúcula y peras. Las dos en masa propia, para comer solas o con una ensalada al lado.</p>'''),
+   ('¿Algo para compartir o más contundente?', '''<p>El pincho de ternera en pan hogaza con tomate y verdes, o la tablita de fiambres para compartir en la mesa. Buenas opciones si van dos o más personas.</p>'''),
+   ('¿Y si prefiero un sándwich?', '''<p>Los baguetines de masa madre —caprese, jamón crudo, jamón y queso, o salame y gruyère— están disponibles todo el día, no solo en la franja del mediodía. Son la opción rápida cuando el almuerzo tiene que ser corto.</p>'''),
+   ('¿Hay opciones vegetarianas o livianas?', '''<p>Las tartas y la ensalada César sin pollo son las opciones vegetarianas del menú. Para algo sin gluten, la oferta es limitada: consultá en la barra, porque se cocina en un obrador que trabaja con harina de trigo.</p>'''),
+   ('¿Se puede almorzar y seguir trabajando?', '''<p>Sí. honesto funciona también como cowork: wifi, enchufes en las mesas y un patio cómodo para quedarte después del almuerzo, solo o con el equipo. Es pet friendly.</p>'''),
+  ],
+  figure=('cocina-ventana','La cocina de honesto vista desde el salón, con la panadera trabajando','La cocina sigue trabajando al mediodía. Se ve desde el salón.'),
+  faq=[
+   ('¿Dónde almorzar en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Menú de almuerzo de 12 a 15, de producción propia, más baguetines de masa madre disponibles todo el día.'),
+   ('¿A qué hora sirven el almuerzo?','De 12:00 a 15:00. Los baguetines y tostones de masa madre se pueden pedir en cualquier horario.'),
+   ('¿Tienen menú ejecutivo?','Sí: bebida, plato principal y un laminado. También hay un menú liviano para quien prefiere algo más ligero.'),
+   ('¿Hay opciones vegetarianas?','Las tartas (calabaza y queso brie, o queso azul) y la ensalada César sin pollo. La carta no tiene opción vegana definida; consultá en la barra.'),
+   ('¿Puedo pedir el almuerzo para la oficina?','Sí, se puede pedir para llevar. Escribinos por WhatsApp para coordinar el pedido.'),
+   ('¿Se puede trabajar después de almorzar?','Sí. Hay wifi, enchufes en las mesas y un patio cómodo. Es pet friendly.'),
+  ],
+  aside_links=[('/desayuno/','Desayuno y brunch'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Nuestros laminados'),(CARTA,'Carta completa con precios')],
+  cta=('un buen almuerzo, cerca de la oficina.','Menú del mediodía de 12 a 15, en Independencia 180, centro de Córdoba.'),
  ),
 }
 

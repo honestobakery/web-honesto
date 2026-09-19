@@ -90,6 +90,26 @@
     </image:image>
   </url>
   <url>
+    <loc>https://honesto.com.ar/desayuno/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/mesa-cafes-1600.webp</image:loc>
+      <image:title>Dos cafés en la mesa por la mañana en honesto, centro de Córdoba</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://honesto.com.ar/almuerzo/</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://honesto.com.ar/assets/images/bebida-fresca-1600.webp</image:loc>
+      <image:title>Vaso con bebida fresca sobre la mesa, honesto centro de Córdoba</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://honesto.com.ar/llms.txt</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>monthly</changefreq>
