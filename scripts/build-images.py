@@ -34,6 +34,16 @@ SLOTS = {
     'alfajor':       ('_A744585.jpg', (4, 3), (0.5, 0.5)),        # pastelería: alfajor
     'congelados':    ('_A744482.jpg', (4, 3), (0.5, 0.5)),        # congelados: bloque de masa laminada
     'hornos':        ('_A744488.jpg', (4, 3), (0.5, 0.5)),        # por qué: hornos
+    # páginas de contenido
+    'fermentacion':  ('_A744501.jpg', (4, 3), (0.5, 0.5)),        # /masa-madre: bollos fermentando
+    'cocina':        ('_A744597.jpg', (4, 3), (0.5, 0.5)),        # /masa-madre: cocina y equipo
+    'cafe-alfajor':  ('_A744593.jpg', (4, 3), (0.5, 0.5)),        # /cafe-especialidad: café + alfajor
+    'mesas':         ('_A744513.jpg', (4, 3), (0.5, 0.45)),       # /cafe-especialidad: clientes en el patio
+    'laminadora':    ('_A744477.jpg', (4, 3), (0.5, 0.5)),        # /laminados: pasando la masa por la laminadora
+    'cortante':      ('_A744461.jpg', (4, 3), (0.5, 0.5)),        # /laminados: cortando discos de masa
+    'cartel':        ('_A744437.jpg', (4, 3), (0.5, 0.45)),       # /centro-cordoba: cartel en la fachada
+    'puerta':        ('_A744537.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: puerta abierta a la calle
+    'salon':         ('_A744584.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: salón interior
 }
 # og-<nombre>.jpg 1200x630: (original, focal)
 SQUARE = {'fachada': ('_A744433.jpg', (0.5, 0.5))}

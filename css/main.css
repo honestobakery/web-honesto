@@ -2149,6 +2149,245 @@ a {
   color: var(--color-charcoal);
 }
 
+/* ─── PÁGINAS DE CONTENIDO (/masa-madre, /cafe-especialidad, /laminados, /centro-cordoba) */
+.page-hero {
+  background: var(--color-rose-40);
+  padding: 128px 0 56px;   /* header is fixed: keep breadcrumbs clear of it */
+}
+
+@media (min-width: 1024px) {
+  .page-hero { padding: 176px 0 80px; }
+}
+
+.page-hero--blue { background: var(--color-blue-primary); color: var(--color-cream); }
+
+.page-hero__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: grid;
+  gap: 32px;
+}
+
+@media (min-width: 1024px) {
+  .page-hero__inner {
+    padding-inline: 64px;
+    grid-template-columns: 7fr 5fr;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+.page-hero h1 {
+  font-size: clamp(30px, 4.4vw, 48px);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-charcoal);
+  margin: 12px 0 20px;
+  max-width: 22ch;
+}
+
+.page-hero h1 em {
+  font-style: normal;
+  font-family: var(--font-display);
+  font-weight: 400;
+  color: var(--color-blue-primary);
+}
+
+.page-hero--blue h1 { color: var(--color-cream); }
+.page-hero--blue h1 em { color: var(--color-yellow); }
+.page-hero--blue .section-eyebrow { color: var(--color-cream-60); }
+
+.page-hero__lead {
+  font-size: clamp(17px, 1.6vw, 20px);
+  line-height: 1.55;
+  color: var(--color-charcoal-80);
+  margin: 0;
+  max-width: 54ch;
+}
+
+.page-hero--blue .page-hero__lead { color: var(--color-cream-80); }
+
+.page-hero__figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.page-hero__figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.breadcrumbs {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-50);
+  margin: 0 0 8px;
+}
+
+.breadcrumbs a { color: inherit; text-decoration: none; }
+.breadcrumbs a:hover { color: var(--color-blue-primary); }
+.breadcrumbs span { margin: 0 8px; }
+.page-hero--blue .breadcrumbs { color: var(--color-cream-60); }
+
+.article {
+  background: var(--color-cream);
+  padding: 72px 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .article { padding: 96px 0 40px; }
+}
+
+.article__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: grid;
+  gap: 56px;
+}
+
+@media (min-width: 1024px) {
+  .article__inner {
+    padding-inline: 64px;
+    grid-template-columns: 8fr 4fr;
+    gap: 96px;
+    align-items: start;
+  }
+}
+
+.article__body { display: grid; gap: 40px; }
+
+.article__body section > h2 {
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--color-charcoal);
+  margin: 0 0 14px;
+  text-wrap: balance;
+}
+
+.article__body p {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--color-charcoal-80);
+  margin: 0 0 14px;
+  max-width: 66ch;
+}
+
+.article__body p:last-child { margin-bottom: 0; }
+
+.article__body ul,
+.article__body ol {
+  margin: 0 0 14px;
+  padding-left: 22px;
+  color: var(--color-charcoal-80);
+  font-size: 17px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.article__body li { margin-bottom: 6px; }
+.article__body li strong { color: var(--color-charcoal); }
+
+.article__body a {
+  color: var(--color-blue-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article__body a:hover { color: var(--color-blue-deep); }
+
+.article__figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+}
+
+.article__figure img { width: 100%; display: block; }
+
+.article__figure figcaption {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-50);
+  padding: 10px 0 0;
+}
+
+.article__aside { display: grid; gap: 32px; }
+
+@media (min-width: 1024px) {
+  .article__aside { position: sticky; top: 112px; }
+}
+
+.aside-card {
+  border: 1px solid var(--color-charcoal-10);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+}
+
+.aside-card h3 {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-olive);
+  margin: 0 0 12px;
+  font-weight: 400;
+}
+
+.aside-card ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+.aside-card li,
+.aside-card p {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.aside-card a { color: var(--color-blue-primary); text-decoration: underline; text-underline-offset: 3px; }
+.aside-card a:hover { color: var(--color-blue-deep); }
+
+.aside-card--blue {
+  background: var(--color-blue-primary);
+  border-color: transparent;
+}
+
+.aside-card--blue h3 { color: var(--color-cream-60); }
+.aside-card--blue p { color: var(--color-cream); }
+.aside-card--blue .btn-cream { margin-top: 14px; }
+
+.dist-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.dist-table td { padding: 8px 0; border-bottom: 1px solid var(--color-charcoal-10); color: var(--color-charcoal); vertical-align: top; }
+.dist-table td:last-child { text-align: right; font-family: var(--font-mono); font-size: 12px; color: var(--color-charcoal-60); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+.product-card__desc a { color: var(--color-blue-primary); text-decoration: underline; text-underline-offset: 3px; }
+.product-card__desc a:hover { color: var(--color-blue-deep); }
+
+.footer-v2__links { list-style: none; margin: 20px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.footer-v2__links a {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-cream-60);
+  text-decoration: none;
+}
+.footer-v2__links a:hover { color: var(--color-cream); }
+
+.mobile-menu__group {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-40);
+  padding: 16px 0 4px;
+  border-top: 1px solid var(--color-charcoal-10);
+  margin-top: 8px;
+}
+
 /* ─── BAKERY B2B ─────────────────────────────────────────── */
 .btn-cream {
   display: inline-flex;
