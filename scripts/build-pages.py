@@ -221,7 +221,7 @@ PAGES = {
   title='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos | honesto',
   description='Qué es el café de especialidad, qué significa calibrarlo todos los días y qué servimos en honesto, Independencia 180, centro de Córdoba: café de la casa, tolva invitada de tostadores locales y leches vegetales.',
   headline='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos',
-  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café calibrado, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
+  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café calibrado, tostadores de café Córdoba, Chiquitito café, Ínfimo tostamos café, tolva invitada, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
   eyebrow='Café de especialidad', crumb='Café de especialidad',
   h1='Café de especialidad, <em>calibrado todos los días.</em>',
   lead='No hace falta saber de café para notar la diferencia. Acá explicamos qué es el café de especialidad, qué hacemos cada mañana antes de servir la primera taza y por qué el centro de Córdoba es un buen lugar para tomarlo despacio.',
@@ -229,13 +229,14 @@ PAGES = {
   hero_class='page-hero--blue',
   resumen_title='¿Qué es el café de especialidad de honesto?',
   resumen='Es café de especialidad, es decir, de granos seleccionados y trazables, que calibramos todos los días: ajustamos molienda, dosis, tiempo y temperatura cada mañana para que salga igual de bien en cada taza. Además del café de la casa, siempre hay una tolva invitada con un tostador local de Córdoba. Servimos espresso, café con leche (también con leches vegetales) y café negro, en Independencia 180, con medialunas y laminados recién horneados.',
-  facts=[('Qué','Café de especialidad de la casa + tolva invitada de tostadores locales'),('Cómo','Espresso, café con leche (también leches vegetales) y café negro'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
+  facts=[('Qué','Café de especialidad de la casa + tolva invitada de tostadores locales (Chiquitito, Ínfimo y otros)'),('Cómo','Espresso, café con leche (también leches vegetales) y café negro'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
   sections=[
    ('¿Qué es el café de especialidad?', '''<p>"Café de especialidad" es un término técnico. Se refiere a cafés que obtienen 80 puntos o más sobre 100 en una evaluación sensorial estandarizada, hecha por catadores certificados. Para llegar ahí, el grano tiene que estar libre de defectos, cultivado y procesado con cuidado, y ser trazable: se sabe de qué finca o cooperativa viene, de qué variedad y cómo se procesó.</p>
 <p>Ese cuidado se pierde si el tostado es viejo o si la preparación es descuidada. Por eso en café de especialidad importa tanto lo que pasa en la barra como lo que pasó en origen.</p>'''),
    ('¿Qué significa que calibramos el café todos los días?', '''<p>El café es un producto vivo. Cambia con la humedad del ambiente, con la temperatura del local y con los días que pasan desde el tostado. La misma receta de ayer puede salir distinta hoy. Calibrar es ajustar cada mañana los cuatro parámetros que definen un espresso: la <strong>molienda</strong>, la <strong>dosis</strong> de café, el <strong>tiempo</strong> de extracción y la <strong>temperatura</strong> del agua. Se prueba, se corrige y se vuelve a probar hasta que la taza está donde tiene que estar.</p>
 <p>No lo hacemos para contarlo. Lo hacemos porque es la única manera de que el café salga igual de bien un martes a las 8 que un sábado a las 14.</p>'''),
    ('¿Qué café servimos?', '''<p>Trabajamos con dos tolvas. En una está nuestro <strong>café de especialidad de la casa</strong>; en la otra, siempre, una <strong>tolva invitada</strong> que rota entre <strong>tostadores locales</strong> de Córdoba. Así el café de todos los días es el mismo y, a la vez, siempre hay algo nuevo para probar de la escena cordobesa.</p>
+<p>Por la tolva invitada pasan tostadores como <a href="https://chiquitito.cafe/" target="_blank" rel="noopener noreferrer">Chiquitito</a>, tostadores de Córdoba que trabajan cafés de origen único de Brasil, Colombia, Bolivia, Honduras, Perú, Etiopía y Uganda, e <a href="https://www.instagram.com/infimo.tostamoscafe/" target="_blank" rel="noopener noreferrer">Ínfimo</a>, también tostadores locales. La tolva cambia; la idea es que siempre haya un café cordobés distinto para probar.</p>
 <p>Servimos espresso y sus variantes con leche, y café negro. Hay <strong>leches vegetales</strong> para quien las prefiera. Lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. Si querés saber qué tostador está en la tolva invitada esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % WA),
    ('¿Con qué acompañarlo?', '''<p>Con lo que sale del horno. Medialunas de manteca estilo marplatense, croissant, pan de chocolate, roll de canela, danesas, alfajor de chocolate y frutos rojos, budines y cookies. Todo de producción propia, con <a href="/masa-madre/">masa madre</a> y 100% manteca en los <a href="/laminados/">laminados</a>. Al mediodía hay comida fresca para almorzar.</p>'''),
    ('¿Es un buen lugar para trabajar o estudiar?', '''<p>Sí. honesto está en el centro de Córdoba, a 200 metros de la Plaza San Martín, y está pensado para quedarse: mesas cómodas, luz natural, un patio con plantas y horario largo, de 8:00 a 21:00 de lunes a viernes. Vienen oficinistas a la mañana temprano, estudiantes a la tarde y gente que aprovecha un trámite en el centro para tomar un café bien hecho.</p>'''),
@@ -246,9 +247,11 @@ PAGES = {
    ('¿Qué diferencia hay entre café de especialidad y café común?','El café de especialidad viene de granos seleccionados, trazables y sin defectos, evaluados con 80 puntos o más sobre 100, tostados recientemente y preparados con parámetros controlados. El café común suele ser una mezcla de granos de menor calidad, tostado muy oscuro para uniformar el sabor.'),
    ('¿Qué es calibrar el café?','Ajustar cada día la molienda, la dosis, el tiempo de extracción y la temperatura del agua, probando hasta que el espresso sale como debe. Se hace porque el café cambia con el clima y con los días desde el tostado.'),
    ('¿Tienen leches vegetales?','Sí. Ofrecemos leches vegetales para el café con leche y sus variantes.'),
-   ('¿Qué es la tolva invitada?','Además de nuestro café de especialidad de la casa, siempre hay una segunda tolva con un café de un tostador local de Córdoba, que va rotando. Es una forma de probar lo que se tuesta en la ciudad.'),
+   ('¿Qué es la tolva invitada?','Además de nuestro café de especialidad de la casa, siempre hay una segunda tolva con un café de un tostador local de Córdoba, que va rotando. Entre los tostadores que pasan están Chiquitito e Ínfimo. Es una forma de probar lo que se tuesta en la ciudad.'),
    ('¿Se puede trabajar con la notebook?','Sí. Hay mesas cómodas, luz natural y horario corrido de 8:00 a 21:00 de lunes a viernes. Es un lugar pensado para quedarse.'),
   ],
+  mentions=[{"@type":"Organization","name":"Chiquitito Café de Especialidad","url":"https://chiquitito.cafe/","sameAs":["https://www.instagram.com/chiquitito.cafe/"],"description":"Tostadores de café de especialidad en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}},
+            {"@type":"Organization","name":"Ínfimo · tostamos café","sameAs":["https://www.instagram.com/infimo.tostamoscafe/"],"description":"Tostadores de café en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}}],
   aside_links=[('/laminados/','Medialunas y croissants para acompañar'),('/masa-madre/','Nuestro pan de masa madre'),('/centro-cordoba/','Cómo llegar y qué hay cerca'),('/#carta','La carta')],
   cta=('un café bien hecho, sin vueltas.','Independencia 180, centro de Córdoba. De lunes a viernes de 8 a 21, sábados de 9 a 15.'),
  ),
@@ -393,6 +396,7 @@ def build(slug, pg):
          "author": {"@id": SITE + "/#negocio"}, "publisher": {"@id": SITE + "/#negocio"}, "about": {"@id": SITE + "/#negocio"},
          "mainEntityOfPage": {"@id": url + "#pagina"}, "datePublished": DATE, "dateModified": DATE, "inLanguage": "es-AR",
          "articleSection": pg['crumb'],
+         **({"mentions": pg['mentions']} if pg.get('mentions') else {}),
          "articleBody": plain(pg['resumen']) + ' ' + ' '.join(plain(b) for _, b in pg['sections'])},
         {"@type": "FAQPage", "@id": url + "#preguntas", "isPartOf": {"@id": url + "#pagina"},
          "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": plain(a)}} for q, a in pg['faq']]}
