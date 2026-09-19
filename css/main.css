@@ -2797,3 +2797,272 @@ a {
     transform: none;
   }
 }
+
+/* ---------------------------------------------------------------------------
+   404 — "Esta página no leudó."
+   Cream + charcoal + blue CTA. Ticket de caja + personaje que entra caminando.
+   --------------------------------------------------------------------------- */
+.notfound {
+  background: var(--color-rose-40);
+  padding: 148px 0 72px;   /* header is fixed; topbar wraps to 2 lines on phones */
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .notfound { padding: 176px 0 112px; min-height: 100vh; display: flex; align-items: center; }
+}
+
+.notfound__inner {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 24px;
+  display: grid;
+  gap: 56px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .notfound__inner {
+    padding-inline: 64px;
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+    gap: 64px;
+  }
+}
+
+.notfound__eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-50);
+  margin: 0;
+}
+
+.notfound h1 {
+  font-family: var(--font-display);
+  font-size: clamp(44px, 7vw, 88px);
+  font-weight: 400;
+  line-height: 1.05;
+  color: var(--color-charcoal);
+  margin: 16px 0 24px;
+}
+
+.notfound h1 em {
+  font-style: normal;
+  color: var(--color-blue-primary);
+}
+
+.notfound__body {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-charcoal-70);
+  max-width: 460px;
+  margin: 0 0 32px;
+}
+
+.notfound__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.notfound__note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-40);
+  margin: 40px 0 0;
+}
+
+/* Stage: ticket + personaje */
+.notfound__stage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: min(100%, 360px);   /* hug the ticket so the personaje stays next to it */
+  margin-inline: auto;
+  padding-bottom: 150px;   /* room for the personaje to stand below the ticket */
+}
+
+@media (min-width: 1024px) {
+  .notfound__stage { width: auto; margin-inline: 0; justify-content: flex-end; padding-bottom: 0; padding-right: 96px; }
+}
+
+.notfound__personaje {
+  position: absolute;
+  bottom: 0;
+  right: 8px;
+  width: 96px;
+  height: auto;
+  transform-origin: 50% 100%;
+  animation: notfound-walk-in 1.4s var(--ease-out-quint) both, notfound-idle 4s 1.4s ease-in-out infinite;
+}
+
+@media (min-width: 1024px) {
+  .notfound__personaje { width: 150px; right: -24px; bottom: -24px; }
+}
+
+@keyframes notfound-walk-in {
+  from { transform: translateX(160%) rotate(0deg); opacity: 0; }
+  20%  { opacity: 1; }
+  to   { transform: translateX(0) rotate(0deg); opacity: 1; }
+}
+
+@keyframes notfound-idle {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50%      { transform: translateX(0) rotate(-2deg) translateY(-3px); }
+}
+
+/* Ticket de caja */
+.ticket {
+  --ticket-bg: var(--color-cream);
+  position: relative;
+  width: min(100%, 360px);
+  background: var(--ticket-bg);
+  color: var(--color-charcoal);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  padding: 28px 24px 32px;
+  box-shadow: var(--shadow-medium, 0 4px 16px rgba(59, 59, 59, 0.12));
+  transform: rotate(-1.5deg);
+  animation: ticket-print 900ms var(--ease-out-quint) both;
+}
+
+/* zigzag bottom edge */
+.ticket::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+  height: 10px;
+  background:
+    linear-gradient(-45deg, transparent 70%, var(--ticket-bg) 71%) 0 0 / 20px 10px repeat-x,
+    linear-gradient(45deg, transparent 70%, var(--ticket-bg) 71%) 0 0 / 20px 10px repeat-x;
+}
+
+@keyframes ticket-print {
+  from { clip-path: inset(0 0 100% 0); transform: rotate(-1.5deg) translateY(-24px); }
+  to   { clip-path: inset(0 0 -12px 0); transform: rotate(-1.5deg) translateY(0); }
+}
+
+.ticket p { margin: 0; }
+
+.ticket__head {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-charcoal-60);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--color-charcoal-40);
+}
+
+.ticket__head strong { color: var(--color-charcoal); font-weight: 700; }
+
+.ticket__brand {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--color-charcoal);
+  margin-bottom: 8px !important;
+}
+
+.ticket__lines {
+  list-style: none;
+  margin: 0;
+  padding: 16px 0;
+  border-bottom: 1px dashed var(--color-charcoal-40);
+}
+
+.ticket__line,
+.ticket__line a,
+.ticket__total {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+}
+
+.ticket__line { margin: 0 0 8px; }
+.ticket__line:last-child { margin-bottom: 0; }
+
+.ticket__line a {
+  width: 100%;
+  color: inherit;
+  border-radius: var(--radius-sm);
+  transition: color 180ms, background 180ms;
+}
+
+.ticket__line a:hover,
+.ticket__line a:focus-visible {
+  color: var(--color-blue-primary);
+}
+
+.ticket__line a:hover .ticket__status {
+  background: var(--color-blue-primary);
+  color: var(--color-cream);
+}
+
+.ticket__qty { flex: 0 0 1ch; color: var(--color-charcoal-50); }
+
+.ticket__item {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+/* dotted leader */
+.ticket__item::after {
+  content: "";
+  flex: 1 1 auto;
+  min-width: 12px;
+  height: 0;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted var(--color-charcoal-40);
+}
+
+.ticket__status {
+  flex: 0 0 auto;
+  font-weight: 700;
+  padding: 0 4px;
+  border-radius: var(--radius-sm);
+  transition: background 180ms, color 180ms;
+}
+
+.ticket__line--missing .ticket__item {
+  color: var(--color-charcoal-50);
+  text-decoration: line-through;
+  text-decoration-color: var(--color-charcoal-40);
+}
+.ticket__line--missing .ticket__status { color: var(--color-blue-primary); }
+
+.ticket__total {
+  padding: 16px 0 0;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.ticket__foot {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--color-charcoal-40);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--color-charcoal-60);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticket,
+  .notfound__personaje { animation: none; }
+}

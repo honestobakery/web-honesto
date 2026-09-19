@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Página no encontrada | honesto</title>
+  <title>Esta página no leudó | honesto</title>
+  <meta name="description" content="Error 404. La página que buscás no existe o se movió. Lo demás está donde siempre: Independencia 180, Centro, Córdoba.">
   <meta name="robots" content="noindex">
   <meta name="theme-color" content="#F4F2E7">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png">
@@ -12,20 +13,219 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Ir al contenido</a>
+
+<!-- HEADER -->
+<header class="lp-header">
+  <div class="topbar">
+    <p>Bakery &amp; Café / Comida Fresca — Centro, Córdoba</p>
+  </div>
+  <nav class="mainnav" aria-label="Navegación principal">
+    <div class="mainnav__links">
+      <a href="/">Inicio</a>
+      <a href="/masa-madre/">Masa madre</a>
+    </div>
+    <a class="mainnav__brand" href="/">honesto</a>
+    <div class="mainnav__links">
+      <a href="/#carta">Carta</a>
+      <a href="/#preguntas">Preguntas</a>
+      <a class="mainnav__cta" href="/bakery.html">Mayorista</a>
+    </div>
+    <button class="mainnav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/>
+      </svg>
+    </button>
+  </nav>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
+    <a href="/">Inicio</a>
+    <a href="/masa-madre/">Masa madre</a>
+    <a href="/#nosotros">Nosotros</a>
+    <a href="/#carta">Carta</a>
+    <a href="/#preguntas">Preguntas</a>
+    <a href="/bakery.html">Panadería mayorista</a>
+    <p class="mobile-menu__group">Más</p>
+    <a href="/cafe-especialidad/">Café de especialidad</a>
+    <a href="/laminados/">Laminados</a>
+    <a href="/centro-cordoba/">Centro de Córdoba</a>
+  </nav>
+</header>
+
+<!-- MAIN -->
 <main id="main">
-  <section class="cta-section" style="min-height: 100vh; display: flex; align-items: center;">
-    <div class="cta-section__inner">
-      <p class="cta-section__eyebrow">Error 404</p>
-      <h1 style="font-family: var(--font-display); font-size: clamp(36px, 5vw, 56px); font-weight: 400; line-height: 1.15; color: var(--color-charcoal); margin: 16px 0;">esta página no existe.</h1>
-      <p class="cta-section__body">Puede que el enlace esté mal escrito o que la página se haya movido. Lo demás está donde siempre.</p>
-      <div class="cta-section__actions">
-        <a class="btn-primary" href="/">Volver al inicio</a>
-        <a class="btn-outline-dark" href="/#carta">Ver la carta</a>
+  <section class="notfound" aria-labelledby="notfound-title">
+    <div class="notfound__inner">
+
+      <div class="notfound__copy">
+        <p class="notfound__eyebrow">Error 404</p>
+        <h1 id="notfound-title">Esta página <em>no leudó.</em></h1>
+        <p class="notfound__body">
+          Puede que el enlace esté mal escrito o que la página se haya movido.
+          El resto salió a las 8:00, como todos los días.
+        </p>
+        <div class="notfound__actions">
+          <a class="btn-primary" href="/">Volver al inicio</a>
+          <a class="btn-outline-dark" href="/#carta">Ver la carta</a>
+        </div>
+        <p class="notfound__note">Independencia 180, Centro, Córdoba</p>
       </div>
-      <p class="cta-section__tagline">Independencia 180, Centro, Córdoba</p>
+
+      <div class="notfound__stage">
+        <div class="ticket" role="group" aria-label="Ticket de caja número 404">
+          <header class="ticket__head">
+            <p class="ticket__brand">honesto</p>
+            <p>Independencia 180 · Centro · Córdoba</p>
+            <p>Ticket <strong>#404</strong> · Caja: mostrador</p>
+            <p>Fecha: hoy · Hora: temprano</p>
+          </header>
+
+          <ul class="ticket__lines">
+            <li class="ticket__line ticket__line--missing">
+              <span class="ticket__qty">1</span>
+              <span class="ticket__item">Página que buscabas</span>
+              <span class="ticket__status">no hay</span>
+            </li>
+            <li class="ticket__line">
+              <a href="/masa-madre/">
+                <span class="ticket__qty">1</span>
+                <span class="ticket__item">Hogaza de masa madre</span>
+                <span class="ticket__status">hay</span>
+              </a>
+            </li>
+            <li class="ticket__line">
+              <a href="/cafe-especialidad/">
+                <span class="ticket__qty">1</span>
+                <span class="ticket__item">Café de especialidad</span>
+                <span class="ticket__status">hay</span>
+              </a>
+            </li>
+            <li class="ticket__line">
+              <a href="/laminados/">
+                <span class="ticket__qty">1</span>
+                <span class="ticket__item">Laminados, desde las 8:00</span>
+                <span class="ticket__status">hay</span>
+              </a>
+            </li>
+            <li class="ticket__line">
+              <a href="/bakery.html">
+                <span class="ticket__qty">1</span>
+                <span class="ticket__item">Panadería mayorista</span>
+                <span class="ticket__status">hay</span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="ticket__total">
+            <span class="ticket__item">Total</span>
+            <span class="ticket__status">lo justo</span>
+          </p>
+
+          <footer class="ticket__foot">
+            <p>Gracias por venir.</p>
+            <p>Lo demás está donde siempre.</p>
+          </footer>
+        </div>
+
+        <img class="notfound__personaje" src="/assets/personajes/personaje-01.png" width="342" height="500" alt="Ilustración: un personaje con cabeza de pan camina buscando algo con la mano extendida.">
+      </div>
+
     </div>
   </section>
 </main>
+
+<!-- FOOTER -->
+<footer class="footer-v2" id="contacto">
+  <div class="footer-v2__inner">
+    <div class="footer-v2__grid">
+      <div>
+        <a class="footer-v2__brand" href="/">honesto</a>
+        <p class="footer-v2__tagline">Bakery &amp; Café / Comida Fresca</p>
+        <p class="footer-v2__desc">Lo esencial puede ser extraordinario.</p>
+        <ul class="footer-v2__links" aria-label="Más sobre honesto">
+          <li><a href="/masa-madre/">Masa madre</a></li>
+          <li><a href="/cafe-especialidad/">Café de especialidad</a></li>
+          <li><a href="/laminados/">Laminados</a></li>
+          <li><a href="/centro-cordoba/">Centro de Córdoba</a></li>
+          <li><a href="/bakery.html">Panadería mayorista</a></li>
+        </ul>
+      </div>
+      <div class="footer-v2__col">
+        <h3>Ubicación</h3>
+        <div class="footer-v2__location">
+          <svg class="footer-v2__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/>
+            <circle cx="12" cy="10" r="3"/>
+          </svg>
+          <address>
+            <p>Independencia 180, Centro</p>
+            <p class="footer-v2__col-sub">Córdoba, Argentina</p>
+          </address>
+        </div>
+      </div>
+      <div class="footer-v2__col">
+        <h3>Horarios</h3>
+        <div class="footer-v2__location">
+          <svg class="footer-v2__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 6v6l4 2"/>
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          <div class="footer-v2__hours">
+            <p>Lun - Vie: <time datetime="08:00">8:00</time> - <time datetime="21:00">21:00</time></p>
+            <p>Sáb: <time datetime="09:00">9:00</time> - <time datetime="15:00">15:00</time></p>
+            <p class="muted">Dom: Cerrado</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-v2__col">
+        <h3>Contacto</h3>
+        <div class="footer-v2__contact">
+          <a href="tel:+543516016091">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/>
+            </svg>
+            +54 351 601-6091
+          </a>
+          <a href="mailto:hola@honesto.com.ar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/>
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+            </svg>
+            hola@honesto.com.ar
+          </a>
+          <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+            </svg>
+            @honesto.bakery
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-v2__bottom">
+      <p class="footer-v2__copy">© 2026 honesto. Todos los derechos reservados.</p>
+      <span class="footer-v2__sign">hasta mañana.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.querySelector('.mainnav__toggle');
+  const menu = document.getElementById('mobile-menu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    if (open) menu.querySelector('a').focus();
+  });
+  menu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      menu.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    });
+  });
+</script>
 
 </body>
 </html>
