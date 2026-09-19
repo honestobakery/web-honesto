@@ -12,7 +12,9 @@ ROOT = os.path.join(os.path.dirname(__file__), '..')
 SITE = 'https://honesto.com.ar'
 TEL = '+543516016091'; TEL_SHOW = '+54 351 601-6091'
 WA = 'https://wa.me/543516016091'
-FUDO = 'https://menu.fu.do/independencia180/qr-menu'
+FUDO = 'https://menu.fu.do/independencia180/qr-menu'   # carta del obrador (B2B)
+CARTA = 'https://menu.fu.do/ledureausas/qr-menu'      # carta del café
+MAPS = 'https://maps.app.goo.gl/o1mb7m6Jnk81puLw9'      # ficha de Google Maps
 DATE = '2026-09-19'
 HOURS = 'Lun–Vie 8:00–21:00 · Sáb 9:00–15:00 · Dom cerrado'
 
@@ -35,7 +37,7 @@ def header(active):
   <nav class="mainnav" aria-label="Navegación principal">
     <div class="mainnav__links">
       <a href="/">Inicio</a>
-      <a href="/#nosotros">Nosotros</a>
+      <a href="/masa-madre/"{' aria-current="page"' if active=='masa-madre' else ''}>Masa madre</a>
     </div>
     <a class="mainnav__brand" href="/">honesto</a>
     <div class="mainnav__links">
@@ -51,12 +53,12 @@ def header(active):
   </nav>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Menú móvil">
     <a href="/">Inicio</a>
+    <a href="/masa-madre/"{' aria-current="page"' if active=='masa-madre' else ''}>Masa madre</a>
     <a href="/#nosotros">Nosotros</a>
     <a href="/#carta">Carta</a>
     <a href="/#preguntas">Preguntas</a>
     <a href="/bakery.html">Bakery B2B</a>
     <p class="mobile-menu__group">Más</p>
-    <a href="/masa-madre/"{' aria-current="page"' if active=='masa-madre' else ''}>Masa madre</a>
     <a href="/cafe-especialidad/"{' aria-current="page"' if active=='cafe-especialidad' else ''}>Café de especialidad</a>
     <a href="/laminados/"{' aria-current="page"' if active=='laminados' else ''}>Laminados</a>
     <a href="/centro-cordoba/"{' aria-current="page"' if active=='centro-cordoba' else ''}>Centro de Córdoba</a>
@@ -174,7 +176,7 @@ PAGES = {
   eyebrow='Masa madre', crumb='Masa madre',
   h1='Pan de masa madre real. <em>Qué es y por qué se nota.</em>',
   lead='Nuestra hogaza fermenta 24 horas sin levadura comercial, con harinas de trigo, integral y centeno, y se hornea todos los días en Independencia 180. Acá contamos qué es la masa madre, por qué lleva tanto tiempo y cómo cuidar el pan en casa.',
-  hero_img=('fermentacion','Bollos de masa fermentando en la placa, en la cocina de honesto'),
+  hero_img=('hogazas-masa','Hogazas de masa madre recién horneadas enfriándose en el carro de la panadería de honesto'),
   hero_class='',
   resumen_title='¿Qué es el pan de masa madre de honesto?',
   resumen='Es pan hecho solo con harina, agua, sal y masa madre: un cultivo natural de levaduras y bacterias que fermenta la masa sin levadura comercial. Nuestra hogaza usa harinas de trigo, integral y centeno, fermenta 24 horas y se hornea todos los días en el centro de Córdoba. Pesa alrededor de 1 kg.',
@@ -203,7 +205,9 @@ PAGES = {
 </ul>'''),
    ('¿En qué se diferencia del pan común?', '''<p>El pan industrial se leva con levadura comercial en pocas horas y suele llevar aditivos para acelerar el proceso y prolongar la vida útil. El pan de masa madre se leva con un cultivo natural durante un día entero, sin aditivos. El resultado es otro pan: más sabor, mejor corteza, miga más húmeda y una acidez suave que muchos describen como "más liviano". No hace falta saber de pan para notar la diferencia. Se nota al cortarlo.</p>'''),
   ],
-  figure=('cocina','Cocina de honesto en Independencia 180: el equipo trabajando entre mesadas y hornos','La cocina y el horno están a la vista. El proceso no se esconde.'),
+  figures=[('vitrina','Panadera de honesto trabajando, con la vitrina de hogazas y panes al fondo','Las hogazas del día, en la vitrina desde las 8.',2),
+           ('cocina','Panadería de honesto en Independencia 180: el equipo trabajando entre mesadas y hornos','La panadería, a la vista. El proceso no se esconde.',4),
+           ('ventana','La panadería de honesto vista desde la ventana que da al salón','Desde el salón se ve la panadería trabajar.',6)],
   faq=[
    ('¿Dónde comprar pan de masa madre en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Horneamos hogazas, panes de molde y baguetines de masa madre todos los días. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.'),
    ('¿A qué hora sale el pan?','A las 8 de la mañana, en la apertura, el pan del día ya está en el mostrador. Se vende hasta que se termina; se puede reservar por WhatsApp.'),
@@ -221,15 +225,15 @@ PAGES = {
   title='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos | honesto',
   description='Qué es el café de especialidad, qué significa calibrarlo todos los días y qué servimos en honesto, Independencia 180, centro de Córdoba: café de la casa, tolva invitada de tostadores locales y leches vegetales.',
   headline='Café de especialidad en el centro de Córdoba: qué es y cómo lo preparamos',
-  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café calibrado, tostadores de café Córdoba, Chiquitito café, Ínfimo tostamos café, tolva invitada, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
+  keywords='café de especialidad Córdoba centro, cafetería de especialidad Córdoba, café filtrado Córdoba, espresso tonic Córdoba, café con leche vegetal Córdoba, café calibrado, tostadores de café Córdoba, Chiquitito café, Ínfimo tostamos café, tolva invitada, espresso Córdoba centro, dónde tomar café de especialidad en Córdoba, cafetería para trabajar Córdoba centro, café y medialunas Córdoba',
   eyebrow='Café de especialidad', crumb='Café de especialidad',
   h1='Café de especialidad, <em>calibrado todos los días.</em>',
   lead='No hace falta saber de café para notar la diferencia. Acá explicamos qué es el café de especialidad, qué hacemos cada mañana antes de servir la primera taza y por qué el centro de Córdoba es un buen lugar para tomarlo despacio.',
   hero_img=('cafe-alfajor','Café de especialidad en vaso de vidrio junto a un alfajor, en una mesa de honesto'),
   hero_class='page-hero--blue',
   resumen_title='¿Qué es el café de especialidad de honesto?',
-  resumen='Es café de especialidad, es decir, de granos seleccionados y trazables, que calibramos todos los días: ajustamos molienda, dosis, tiempo y temperatura cada mañana para que salga igual de bien en cada taza. Además del café de la casa, siempre hay una tolva invitada con un tostador local de Córdoba. Servimos espresso, café con leche (también con leches vegetales) y café negro, en Independencia 180, con medialunas y laminados recién horneados.',
-  facts=[('Qué','Café de especialidad de la casa + tolva invitada de tostadores locales (Chiquitito, Ínfimo y otros)'),('Cómo','Espresso, café con leche (también leches vegetales) y café negro'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
+  resumen='Es café de especialidad, es decir, de granos seleccionados y trazables, que calibramos todos los días: ajustamos molienda, dosis, tiempo y temperatura cada mañana para que salga igual de bien en cada taza. Además del café de la casa, siempre hay una tolva invitada con un tostador local de Córdoba. Servimos espresso y sus clásicos, café filtrado en el método que elijas, cafés fríos y leches vegetales, en Independencia 180, con medialunas y laminados recién horneados.',
+  facts=[('Qué','Café de especialidad de la casa + tolva invitada de tostadores locales (Chiquitito, Ínfimo y otros)'),('Cómo','Espresso y clásicos · filtrado en el método que elijas · fríos (espresso tonic, cold latte) · leches vegetales'),('Con qué','Medialunas, croissants, alfajores y pastelería propia'),('Dónde','Independencia 180, Centro, Córdoba · '+HOURS)],
   sections=[
    ('¿Qué es el café de especialidad?', '''<p>"Café de especialidad" es un término técnico. Se refiere a cafés que obtienen 80 puntos o más sobre 100 en una evaluación sensorial estandarizada, hecha por catadores certificados. Para llegar ahí, el grano tiene que estar libre de defectos, cultivado y procesado con cuidado, y ser trazable: se sabe de qué finca o cooperativa viene, de qué variedad y cómo se procesó.</p>
 <p>Ese cuidado se pierde si el tostado es viejo o si la preparación es descuidada. Por eso en café de especialidad importa tanto lo que pasa en la barra como lo que pasó en origen.</p>'''),
@@ -237,7 +241,8 @@ PAGES = {
 <p>No lo hacemos para contarlo. Lo hacemos porque es la única manera de que el café salga igual de bien un martes a las 8 que un sábado a las 14.</p>'''),
    ('¿Qué café servimos?', '''<p>Trabajamos con dos tolvas. En una está nuestro <strong>café de especialidad de la casa</strong>; en la otra, siempre, una <strong>tolva invitada</strong> que rota entre <strong>tostadores locales</strong> de Córdoba. Así el café de todos los días es el mismo y, a la vez, siempre hay algo nuevo para probar de la escena cordobesa.</p>
 <p>Por la tolva invitada pasan tostadores como <a href="https://chiquitito.cafe/" target="_blank" rel="noopener noreferrer">Chiquitito</a>, tostadores de Córdoba que trabajan cafés de origen único de Brasil, Colombia, Bolivia, Honduras, Perú, Etiopía y Uganda, e <a href="https://www.instagram.com/infimo.tostamoscafe/" target="_blank" rel="noopener noreferrer">Ínfimo</a>, también tostadores locales. La tolva cambia; la idea es que siempre haya un café cordobés distinto para probar.</p>
-<p>Servimos espresso y sus variantes con leche, y café negro. Hay <strong>leches vegetales</strong> para quien las prefiera. Lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. Si querés saber qué tostador está en la tolva invitada esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % WA),
+<p>En la barra hay <strong>espresso y sus clásicos</strong> (cortado, café con leche, capuccino, moka, macchiato, americano), <strong>café filtrado</strong> de cualquiera de las dos tolvas en el método que elijas, y <strong>cafés fríos</strong> como el espresso tonic, el cold latte y el cold moka. Hay <strong>leches vegetales</strong> para quien las prefiera. Y para quien no toma café: té en hebras agroecológico de Misiones, chai, matcha latte y chocolate caliente.</p>
+<p>Lo preparamos sin pose: si te gusta más intenso, te lo decimos; si querés algo suave, también. La carta completa con precios está en <a href="%s" target="_blank" rel="noopener noreferrer">la carta online</a>. Si querés saber qué tostador está en la tolva invitada esta semana, preguntá en la barra o escribinos por <a href="%s" target="_blank" rel="noopener noreferrer">WhatsApp</a>.</p>''' % (CARTA, WA)),
    ('¿Con qué acompañarlo?', '''<p>Con lo que sale del horno. Medialunas de manteca estilo marplatense, croissant, pan de chocolate, roll de canela, danesas, alfajor de chocolate y frutos rojos, budines y cookies. Todo de producción propia, con <a href="/masa-madre/">masa madre</a> y 100% manteca en los <a href="/laminados/">laminados</a>. Al mediodía hay comida fresca para almorzar.</p>'''),
    ('¿Es un buen lugar para trabajar o estudiar?', '''<p>Sí. honesto está en el centro de Córdoba, a 200 metros de la Plaza San Martín, y está pensado para quedarse: mesas cómodas, luz natural, un patio con plantas y horario largo, de 8:00 a 21:00 de lunes a viernes. Vienen oficinistas a la mañana temprano, estudiantes a la tarde y gente que aprovecha un trámite en el centro para tomar un café bien hecho.</p>'''),
   ],
@@ -247,12 +252,13 @@ PAGES = {
    ('¿Qué diferencia hay entre café de especialidad y café común?','El café de especialidad viene de granos seleccionados, trazables y sin defectos, evaluados con 80 puntos o más sobre 100, tostados recientemente y preparados con parámetros controlados. El café común suele ser una mezcla de granos de menor calidad, tostado muy oscuro para uniformar el sabor.'),
    ('¿Qué es calibrar el café?','Ajustar cada día la molienda, la dosis, el tiempo de extracción y la temperatura del agua, probando hasta que el espresso sale como debe. Se hace porque el café cambia con el clima y con los días desde el tostado.'),
    ('¿Tienen leches vegetales?','Sí. Ofrecemos leches vegetales para el café con leche y sus variantes.'),
+   ('¿Hacen café filtrado?','Sí. Filtrado de la tolva principal o de la tolva invitada, en el método que elijas. También hay cafés fríos: espresso tonic, ice americano, cold latte y cold moka.'),
    ('¿Qué es la tolva invitada?','Además de nuestro café de especialidad de la casa, siempre hay una segunda tolva con un café de un tostador local de Córdoba, que va rotando. Entre los tostadores que pasan están Chiquitito e Ínfimo. Es una forma de probar lo que se tuesta en la ciudad.'),
    ('¿Se puede trabajar con la notebook?','Sí. Hay mesas cómodas, luz natural y horario corrido de 8:00 a 21:00 de lunes a viernes. Es un lugar pensado para quedarse.'),
   ],
   mentions=[{"@type":"Organization","name":"Chiquitito Café de Especialidad","url":"https://chiquitito.cafe/","sameAs":["https://www.instagram.com/chiquitito.cafe/"],"description":"Tostadores de café de especialidad en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}},
             {"@type":"Organization","name":"Ínfimo · tostamos café","sameAs":["https://www.instagram.com/infimo.tostamoscafe/"],"description":"Tostadores de café en Córdoba, Argentina","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressCountry":"AR"}}],
-  aside_links=[('/laminados/','Medialunas y croissants para acompañar'),('/masa-madre/','Nuestro pan de masa madre'),('/centro-cordoba/','Cómo llegar y qué hay cerca'),('/#carta','La carta')],
+  aside_links=[('/laminados/','Medialunas y croissants para acompañar'),('/masa-madre/','Nuestro pan de masa madre'),('/centro-cordoba/','Cómo llegar y qué hay cerca'),(CARTA,'La carta del café, con precios')],
   cta=('un café bien hecho, sin vueltas.','Independencia 180, centro de Córdoba. De lunes a viernes de 8 a 21, sábados de 9 a 15.'),
  ),
 
@@ -264,7 +270,7 @@ PAGES = {
   eyebrow='Laminados', crumb='Laminados',
   h1='Laminados de manteca y masa madre. <em>Las de siempre, bien hechas.</em>',
   lead='Medialunas estilo marplatense, croissants, pan de chocolate, rolls de canela, danesas y pepas de membrillo. Todo laminado con masa madre y 100% manteca, y horneado el mismo día en Independencia 180.',
-  hero_img=('laminadora','Panadero pasando un bloque de masa con manteca por la laminadora en la cocina de honesto'),
+  hero_img=('medialuna-2','Medialuna de manteca y masa madre estilo marplatense en plato, con luz natural'),
   hero_class='',
   resumen_title='¿Qué son los laminados de honesto?',
   resumen='Son las piezas de masa y manteca en capas que hacemos todos los días: medialunas de manteca estilo marplatense, croissants, pan de chocolate, roll de canela, danesas con pastelera o crumble de manzana y pepa de membrillo. La masa se leva con masa madre y se lamina con manteca, sin margarina. Se venden en el local, en Independencia 180, y al por mayor a cafeterías de Córdoba.',
@@ -292,7 +298,9 @@ PAGES = {
 </ul>'''),
    ('Laminados para cafeterías y restaurantes', '''<p>Los mismos laminados se venden al por mayor a través de <a href="/bakery.html">honesto bakery</a>, horneados o <strong>congelados sin fermentar</strong> en packs de 10 (croissant, pan de chocolate, danesa, roll de canela, medialunita) para descongelar, leudar y hornear en tu negocio. Te pasamos las indicaciones de leudado y horneado.</p>'''),
   ],
-  figure=('cortante','Mano cortando discos de masa con un cortante sobre la placa, en la cocina de honesto','Cada pieza se corta y se forma a mano.'),
+  figures=[('laminadora','Panadero pasando un bloque de masa con manteca por la laminadora en la cocina de honesto','La masa pasa por la laminadora hasta formar decenas de capas de manteca.',2),
+           ('cortante','Mano cortando discos de masa con un cortante sobre la placa, en la cocina de honesto','Cada pieza se corta y se forma a mano.',4),
+           ('roll-2','Roll de canela de manteca con azúcar en plato verde, laminado de honesto','Roll de canela: masa esponjosa, manteca de canela y azúcar morena.',6)],
   faq=[
    ('¿Dónde comprar medialunas de manteca en el centro de Córdoba?','En honesto, Independencia 180, a 200 metros de la Plaza San Martín. Medialunas estilo marplatense de masa madre y 100% manteca, horneadas todos los días. Lunes a viernes de 8:00 a 21:00, sábados de 9:00 a 15:00.'),
    ('¿Los laminados llevan margarina?','No. Se laminan únicamente con manteca.'),
@@ -348,7 +356,8 @@ PAGES = {
 <li><strong>Para quien pasa.</strong> Trámite, turismo, una vuelta por el casco histórico. Un lugar para probar el pan y el café de la ciudad, a metros de la Catedral.</li>
 </ul>'''),
   ],
-  figure=('puerta','Puerta abierta de honesto con la calle Independencia y gente pasando al fondo','La puerta a la calle Independencia. El centro pasa por acá.'),
+  figures=[('puerta','Puerta abierta de honesto con la calle Independencia y gente pasando al fondo','La puerta a la calle Independencia. El centro pasa por acá.',2),
+           ('salon','Salón de honesto con mesas y sillas blancas, luz natural y paredes de la casona','El salón de la casona. Mesas para quedarse.',4)],
   faq=[
    ('¿Dónde queda honesto en Córdoba?','En Independencia 180, Centro, Córdoba, Argentina. Es la calle de la Catedral y el Cabildo; honesto está una cuadra más al sur, a 200 metros de la Plaza San Martín.'),
    ('¿Cómo llego desde la Plaza San Martín?','Tomá Independencia desde la esquina sureste de la plaza, en dirección sur. Pasás el Cabildo y la Catedral, y honesto está en la cuadra siguiente. Son dos o tres minutos a pie.'),
@@ -358,7 +367,7 @@ PAGES = {
    ('¿honesto es el ex Le Dureau?','Sí. El local de Independencia 180 abrió en 2019 como Le Dureau, una de las primeras cafeterías de especialidad de Córdoba. Desde 2026 se llama honesto y se enfoca en pan de masa madre, laminados y café de especialidad. Misma casona, nuevo nombre.'),
    ('¿Cómo los contacto?','Por WhatsApp o teléfono al +54 351 601-6091, por correo a hola@honesto.com.ar o por Instagram en @honesto.bakery.'),
   ],
-  aside_links=[('/masa-madre/','Nuestro pan de masa madre'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Medialunas y croissants'),('https://www.google.com/maps/search/?api=1&query=Independencia+180%2C+C%C3%B3rdoba%2C+Argentina','Abrir en Google Maps')],
+  aside_links=[('/masa-madre/','Nuestro pan de masa madre'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Medialunas y croissants'),(MAPS,'Abrir en Google Maps')],
   cta=('nos vemos en el centro.','Independencia 180, a una cuadra de la Catedral. Lunes a viernes de 8 a 21, sábados de 9 a 15.'),
  ),
 }
@@ -367,13 +376,15 @@ def build(slug, pg):
     url = f'{SITE}/{slug}/'
     faq_html = '\n'.join(f'        <details class="faq__item">\n          <summary>{q}</summary>\n          <p>{a}</p>\n        </details>' for q, a in pg['faq'])
     sections_html = '\n'.join(f'      <section>\n        <h2>{h}</h2>\n{body}\n      </section>' for h, body in pg['sections'])
-    # figure inserted after the 3rd section
+    # figures: (slot, alt, caption, after_section_index) inserted between sections
     parts = sections_html.split('      </section>\n')
-    fig_slot, fig_alt, fig_cap = pg['figure']
-    figure = f'      <figure class="article__figure">\n        {img(fig_slot, fig_alt, BODY_SIZES)}\n        <figcaption>{fig_cap}</figcaption>\n      </figure>'
-    if len(parts) > 3:
-        parts.insert(3, figure + '\n')
+    figs = pg.get('figures') or [pg['figure'] + (3,)]
+    for fig_slot, fig_alt, fig_cap, after in sorted(figs, key=lambda f: -f[3]):
+        figure = f'      <figure class="article__figure">\n        {img(fig_slot, fig_alt, BODY_SIZES)}\n        <figcaption>{fig_cap}</figcaption>\n      </figure>'
+        if len(parts) > after:
+            parts.insert(after, figure + '\n')
     sections_html = '      </section>\n'.join(parts)
+    fig_slot = figs[0][0]
     facts_html = '\n'.join(f'        <div><dt>{k}</dt><dd>{v}</dd></div>' for k, v in pg['facts'])
     def alink(h, t):
         ext = ' target="_blank" rel="noopener noreferrer"' if h.startswith('http') else ''
@@ -392,7 +403,7 @@ def build(slug, pg):
              {"@type": "ListItem", "position": 1, "name": "honesto", "item": SITE + "/"},
              {"@type": "ListItem", "position": 2, "name": pg['crumb'], "item": url}]}},
         {"@type": "Article", "@id": url + "#articulo", "headline": pg['headline'], "description": pg['description'],
-         "image": [f"{SITE}/assets/images/{hero_slot}-1600.webp", f"{SITE}/assets/images/{fig_slot}-1600.webp"],
+         "image": [f"{SITE}/assets/images/{hero_slot}-1600.webp"] + [f"{SITE}/assets/images/{f[0]}-1600.webp" for f in figs],
          "author": {"@id": SITE + "/#negocio"}, "publisher": {"@id": SITE + "/#negocio"}, "about": {"@id": SITE + "/#negocio"},
          "mainEntityOfPage": {"@id": url + "#pagina"}, "datePublished": DATE, "dateModified": DATE, "inLanguage": "es-AR",
          "articleSection": pg['crumb'],

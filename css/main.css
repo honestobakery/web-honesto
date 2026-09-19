@@ -2391,6 +2391,86 @@ a {
   margin-top: 8px;
 }
 
+/* ─── /links (hub para el celular) ───────────────────────── */
+.links-page { background: var(--color-cream); }
+
+.links {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 40px 24px 56px;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.links__head { text-align: center; display: grid; gap: 8px; justify-items: center; }
+.links__logo img { width: 180px; height: auto; display: block; }
+.links__bio {
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--color-charcoal-70);
+  margin: 0;
+  max-width: 34ch;
+}
+
+.links__list { display: grid; gap: 12px; }
+
+.links__btn {
+  display: grid;
+  gap: 2px;
+  text-align: center;
+  padding: 16px 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-charcoal);
+  color: var(--color-charcoal);
+  text-decoration: none;
+  transition: background 180ms, color 180ms, transform 180ms;
+}
+
+.links__btn span {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.links__btn small {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--color-charcoal-60);
+}
+
+.links__btn:hover { background: var(--color-charcoal); color: var(--color-cream); transform: translateY(-1px); }
+.links__btn:hover small { color: var(--color-cream-80); }
+
+.links__btn--primary { background: var(--color-blue-primary); border-color: var(--color-blue-primary); color: var(--color-cream); }
+.links__btn--primary small { color: var(--color-cream-80); }
+.links__btn--primary:hover { background: var(--color-blue-deep); border-color: var(--color-blue-deep); }
+
+.links__btn--quiet { border-color: var(--color-charcoal-20); }
+.links__btn--quiet span { font-weight: 400; }
+
+.links__btn:focus-visible { outline: 2px solid var(--color-blue-primary); outline-offset: 3px; }
+
+.links__foot { text-align: center; margin-top: auto; }
+.links__foot p {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-50);
+  margin: 0 0 8px;
+}
+.links__foot .links__sign {
+  font-family: var(--font-display);
+  font-size: 22px;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--color-charcoal-60);
+}
+
 /* ─── BAKERY B2B ─────────────────────────────────────────── */
 .btn-cream {
   display: inline-flex;

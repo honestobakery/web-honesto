@@ -35,12 +35,16 @@ SLOTS = {
     'congelados':    ('_A744482.jpg', (4, 3), (0.5, 0.5)),        # congelados: bloque de masa laminada
     'hornos':        ('_A744488.jpg', (4, 3), (0.5, 0.5)),        # por qué: hornos
     # páginas de contenido
-    'fermentacion':  ('_A744501.jpg', (4, 3), (0.5, 0.5)),        # /masa-madre: bollos fermentando
+    'hogazas-masa':  ('_A744454.jpg', (4, 3), (0.5, 0.9), 0.92), # /masa-madre: hogazas en el carro y la panadería detrás (hero)
+    'vitrina':       ('_A744505.jpg', (4, 3), (0.62, 0.5)),       # /masa-madre: panadera con la vitrina de panes
+    'ventana':       ('_A744524.jpg', (4, 3), (0.5, 0.5)),        # /masa-madre: la panadería desde la ventana
     'cocina':        ('_A744597.jpg', (4, 3), (0.5, 0.5)),        # /masa-madre: cocina y equipo
     'cafe-alfajor':  ('_A744593.jpg', (4, 3), (0.5, 0.5)),        # /cafe-especialidad: café + alfajor
     'mesas':         ('_A744513.jpg', (4, 3), (0.5, 0.45)),       # /cafe-especialidad: clientes en el patio
     'laminadora':    ('_A744477.jpg', (4, 3), (0.5, 0.5)),        # /laminados: pasando la masa por la laminadora
     'cortante':      ('_A744461.jpg', (4, 3), (0.5, 0.5)),        # /laminados: cortando discos de masa
+    'medialuna-2':   ('_A744545.jpg', (4, 3), (0.5, 0.5)),        # /laminados: medialuna (hero)
+    'roll-2':        ('_A744554.jpg', (4, 3), (0.5, 0.5)),        # /laminados: roll de canela
     'cartel':        ('_A744437.jpg', (4, 3), (0.5, 0.45)),       # /centro-cordoba: cartel en la fachada
     'puerta':        ('_A744537.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: puerta abierta a la calle
     'salon':         ('_A744584.jpg', (4, 3), (0.5, 0.5)),        # /centro-cordoba: salón interior
