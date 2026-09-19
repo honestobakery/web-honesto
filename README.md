@@ -50,7 +50,7 @@ El dominio custom esperado es `https://honesto.com.ar/`.
 Tras publicar cambios de contenido, avisar a Bing/Copilot vía IndexNow (la clave es el archivo `*.txt` de 32 caracteres hex en la raíz):
 
 ```bash
-KEY=$(ls | grep -E '^[0-9a-f]{32}\.txt$' | sed 's/.txt//')
+KEY=60cbe1a55ca942c4aac018228e2917f0   # clave de Bing Webmaster Tools (hay una segunda clave propia en la raíz; ambas valen)
 curl -s -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json; charset=utf-8" \
   -d "{\"host\":\"honesto.com.ar\",\"key\":\"$KEY\",\"keyLocation\":\"https://honesto.com.ar/$KEY.txt\",\"urlList\":[\"https://honesto.com.ar/\",\"https://honesto.com.ar/bakery.html\"]}" -w "%{http_code}\n"
 ```
