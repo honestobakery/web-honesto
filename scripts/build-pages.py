@@ -43,7 +43,7 @@ def header(active):
     <div class="mainnav__links">
       <a href="/#carta">Carta</a>
       <a href="/#preguntas">Preguntas</a>
-      <a class="mainnav__cta" href="/bakery.html">Bakery B2B</a>
+      <a class="mainnav__cta" href="/bakery.html">Mayorista</a>
     </div>
     <button class="mainnav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -57,7 +57,7 @@ def header(active):
     <a href="/#nosotros">Nosotros</a>
     <a href="/#carta">Carta</a>
     <a href="/#preguntas">Preguntas</a>
-    <a href="/bakery.html">Bakery B2B</a>
+    <a href="/bakery.html">Panadería mayorista</a>
     <p class="mobile-menu__group">Más</p>
     <a href="/cafe-especialidad/"{' aria-current="page"' if active=='cafe-especialidad' else ''}>Café de especialidad</a>
     <a href="/laminados/"{' aria-current="page"' if active=='laminados' else ''}>Laminados</a>
@@ -79,7 +79,7 @@ FOOTER = f'''<!-- FOOTER -->
           <li><a href="/cafe-especialidad/">Café de especialidad</a></li>
           <li><a href="/laminados/">Laminados</a></li>
           <li><a href="/centro-cordoba/">Centro de Córdoba</a></li>
-          <li><a href="/bakery.html">Bakery B2B</a></li>
+          <li><a href="/bakery.html">Panadería mayorista</a></li>
         </ul>
       </div>
       <div class="footer-v2__col">
