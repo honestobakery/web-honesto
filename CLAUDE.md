@@ -37,7 +37,7 @@ Two documents in this repo do govern social content, because they govern the web
 
 ## SEO / GEO rules
 
-- **Facts must match everywhere**: address, hours (Lun–Vie 8:00–21:00, Sáb 8:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
+- **Facts must match everywhere**: address, hours (Lun–Vie 8:00–21:00, Sáb 9:00–15:00, Dom cerrado), phone (+54 351 601-6091), email and Instagram appear in `index.html` (JSON-LD, FAQ, footer), `bakery.html`, and `llms.txt`. Change one → change all.
 - JSON-LD lives in a single `@graph` per page. The business node is `https://honesto.com.ar/#negocio`; reference it by `@id`, don't duplicate it.
 - The `FAQPage` schema must mirror the visible `#preguntas` section 1:1 (Google requires FAQ content to be visible on the page).
 - **Target queries**: home targets "café de especialidad" + "pan de masa madre / hogaza" + "centro de Córdoba"; bakery.html targets "panadería mayorista / proveedor B2B de pan de masa madre, laminados y pastelería para cafeterías en Córdoba". Keep those phrases in titles, H1, FAQ and llms.txt.
