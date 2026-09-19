@@ -2391,6 +2391,34 @@ a {
   margin-top: 8px;
 }
 
+/* Mapa (/centro-cordoba) */
+.mapa { margin: 0 0 24px; }
+
+.mapa__map {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 260px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-rose-40);
+}
+
+.mapa__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-top: 14px;
+}
+
+.mapa__note {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal-50);
+}
+
 /* ─── /links (hub para el celular) ───────────────────────── */
 .links-page { background: var(--color-cream); }
 

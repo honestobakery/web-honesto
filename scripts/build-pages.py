@@ -15,6 +15,8 @@ WA = 'https://wa.me/543516016091'
 FUDO = 'https://menu.fu.do/independencia180/qr-menu'   # carta del obrador (B2B)
 CARTA = 'https://menu.fu.do/ledureausas/qr-menu'      # carta del café
 MAPS = 'https://maps.app.goo.gl/o1mb7m6Jnk81puLw9'      # ficha de Google Maps
+GMAPS_KEY = 'AIzaSyD3FI8uTQYOBQ3KcY7dOmERRaDAGh8gUEE'      # Maps JavaScript API — restringir por referrer a honesto.com.ar/*
+LAT, LNG = -31.41797, -64.18505
 DATE = '2026-09-19'
 HOURS = 'Lun–Vie 8:00–21:00 · Sáb 9:00–15:00 · Dom cerrado'
 
@@ -163,6 +165,39 @@ FOOTER = f'''<!-- FOOTER -->
 </body>
 </html>
 '''
+
+MAP_SCRIPT = f"""<script>
+  // Mapa de Google: se carga solo cuando el bloque entra en pantalla.
+  (function () {{
+    var el = document.getElementById('mapa');
+    if (!el) return;
+    var pos = {{ lat: {LAT}, lng: {LNG} }};
+    window.initHonestoMap = async function () {{
+      var maps = await google.maps.importLibrary('maps');
+      var marker = await google.maps.importLibrary('marker');
+      var map = new maps.Map(el, {{
+        center: pos, zoom: 17, mapId: 'DEMO_MAP_ID',
+        mapTypeControl: false, streetViewControl: false, fullscreenControl: true,
+        gestureHandling: 'cooperative'
+      }});
+      var pin = new marker.PinElement({{ background: '#2051C6', borderColor: '#F4F2E7', glyphColor: '#F4F2E7' }});
+      new marker.AdvancedMarkerElement({{ map: map, position: pos, title: 'honesto · Independencia 180', content: pin.element }});
+    }};
+    function load() {{
+      var s = document.createElement('script');
+      s.src = 'https://maps.googleapis.com/maps/api/js?key={GMAPS_KEY}&callback=initHonestoMap&loading=async&v=weekly&language=es&region=AR';
+      s.async = true; s.defer = true; document.head.appendChild(s);
+    }}
+    if ('IntersectionObserver' in window) {{
+      var io = new IntersectionObserver(function (entries) {{
+        if (entries[0].isIntersecting) {{ io.disconnect(); load(); }}
+      }}, {{ rootMargin: '400px' }});
+      io.observe(el);
+    }} else {{ load(); }}
+  }})();
+</script>
+
+"""
 
 # ─────────────────────────────────────────────────────────────────────────────
 # CONTENIDO
@@ -327,7 +362,14 @@ PAGES = {
   resumen='En Independencia 180, Centro, Córdoba, Argentina, en una casona del complejo de Santa Teresa. Es la calle que sale de la esquina sureste de la Plaza San Martín, sobre la que están el Cabildo y la Catedral, una cuadra antes de nuestro local. El local abrió en 2019 como Le Dureau y desde 2026 se llama honesto. La Manzana Jesuítica y el Colegio Monserrat quedan a menos de 200 metros; Patio Olmos, a 330; la Peatonal, a 430. Abrimos de lunes a viernes de 8:00 a 21:00 y los sábados de 9:00 a 15:00.',
   facts=[('Dirección','Independencia 180, Centro, Córdoba (X5000)'),('Referencia','Una cuadra al sur de la Catedral, en el complejo de Santa Teresa'),('Desde','2019 como Le Dureau · honesto desde 2026'),('Horario',HOURS),('Contacto',f'<a href="tel:{TEL}">{TEL_SHOW}</a> · <a href="https://instagram.com/honesto.bakery" target="_blank" rel="noopener noreferrer">@honesto.bakery</a>')],
   sections=[
-   ('¿Cómo llegar y qué hay cerca?', '''<p>Desde la Plaza San Martín, tomá Independencia hacia el sur: pasás el Cabildo y la Catedral y en la cuadra siguiente, a la derecha, está honesto. Si venís caminando por la Peatonal, son cinco minutos. Estas son las distancias reales, medidas desde la puerta:</p>
+   ('¿Cómo llegar y qué hay cerca?', '''<div class="mapa">
+  <div id="mapa" class="mapa__map" role="img" aria-label="Mapa de Google con la ubicación de honesto en Independencia 180, centro de Córdoba"></div>
+  <div class="mapa__actions">
+    <a class="btn-primary" href="%s" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+    <span class="mapa__note">Independencia 180 · Centro · Córdoba</span>
+  </div>
+</div>
+<p>Desde la Plaza San Martín, tomá Independencia hacia el sur: pasás el Cabildo y la Catedral y en la cuadra siguiente, a la derecha, está honesto. Si venís caminando por la Peatonal, son cinco minutos. Estas son las distancias reales, medidas desde la puerta:</p>
 <table class="dist-table">
 <tr><td>Iglesia de Santa Teresa y Museo Juan de Tejeda</td><td>mismo complejo</td></tr>
 <tr><td>Iglesia de la Compañía de Jesús y Manzana Jesuítica</td><td>170 m</td></tr>
@@ -342,7 +384,7 @@ PAGES = {
 <tr><td>Tribunales I (Palacio de Justicia)</td><td>730 m</td></tr>
 <tr><td>Mercado Norte</td><td>1 km</td></tr>
 <tr><td>Terminal de Ómnibus</td><td>1,1 km</td></tr>
-</table>'''),
+</table>''' % MAPS),
    ('Un poco de historia: el casco histórico', '''<p>Córdoba se fundó en 1573 alrededor de lo que hoy es la Plaza San Martín. De ahí salen las calles del casco histórico, y una de ellas es Independencia. En sus primeras cuadras están el <strong>Cabildo</strong>, sede del gobierno colonial, y la <strong>Catedral</strong>, cuya construcción llevó casi dos siglos. Una cuadra al oeste, la <strong>Manzana Jesuítica</strong>, con la Iglesia de la Compañía de Jesús, el Colegio Monserrat y la primera universidad del país, es Patrimonio de la Humanidad desde el año 2000.</p>'''),
    ('La casona: parte del complejo de Santa Teresa', '''<p>Nuestro local está en una casona del <strong>complejo de Santa Teresa</strong>, sobre Independencia. El complejo nació en 1628, cuando Juan de Tejeda cedió la casa de su familia para fundar el <strong>Monasterio de San José de las Carmelitas Descalzas</strong> y la <strong>Iglesia de Santa Teresa de Jesús</strong>. Ahí vivió sus últimos años su hijo, <strong>Luis de Tejeda</strong>, considerado el primer poeta de estas tierras, y por eso una frase suya nos acompaña en la portada del sitio. Hoy el conjunto, Monumento Histórico Nacional desde 1941, reúne el monasterio de clausura, la iglesia y el Museo de Arte Religioso Juan de Tejeda.</p>
 <p>Trabajar entre esas paredes tiene sentido para lo que hacemos: cosas que llevan tiempo, hechas todos los días, sin apuro.</p>'''),
@@ -367,6 +409,7 @@ PAGES = {
    ('¿honesto es el ex Le Dureau?','Sí. El local de Independencia 180 abrió en 2019 como Le Dureau, una de las primeras cafeterías de especialidad de Córdoba. Desde 2026 se llama honesto y se enfoca en pan de masa madre, laminados y café de especialidad. Misma casona, nuevo nombre.'),
    ('¿Cómo los contacto?','Por WhatsApp o teléfono al +54 351 601-6091, por correo a hola@honesto.com.ar o por Instagram en @honesto.bakery.'),
   ],
+  map=True,
   aside_links=[('/masa-madre/','Nuestro pan de masa madre'),('/cafe-especialidad/','Café de especialidad'),('/laminados/','Medialunas y croissants'),(MAPS,'Abrir en Google Maps')],
   cta=('nos vemos en el centro.','Independencia 180, a una cuadra de la Catedral. Lunes a viernes de 8 a 21, sábados de 9 a 15.'),
  ),
@@ -545,7 +588,7 @@ def build(slug, pg):
 
 </main>
 
-{FOOTER}'''
+{MAP_SCRIPT if pg.get('map') else ''}{FOOTER}'''
     out_dir = os.path.join(ROOT, slug); os.makedirs(out_dir, exist_ok=True)
     with open(os.path.join(out_dir, 'index.html'), 'w', encoding='utf-8') as f:
         f.write(html)
